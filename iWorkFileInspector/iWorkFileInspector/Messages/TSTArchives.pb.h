@@ -20,11 +20,9 @@
 #endif
 
 #include <google/protobuf/generated_message_util.h>
-#include <google/protobuf/message.h>
 #include <google/protobuf/repeated_field.h>
 #include <google/protobuf/extension_set.h>
-#include <google/protobuf/generated_enum_reflection.h>
-#include <google/protobuf/unknown_field_set.h>
+#include <google/protobuf/generated_message_reflection.h>
 #include "TSPMessages.pb.h"
 #include "TSDArchives.pb.h"
 #include "TSKArchives.pb.h"
@@ -410,29 +408,29 @@ class CellID : public ::google::protobuf::Message {
  public:
   CellID();
   virtual ~CellID();
-
+  
   CellID(const CellID& from);
-
+  
   inline CellID& operator=(const CellID& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const CellID& default_instance();
-
+  
   void Swap(CellID* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   CellID* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -440,7 +438,7 @@ class CellID : public ::google::protobuf::Message {
   void MergeFrom(const CellID& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -453,36 +451,36 @@ class CellID : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required fixed32 packedData = 1;
   inline bool has_packeddata() const;
   inline void clear_packeddata();
   static const int kPackedDataFieldNumber = 1;
   inline ::google::protobuf::uint32 packeddata() const;
   inline void set_packeddata(::google::protobuf::uint32 value);
-
+  
   // @@protoc_insertion_point(class_scope:TST.CellID)
  private:
   inline void set_has_packeddata();
   inline void clear_has_packeddata();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::google::protobuf::uint32 packeddata_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(1 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static CellID* default_instance_;
 };
@@ -492,29 +490,29 @@ class TableSize : public ::google::protobuf::Message {
  public:
   TableSize();
   virtual ~TableSize();
-
+  
   TableSize(const TableSize& from);
-
+  
   inline TableSize& operator=(const TableSize& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const TableSize& default_instance();
-
+  
   void Swap(TableSize* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   TableSize* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -522,7 +520,7 @@ class TableSize : public ::google::protobuf::Message {
   void MergeFrom(const TableSize& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -535,36 +533,36 @@ class TableSize : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required fixed32 packedData = 1;
   inline bool has_packeddata() const;
   inline void clear_packeddata();
   static const int kPackedDataFieldNumber = 1;
   inline ::google::protobuf::uint32 packeddata() const;
   inline void set_packeddata(::google::protobuf::uint32 value);
-
+  
   // @@protoc_insertion_point(class_scope:TST.TableSize)
  private:
   inline void set_has_packeddata();
   inline void clear_has_packeddata();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::google::protobuf::uint32 packeddata_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(1 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static TableSize* default_instance_;
 };
@@ -574,29 +572,29 @@ class CellRange : public ::google::protobuf::Message {
  public:
   CellRange();
   virtual ~CellRange();
-
+  
   CellRange(const CellRange& from);
-
+  
   inline CellRange& operator=(const CellRange& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const CellRange& default_instance();
-
+  
   void Swap(CellRange* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   CellRange* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -604,7 +602,7 @@ class CellRange : public ::google::protobuf::Message {
   void MergeFrom(const CellRange& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -617,13 +615,13 @@ class CellRange : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TST.CellID origin = 1;
   inline bool has_origin() const;
   inline void clear_origin();
@@ -631,8 +629,7 @@ class CellRange : public ::google::protobuf::Message {
   inline const ::TST::CellID& origin() const;
   inline ::TST::CellID* mutable_origin();
   inline ::TST::CellID* release_origin();
-  inline void set_allocated_origin(::TST::CellID* origin);
-
+  
   // required .TST.TableSize size = 2;
   inline bool has_size() const;
   inline void clear_size();
@@ -640,27 +637,26 @@ class CellRange : public ::google::protobuf::Message {
   inline const ::TST::TableSize& size() const;
   inline ::TST::TableSize* mutable_size();
   inline ::TST::TableSize* release_size();
-  inline void set_allocated_size(::TST::TableSize* size);
-
+  
   // @@protoc_insertion_point(class_scope:TST.CellRange)
  private:
   inline void set_has_origin();
   inline void clear_has_origin();
   inline void set_has_size();
   inline void clear_has_size();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TST::CellID* origin_;
   ::TST::TableSize* size_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static CellRange* default_instance_;
 };
@@ -670,29 +666,29 @@ class TableSelection : public ::google::protobuf::Message {
  public:
   TableSelection();
   virtual ~TableSelection();
-
+  
   TableSelection(const TableSelection& from);
-
+  
   inline TableSelection& operator=(const TableSelection& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const TableSelection& default_instance();
-
+  
   void Swap(TableSelection* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   TableSelection* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -700,7 +696,7 @@ class TableSelection : public ::google::protobuf::Message {
   void MergeFrom(const TableSelection& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -713,13 +709,13 @@ class TableSelection : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TST.CellRange cellRange = 1;
   inline bool has_cellrange() const;
   inline void clear_cellrange();
@@ -727,8 +723,7 @@ class TableSelection : public ::google::protobuf::Message {
   inline const ::TST::CellRange& cellrange() const;
   inline ::TST::CellRange* mutable_cellrange();
   inline ::TST::CellRange* release_cellrange();
-  inline void set_allocated_cellrange(::TST::CellRange* cellrange);
-
+  
   // required .TST.CellRange extendedCellRange = 2;
   inline bool has_extendedcellrange() const;
   inline void clear_extendedcellrange();
@@ -736,22 +731,21 @@ class TableSelection : public ::google::protobuf::Message {
   inline const ::TST::CellRange& extendedcellrange() const;
   inline ::TST::CellRange* mutable_extendedcellrange();
   inline ::TST::CellRange* release_extendedcellrange();
-  inline void set_allocated_extendedcellrange(::TST::CellRange* extendedcellrange);
-
+  
   // required bool extendedCellRangeValid = 3;
   inline bool has_extendedcellrangevalid() const;
   inline void clear_extendedcellrangevalid();
   static const int kExtendedCellRangeValidFieldNumber = 3;
   inline bool extendedcellrangevalid() const;
   inline void set_extendedcellrangevalid(bool value);
-
+  
   // required .TST.SelectionTypeArchive selection_type = 4;
   inline bool has_selection_type() const;
   inline void clear_selection_type();
   static const int kSelectionTypeFieldNumber = 4;
-  inline ::TST::SelectionTypeArchive selection_type() const;
-  inline void set_selection_type(::TST::SelectionTypeArchive value);
-
+  inline TST::SelectionTypeArchive selection_type() const;
+  inline void set_selection_type(TST::SelectionTypeArchive value);
+  
   // @@protoc_insertion_point(class_scope:TST.TableSelection)
  private:
   inline void set_has_cellrange();
@@ -762,21 +756,21 @@ class TableSelection : public ::google::protobuf::Message {
   inline void clear_has_extendedcellrangevalid();
   inline void set_has_selection_type();
   inline void clear_has_selection_type();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TST::CellRange* cellrange_;
   ::TST::CellRange* extendedcellrange_;
   bool extendedcellrangevalid_;
   int selection_type_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(4 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static TableSelection* default_instance_;
 };
@@ -786,29 +780,29 @@ class TileRowInfo : public ::google::protobuf::Message {
  public:
   TileRowInfo();
   virtual ~TileRowInfo();
-
+  
   TileRowInfo(const TileRowInfo& from);
-
+  
   inline TileRowInfo& operator=(const TileRowInfo& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const TileRowInfo& default_instance();
-
+  
   void Swap(TileRowInfo* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   TileRowInfo* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -816,7 +810,7 @@ class TileRowInfo : public ::google::protobuf::Message {
   void MergeFrom(const TileRowInfo& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -829,34 +823,34 @@ class TileRowInfo : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // optional uint32 storage_version = 5;
   inline bool has_storage_version() const;
   inline void clear_storage_version();
   static const int kStorageVersionFieldNumber = 5;
   inline ::google::protobuf::uint32 storage_version() const;
   inline void set_storage_version(::google::protobuf::uint32 value);
-
+  
   // required uint32 tileRowIndex = 1;
   inline bool has_tilerowindex() const;
   inline void clear_tilerowindex();
   static const int kTileRowIndexFieldNumber = 1;
   inline ::google::protobuf::uint32 tilerowindex() const;
   inline void set_tilerowindex(::google::protobuf::uint32 value);
-
+  
   // required uint32 cellCount = 2;
   inline bool has_cellcount() const;
   inline void clear_cellcount();
   static const int kCellCountFieldNumber = 2;
   inline ::google::protobuf::uint32 cellcount() const;
   inline void set_cellcount(::google::protobuf::uint32 value);
-
+  
   // required bytes cellStorageBuffer = 3;
   inline bool has_cellstoragebuffer() const;
   inline void clear_cellstoragebuffer();
@@ -867,8 +861,7 @@ class TileRowInfo : public ::google::protobuf::Message {
   inline void set_cellstoragebuffer(const void* value, size_t size);
   inline ::std::string* mutable_cellstoragebuffer();
   inline ::std::string* release_cellstoragebuffer();
-  inline void set_allocated_cellstoragebuffer(::std::string* cellstoragebuffer);
-
+  
   // required bytes cellOffsets = 4;
   inline bool has_celloffsets() const;
   inline void clear_celloffsets();
@@ -879,8 +872,7 @@ class TileRowInfo : public ::google::protobuf::Message {
   inline void set_celloffsets(const void* value, size_t size);
   inline ::std::string* mutable_celloffsets();
   inline ::std::string* release_celloffsets();
-  inline void set_allocated_celloffsets(::std::string* celloffsets);
-
+  
   // @@protoc_insertion_point(class_scope:TST.TileRowInfo)
  private:
   inline void set_has_storage_version();
@@ -893,22 +885,22 @@ class TileRowInfo : public ::google::protobuf::Message {
   inline void clear_has_cellstoragebuffer();
   inline void set_has_celloffsets();
   inline void clear_has_celloffsets();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::google::protobuf::uint32 storage_version_;
   ::google::protobuf::uint32 tilerowindex_;
   ::std::string* cellstoragebuffer_;
   ::std::string* celloffsets_;
   ::google::protobuf::uint32 cellcount_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(5 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static TileRowInfo* default_instance_;
 };
@@ -918,29 +910,29 @@ class Tile : public ::google::protobuf::Message {
  public:
   Tile();
   virtual ~Tile();
-
+  
   Tile(const Tile& from);
-
+  
   inline Tile& operator=(const Tile& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const Tile& default_instance();
-
+  
   void Swap(Tile* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   Tile* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -948,7 +940,7 @@ class Tile : public ::google::protobuf::Message {
   void MergeFrom(const Tile& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -961,48 +953,48 @@ class Tile : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required uint32 maxColumn = 1;
   inline bool has_maxcolumn() const;
   inline void clear_maxcolumn();
   static const int kMaxColumnFieldNumber = 1;
   inline ::google::protobuf::uint32 maxcolumn() const;
   inline void set_maxcolumn(::google::protobuf::uint32 value);
-
+  
   // required uint32 maxRow = 2;
   inline bool has_maxrow() const;
   inline void clear_maxrow();
   static const int kMaxRowFieldNumber = 2;
   inline ::google::protobuf::uint32 maxrow() const;
   inline void set_maxrow(::google::protobuf::uint32 value);
-
+  
   // required uint32 numCells = 3;
   inline bool has_numcells() const;
   inline void clear_numcells();
   static const int kNumCellsFieldNumber = 3;
   inline ::google::protobuf::uint32 numcells() const;
   inline void set_numcells(::google::protobuf::uint32 value);
-
+  
   // required uint32 numrows = 4;
   inline bool has_numrows() const;
   inline void clear_numrows();
   static const int kNumrowsFieldNumber = 4;
   inline ::google::protobuf::uint32 numrows() const;
   inline void set_numrows(::google::protobuf::uint32 value);
-
+  
   // optional uint32 storage_version = 6;
   inline bool has_storage_version() const;
   inline void clear_storage_version();
   static const int kStorageVersionFieldNumber = 6;
   inline ::google::protobuf::uint32 storage_version() const;
   inline void set_storage_version(::google::protobuf::uint32 value);
-
+  
   // repeated .TST.TileRowInfo rowInfos = 5;
   inline int rowinfos_size() const;
   inline void clear_rowinfos();
@@ -1014,7 +1006,7 @@ class Tile : public ::google::protobuf::Message {
       rowinfos() const;
   inline ::google::protobuf::RepeatedPtrField< ::TST::TileRowInfo >*
       mutable_rowinfos();
-
+  
   // @@protoc_insertion_point(class_scope:TST.Tile)
  private:
   inline void set_has_maxcolumn();
@@ -1027,23 +1019,23 @@ class Tile : public ::google::protobuf::Message {
   inline void clear_has_numrows();
   inline void set_has_storage_version();
   inline void clear_has_storage_version();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::google::protobuf::uint32 maxcolumn_;
   ::google::protobuf::uint32 maxrow_;
   ::google::protobuf::uint32 numcells_;
   ::google::protobuf::uint32 numrows_;
   ::google::protobuf::RepeatedPtrField< ::TST::TileRowInfo > rowinfos_;
   ::google::protobuf::uint32 storage_version_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(6 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static Tile* default_instance_;
 };
@@ -1053,29 +1045,29 @@ class TileStorage_Tile : public ::google::protobuf::Message {
  public:
   TileStorage_Tile();
   virtual ~TileStorage_Tile();
-
+  
   TileStorage_Tile(const TileStorage_Tile& from);
-
+  
   inline TileStorage_Tile& operator=(const TileStorage_Tile& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const TileStorage_Tile& default_instance();
-
+  
   void Swap(TileStorage_Tile* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   TileStorage_Tile* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -1083,7 +1075,7 @@ class TileStorage_Tile : public ::google::protobuf::Message {
   void MergeFrom(const TileStorage_Tile& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -1096,20 +1088,20 @@ class TileStorage_Tile : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required uint32 tileid = 1;
   inline bool has_tileid() const;
   inline void clear_tileid();
   static const int kTileidFieldNumber = 1;
   inline ::google::protobuf::uint32 tileid() const;
   inline void set_tileid(::google::protobuf::uint32 value);
-
+  
   // required .TSP.Reference tile = 2;
   inline bool has_tile() const;
   inline void clear_tile();
@@ -1117,27 +1109,26 @@ class TileStorage_Tile : public ::google::protobuf::Message {
   inline const ::TSP::Reference& tile() const;
   inline ::TSP::Reference* mutable_tile();
   inline ::TSP::Reference* release_tile();
-  inline void set_allocated_tile(::TSP::Reference* tile);
-
+  
   // @@protoc_insertion_point(class_scope:TST.TileStorage.Tile)
  private:
   inline void set_has_tileid();
   inline void clear_has_tileid();
   inline void set_has_tile();
   inline void clear_has_tile();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TSP::Reference* tile_;
   ::google::protobuf::uint32 tileid_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static TileStorage_Tile* default_instance_;
 };
@@ -1147,29 +1138,29 @@ class TileStorage : public ::google::protobuf::Message {
  public:
   TileStorage();
   virtual ~TileStorage();
-
+  
   TileStorage(const TileStorage& from);
-
+  
   inline TileStorage& operator=(const TileStorage& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const TileStorage& default_instance();
-
+  
   void Swap(TileStorage* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   TileStorage* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -1177,7 +1168,7 @@ class TileStorage : public ::google::protobuf::Message {
   void MergeFrom(const TileStorage& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -1190,15 +1181,15 @@ class TileStorage : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   typedef TileStorage_Tile Tile;
-
+  
   // accessors -------------------------------------------------------
-
+  
   // repeated .TST.TileStorage.Tile tiles = 1;
   inline int tiles_size() const;
   inline void clear_tiles();
@@ -1210,21 +1201,21 @@ class TileStorage : public ::google::protobuf::Message {
       tiles() const;
   inline ::google::protobuf::RepeatedPtrField< ::TST::TileStorage_Tile >*
       mutable_tiles();
-
+  
   // @@protoc_insertion_point(class_scope:TST.TileStorage)
  private:
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::google::protobuf::RepeatedPtrField< ::TST::TileStorage_Tile > tiles_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(1 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static TileStorage* default_instance_;
 };
@@ -1234,29 +1225,29 @@ class PopUpMenuModel_CellValue : public ::google::protobuf::Message {
  public:
   PopUpMenuModel_CellValue();
   virtual ~PopUpMenuModel_CellValue();
-
+  
   PopUpMenuModel_CellValue(const PopUpMenuModel_CellValue& from);
-
+  
   inline PopUpMenuModel_CellValue& operator=(const PopUpMenuModel_CellValue& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const PopUpMenuModel_CellValue& default_instance();
-
+  
   void Swap(PopUpMenuModel_CellValue* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   PopUpMenuModel_CellValue* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -1264,7 +1255,7 @@ class PopUpMenuModel_CellValue : public ::google::protobuf::Message {
   void MergeFrom(const PopUpMenuModel_CellValue& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -1277,20 +1268,20 @@ class PopUpMenuModel_CellValue : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TST.PopUpMenuModel.CellValueType cell_value_type = 1;
   inline bool has_cell_value_type() const;
   inline void clear_cell_value_type();
   static const int kCellValueTypeFieldNumber = 1;
   inline ::TST::PopUpMenuModel_CellValueType cell_value_type() const;
   inline void set_cell_value_type(::TST::PopUpMenuModel_CellValueType value);
-
+  
   // optional .TSCE.BooleanCellValueArchive boolean_value = 2;
   inline bool has_boolean_value() const;
   inline void clear_boolean_value();
@@ -1298,8 +1289,7 @@ class PopUpMenuModel_CellValue : public ::google::protobuf::Message {
   inline const ::TSCE::BooleanCellValueArchive& boolean_value() const;
   inline ::TSCE::BooleanCellValueArchive* mutable_boolean_value();
   inline ::TSCE::BooleanCellValueArchive* release_boolean_value();
-  inline void set_allocated_boolean_value(::TSCE::BooleanCellValueArchive* boolean_value);
-
+  
   // optional .TSCE.DateCellValueArchive date_value = 3;
   inline bool has_date_value() const;
   inline void clear_date_value();
@@ -1307,8 +1297,7 @@ class PopUpMenuModel_CellValue : public ::google::protobuf::Message {
   inline const ::TSCE::DateCellValueArchive& date_value() const;
   inline ::TSCE::DateCellValueArchive* mutable_date_value();
   inline ::TSCE::DateCellValueArchive* release_date_value();
-  inline void set_allocated_date_value(::TSCE::DateCellValueArchive* date_value);
-
+  
   // optional .TSCE.NumberCellValueArchive number_value = 4;
   inline bool has_number_value() const;
   inline void clear_number_value();
@@ -1316,8 +1305,7 @@ class PopUpMenuModel_CellValue : public ::google::protobuf::Message {
   inline const ::TSCE::NumberCellValueArchive& number_value() const;
   inline ::TSCE::NumberCellValueArchive* mutable_number_value();
   inline ::TSCE::NumberCellValueArchive* release_number_value();
-  inline void set_allocated_number_value(::TSCE::NumberCellValueArchive* number_value);
-
+  
   // optional .TSCE.StringCellValueArchive string_value = 5;
   inline bool has_string_value() const;
   inline void clear_string_value();
@@ -1325,8 +1313,7 @@ class PopUpMenuModel_CellValue : public ::google::protobuf::Message {
   inline const ::TSCE::StringCellValueArchive& string_value() const;
   inline ::TSCE::StringCellValueArchive* mutable_string_value();
   inline ::TSCE::StringCellValueArchive* release_string_value();
-  inline void set_allocated_string_value(::TSCE::StringCellValueArchive* string_value);
-
+  
   // @@protoc_insertion_point(class_scope:TST.PopUpMenuModel.CellValue)
  private:
   inline void set_has_cell_value_type();
@@ -1339,22 +1326,22 @@ class PopUpMenuModel_CellValue : public ::google::protobuf::Message {
   inline void clear_has_number_value();
   inline void set_has_string_value();
   inline void clear_has_string_value();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TSCE::BooleanCellValueArchive* boolean_value_;
   ::TSCE::DateCellValueArchive* date_value_;
   ::TSCE::NumberCellValueArchive* number_value_;
   ::TSCE::StringCellValueArchive* string_value_;
   int cell_value_type_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(5 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static PopUpMenuModel_CellValue* default_instance_;
 };
@@ -1364,29 +1351,29 @@ class PopUpMenuModel : public ::google::protobuf::Message {
  public:
   PopUpMenuModel();
   virtual ~PopUpMenuModel();
-
+  
   PopUpMenuModel(const PopUpMenuModel& from);
-
+  
   inline PopUpMenuModel& operator=(const PopUpMenuModel& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const PopUpMenuModel& default_instance();
-
+  
   void Swap(PopUpMenuModel* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   PopUpMenuModel* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -1394,7 +1381,7 @@ class PopUpMenuModel : public ::google::protobuf::Message {
   void MergeFrom(const PopUpMenuModel& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -1407,13 +1394,13 @@ class PopUpMenuModel : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   typedef PopUpMenuModel_CellValue CellValue;
-
+  
   typedef PopUpMenuModel_CellValueType CellValueType;
   static const CellValueType NIL_TYPE = PopUpMenuModel_CellValueType_NIL_TYPE;
   static const CellValueType BOOLEAN_TYPE = PopUpMenuModel_CellValueType_BOOLEAN_TYPE;
@@ -1440,9 +1427,9 @@ class PopUpMenuModel : public ::google::protobuf::Message {
       CellValueType* value) {
     return PopUpMenuModel_CellValueType_Parse(name, value);
   }
-
+  
   // accessors -------------------------------------------------------
-
+  
   // repeated .TST.PopUpMenuModel.CellValue item = 1 [deprecated = true];
   inline int item_size() const PROTOBUF_DEPRECATED;
   inline void clear_item() PROTOBUF_DEPRECATED;
@@ -1454,7 +1441,7 @@ class PopUpMenuModel : public ::google::protobuf::Message {
       item() const PROTOBUF_DEPRECATED;
   inline ::google::protobuf::RepeatedPtrField< ::TST::PopUpMenuModel_CellValue >*
       mutable_item() PROTOBUF_DEPRECATED;
-
+  
   // repeated .TSCE.CellValueArchive tsce_item = 2;
   inline int tsce_item_size() const;
   inline void clear_tsce_item();
@@ -1466,22 +1453,22 @@ class PopUpMenuModel : public ::google::protobuf::Message {
       tsce_item() const;
   inline ::google::protobuf::RepeatedPtrField< ::TSCE::CellValueArchive >*
       mutable_tsce_item();
-
+  
   // @@protoc_insertion_point(class_scope:TST.PopUpMenuModel)
  private:
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::google::protobuf::RepeatedPtrField< ::TST::PopUpMenuModel_CellValue > item_;
   ::google::protobuf::RepeatedPtrField< ::TSCE::CellValueArchive > tsce_item_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static PopUpMenuModel* default_instance_;
 };
@@ -1491,29 +1478,29 @@ class TableDataList_ListEntry : public ::google::protobuf::Message {
  public:
   TableDataList_ListEntry();
   virtual ~TableDataList_ListEntry();
-
+  
   TableDataList_ListEntry(const TableDataList_ListEntry& from);
-
+  
   inline TableDataList_ListEntry& operator=(const TableDataList_ListEntry& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const TableDataList_ListEntry& default_instance();
-
+  
   void Swap(TableDataList_ListEntry* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   TableDataList_ListEntry* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -1521,7 +1508,7 @@ class TableDataList_ListEntry : public ::google::protobuf::Message {
   void MergeFrom(const TableDataList_ListEntry& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -1534,27 +1521,27 @@ class TableDataList_ListEntry : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required uint32 key = 1;
   inline bool has_key() const;
   inline void clear_key();
   static const int kKeyFieldNumber = 1;
   inline ::google::protobuf::uint32 key() const;
   inline void set_key(::google::protobuf::uint32 value);
-
+  
   // required uint32 refcount = 2;
   inline bool has_refcount() const;
   inline void clear_refcount();
   static const int kRefcountFieldNumber = 2;
   inline ::google::protobuf::uint32 refcount() const;
   inline void set_refcount(::google::protobuf::uint32 value);
-
+  
   // optional string string = 3;
   inline bool has_string() const;
   inline void clear_string();
@@ -1565,8 +1552,7 @@ class TableDataList_ListEntry : public ::google::protobuf::Message {
   inline void set_string(const char* value, size_t size);
   inline ::std::string* mutable_string();
   inline ::std::string* release_string();
-  inline void set_allocated_string(::std::string* string);
-
+  
   // optional .TSP.Reference reference = 4;
   inline bool has_reference() const;
   inline void clear_reference();
@@ -1574,8 +1560,7 @@ class TableDataList_ListEntry : public ::google::protobuf::Message {
   inline const ::TSP::Reference& reference() const;
   inline ::TSP::Reference* mutable_reference();
   inline ::TSP::Reference* release_reference();
-  inline void set_allocated_reference(::TSP::Reference* reference);
-
+  
   // optional .TSCE.FormulaArchive formula = 5;
   inline bool has_formula() const;
   inline void clear_formula();
@@ -1583,8 +1568,7 @@ class TableDataList_ListEntry : public ::google::protobuf::Message {
   inline const ::TSCE::FormulaArchive& formula() const;
   inline ::TSCE::FormulaArchive* mutable_formula();
   inline ::TSCE::FormulaArchive* release_formula();
-  inline void set_allocated_formula(::TSCE::FormulaArchive* formula);
-
+  
   // optional .TSK.FormatStructArchive format = 6;
   inline bool has_format() const;
   inline void clear_format();
@@ -1592,8 +1576,7 @@ class TableDataList_ListEntry : public ::google::protobuf::Message {
   inline const ::TSK::FormatStructArchive& format() const;
   inline ::TSK::FormatStructArchive* mutable_format();
   inline ::TSK::FormatStructArchive* release_format();
-  inline void set_allocated_format(::TSK::FormatStructArchive* format);
-
+  
   // optional .TST.CellRange region = 7;
   inline bool has_region() const;
   inline void clear_region();
@@ -1601,8 +1584,7 @@ class TableDataList_ListEntry : public ::google::protobuf::Message {
   inline const ::TST::CellRange& region() const;
   inline ::TST::CellRange* mutable_region();
   inline ::TST::CellRange* release_region();
-  inline void set_allocated_region(::TST::CellRange* region);
-
+  
   // optional .TSK.CustomFormatArchive custom_format = 8;
   inline bool has_custom_format() const;
   inline void clear_custom_format();
@@ -1610,8 +1592,7 @@ class TableDataList_ListEntry : public ::google::protobuf::Message {
   inline const ::TSK::CustomFormatArchive& custom_format() const;
   inline ::TSK::CustomFormatArchive* mutable_custom_format();
   inline ::TSK::CustomFormatArchive* release_custom_format();
-  inline void set_allocated_custom_format(::TSK::CustomFormatArchive* custom_format);
-
+  
   // optional .TSP.Reference richTextPayload = 9;
   inline bool has_richtextpayload() const;
   inline void clear_richtextpayload();
@@ -1619,8 +1600,7 @@ class TableDataList_ListEntry : public ::google::protobuf::Message {
   inline const ::TSP::Reference& richtextpayload() const;
   inline ::TSP::Reference* mutable_richtextpayload();
   inline ::TSP::Reference* release_richtextpayload();
-  inline void set_allocated_richtextpayload(::TSP::Reference* richtextpayload);
-
+  
   // optional .TSP.Reference comment_storage = 10;
   inline bool has_comment_storage() const;
   inline void clear_comment_storage();
@@ -1628,8 +1608,7 @@ class TableDataList_ListEntry : public ::google::protobuf::Message {
   inline const ::TSP::Reference& comment_storage() const;
   inline ::TSP::Reference* mutable_comment_storage();
   inline ::TSP::Reference* release_comment_storage();
-  inline void set_allocated_comment_storage(::TSP::Reference* comment_storage);
-
+  
   // @@protoc_insertion_point(class_scope:TST.TableDataList.ListEntry)
  private:
   inline void set_has_key();
@@ -1652,9 +1631,9 @@ class TableDataList_ListEntry : public ::google::protobuf::Message {
   inline void clear_has_richtextpayload();
   inline void set_has_comment_storage();
   inline void clear_has_comment_storage();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::google::protobuf::uint32 key_;
   ::google::protobuf::uint32 refcount_;
   ::std::string* string_;
@@ -1665,14 +1644,14 @@ class TableDataList_ListEntry : public ::google::protobuf::Message {
   ::TSK::CustomFormatArchive* custom_format_;
   ::TSP::Reference* richtextpayload_;
   ::TSP::Reference* comment_storage_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(10 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static TableDataList_ListEntry* default_instance_;
 };
@@ -1682,29 +1661,29 @@ class TableDataList : public ::google::protobuf::Message {
  public:
   TableDataList();
   virtual ~TableDataList();
-
+  
   TableDataList(const TableDataList& from);
-
+  
   inline TableDataList& operator=(const TableDataList& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const TableDataList& default_instance();
-
+  
   void Swap(TableDataList* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   TableDataList* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -1712,7 +1691,7 @@ class TableDataList : public ::google::protobuf::Message {
   void MergeFrom(const TableDataList& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -1725,13 +1704,13 @@ class TableDataList : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   typedef TableDataList_ListEntry ListEntry;
-
+  
   typedef TableDataList_ListType ListType;
   static const ListType STRING = TableDataList_ListType_STRING;
   static const ListType FORMAT = TableDataList_ListType_FORMAT;
@@ -1763,23 +1742,23 @@ class TableDataList : public ::google::protobuf::Message {
       ListType* value) {
     return TableDataList_ListType_Parse(name, value);
   }
-
+  
   // accessors -------------------------------------------------------
-
-  // required .TST.TableDataList.ListType listType = 1;
+  
+  // optional .TST.TableDataList.ListType listType = 1;
   inline bool has_listtype() const;
   inline void clear_listtype();
   static const int kListTypeFieldNumber = 1;
   inline ::TST::TableDataList_ListType listtype() const;
   inline void set_listtype(::TST::TableDataList_ListType value);
-
+  
   // required uint32 nextListID = 2;
   inline bool has_nextlistid() const;
   inline void clear_nextlistid();
   static const int kNextListIDFieldNumber = 2;
   inline ::google::protobuf::uint32 nextlistid() const;
   inline void set_nextlistid(::google::protobuf::uint32 value);
-
+  
   // repeated .TST.TableDataList.ListEntry entries = 3;
   inline int entries_size() const;
   inline void clear_entries();
@@ -1791,27 +1770,27 @@ class TableDataList : public ::google::protobuf::Message {
       entries() const;
   inline ::google::protobuf::RepeatedPtrField< ::TST::TableDataList_ListEntry >*
       mutable_entries();
-
+  
   // @@protoc_insertion_point(class_scope:TST.TableDataList)
  private:
   inline void set_has_listtype();
   inline void clear_has_listtype();
   inline void set_has_nextlistid();
   inline void clear_has_nextlistid();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   int listtype_;
   ::google::protobuf::uint32 nextlistid_;
   ::google::protobuf::RepeatedPtrField< ::TST::TableDataList_ListEntry > entries_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(3 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static TableDataList* default_instance_;
 };
@@ -1821,29 +1800,29 @@ class TableRBTree_Node : public ::google::protobuf::Message {
  public:
   TableRBTree_Node();
   virtual ~TableRBTree_Node();
-
+  
   TableRBTree_Node(const TableRBTree_Node& from);
-
+  
   inline TableRBTree_Node& operator=(const TableRBTree_Node& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const TableRBTree_Node& default_instance();
-
+  
   void Swap(TableRBTree_Node* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   TableRBTree_Node* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -1851,7 +1830,7 @@ class TableRBTree_Node : public ::google::protobuf::Message {
   void MergeFrom(const TableRBTree_Node& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -1864,46 +1843,46 @@ class TableRBTree_Node : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required uint32 key = 1;
   inline bool has_key() const;
   inline void clear_key();
   static const int kKeyFieldNumber = 1;
   inline ::google::protobuf::uint32 key() const;
   inline void set_key(::google::protobuf::uint32 value);
-
+  
   // required uint32 value = 2;
   inline bool has_value() const;
   inline void clear_value();
   static const int kValueFieldNumber = 2;
   inline ::google::protobuf::uint32 value() const;
   inline void set_value(::google::protobuf::uint32 value);
-
+  
   // @@protoc_insertion_point(class_scope:TST.TableRBTree.Node)
  private:
   inline void set_has_key();
   inline void clear_has_key();
   inline void set_has_value();
   inline void clear_has_value();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::google::protobuf::uint32 key_;
   ::google::protobuf::uint32 value_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static TableRBTree_Node* default_instance_;
 };
@@ -1913,29 +1892,29 @@ class TableRBTree : public ::google::protobuf::Message {
  public:
   TableRBTree();
   virtual ~TableRBTree();
-
+  
   TableRBTree(const TableRBTree& from);
-
+  
   inline TableRBTree& operator=(const TableRBTree& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const TableRBTree& default_instance();
-
+  
   void Swap(TableRBTree* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   TableRBTree* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -1943,7 +1922,7 @@ class TableRBTree : public ::google::protobuf::Message {
   void MergeFrom(const TableRBTree& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -1956,15 +1935,15 @@ class TableRBTree : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   typedef TableRBTree_Node Node;
-
+  
   // accessors -------------------------------------------------------
-
+  
   // repeated .TST.TableRBTree.Node nodes = 1;
   inline int nodes_size() const;
   inline void clear_nodes();
@@ -1976,21 +1955,21 @@ class TableRBTree : public ::google::protobuf::Message {
       nodes() const;
   inline ::google::protobuf::RepeatedPtrField< ::TST::TableRBTree_Node >*
       mutable_nodes();
-
+  
   // @@protoc_insertion_point(class_scope:TST.TableRBTree)
  private:
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::google::protobuf::RepeatedPtrField< ::TST::TableRBTree_Node > nodes_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(1 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static TableRBTree* default_instance_;
 };
@@ -2000,29 +1979,29 @@ class HeaderStorageBucket_Header : public ::google::protobuf::Message {
  public:
   HeaderStorageBucket_Header();
   virtual ~HeaderStorageBucket_Header();
-
+  
   HeaderStorageBucket_Header(const HeaderStorageBucket_Header& from);
-
+  
   inline HeaderStorageBucket_Header& operator=(const HeaderStorageBucket_Header& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const HeaderStorageBucket_Header& default_instance();
-
+  
   void Swap(HeaderStorageBucket_Header* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   HeaderStorageBucket_Header* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -2030,7 +2009,7 @@ class HeaderStorageBucket_Header : public ::google::protobuf::Message {
   void MergeFrom(const HeaderStorageBucket_Header& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -2043,41 +2022,41 @@ class HeaderStorageBucket_Header : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required uint32 index = 1;
   inline bool has_index() const;
   inline void clear_index();
   static const int kIndexFieldNumber = 1;
   inline ::google::protobuf::uint32 index() const;
   inline void set_index(::google::protobuf::uint32 value);
-
+  
   // required float size = 2;
   inline bool has_size() const;
   inline void clear_size();
   static const int kSizeFieldNumber = 2;
   inline float size() const;
   inline void set_size(float value);
-
+  
   // required uint32 hidingState = 3;
   inline bool has_hidingstate() const;
   inline void clear_hidingstate();
   static const int kHidingStateFieldNumber = 3;
   inline ::google::protobuf::uint32 hidingstate() const;
   inline void set_hidingstate(::google::protobuf::uint32 value);
-
+  
   // required uint32 numberOfCells = 4;
   inline bool has_numberofcells() const;
   inline void clear_numberofcells();
   static const int kNumberOfCellsFieldNumber = 4;
   inline ::google::protobuf::uint32 numberofcells() const;
   inline void set_numberofcells(::google::protobuf::uint32 value);
-
+  
   // optional .TSP.Reference cell_style = 5;
   inline bool has_cell_style() const;
   inline void clear_cell_style();
@@ -2085,8 +2064,7 @@ class HeaderStorageBucket_Header : public ::google::protobuf::Message {
   inline const ::TSP::Reference& cell_style() const;
   inline ::TSP::Reference* mutable_cell_style();
   inline ::TSP::Reference* release_cell_style();
-  inline void set_allocated_cell_style(::TSP::Reference* cell_style);
-
+  
   // optional .TSP.Reference text_style = 6;
   inline bool has_text_style() const;
   inline void clear_text_style();
@@ -2094,8 +2072,7 @@ class HeaderStorageBucket_Header : public ::google::protobuf::Message {
   inline const ::TSP::Reference& text_style() const;
   inline ::TSP::Reference* mutable_text_style();
   inline ::TSP::Reference* release_text_style();
-  inline void set_allocated_text_style(::TSP::Reference* text_style);
-
+  
   // @@protoc_insertion_point(class_scope:TST.HeaderStorageBucket.Header)
  private:
   inline void set_has_index();
@@ -2110,23 +2087,23 @@ class HeaderStorageBucket_Header : public ::google::protobuf::Message {
   inline void clear_has_cell_style();
   inline void set_has_text_style();
   inline void clear_has_text_style();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::google::protobuf::uint32 index_;
   float size_;
   ::google::protobuf::uint32 hidingstate_;
   ::google::protobuf::uint32 numberofcells_;
   ::TSP::Reference* cell_style_;
   ::TSP::Reference* text_style_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(6 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static HeaderStorageBucket_Header* default_instance_;
 };
@@ -2136,29 +2113,29 @@ class HeaderStorageBucket : public ::google::protobuf::Message {
  public:
   HeaderStorageBucket();
   virtual ~HeaderStorageBucket();
-
+  
   HeaderStorageBucket(const HeaderStorageBucket& from);
-
+  
   inline HeaderStorageBucket& operator=(const HeaderStorageBucket& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const HeaderStorageBucket& default_instance();
-
+  
   void Swap(HeaderStorageBucket* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   HeaderStorageBucket* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -2166,7 +2143,7 @@ class HeaderStorageBucket : public ::google::protobuf::Message {
   void MergeFrom(const HeaderStorageBucket& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -2179,22 +2156,22 @@ class HeaderStorageBucket : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   typedef HeaderStorageBucket_Header Header;
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required uint32 bucketHashFunction = 1;
   inline bool has_buckethashfunction() const;
   inline void clear_buckethashfunction();
   static const int kBucketHashFunctionFieldNumber = 1;
   inline ::google::protobuf::uint32 buckethashfunction() const;
   inline void set_buckethashfunction(::google::protobuf::uint32 value);
-
+  
   // repeated .TST.HeaderStorageBucket.Header headers = 2;
   inline int headers_size() const;
   inline void clear_headers();
@@ -2206,24 +2183,24 @@ class HeaderStorageBucket : public ::google::protobuf::Message {
       headers() const;
   inline ::google::protobuf::RepeatedPtrField< ::TST::HeaderStorageBucket_Header >*
       mutable_headers();
-
+  
   // @@protoc_insertion_point(class_scope:TST.HeaderStorageBucket)
  private:
   inline void set_has_buckethashfunction();
   inline void clear_has_buckethashfunction();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::google::protobuf::RepeatedPtrField< ::TST::HeaderStorageBucket_Header > headers_;
   ::google::protobuf::uint32 buckethashfunction_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static HeaderStorageBucket* default_instance_;
 };
@@ -2233,29 +2210,29 @@ class HeaderStorage : public ::google::protobuf::Message {
  public:
   HeaderStorage();
   virtual ~HeaderStorage();
-
+  
   HeaderStorage(const HeaderStorage& from);
-
+  
   inline HeaderStorage& operator=(const HeaderStorage& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const HeaderStorage& default_instance();
-
+  
   void Swap(HeaderStorage* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   HeaderStorage* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -2263,7 +2240,7 @@ class HeaderStorage : public ::google::protobuf::Message {
   void MergeFrom(const HeaderStorage& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -2276,20 +2253,20 @@ class HeaderStorage : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required uint32 bucketHashFunction = 1;
   inline bool has_buckethashfunction() const;
   inline void clear_buckethashfunction();
   static const int kBucketHashFunctionFieldNumber = 1;
   inline ::google::protobuf::uint32 buckethashfunction() const;
   inline void set_buckethashfunction(::google::protobuf::uint32 value);
-
+  
   // repeated .TSP.Reference buckets = 2;
   inline int buckets_size() const;
   inline void clear_buckets();
@@ -2301,24 +2278,24 @@ class HeaderStorage : public ::google::protobuf::Message {
       buckets() const;
   inline ::google::protobuf::RepeatedPtrField< ::TSP::Reference >*
       mutable_buckets();
-
+  
   // @@protoc_insertion_point(class_scope:TST.HeaderStorage)
  private:
   inline void set_has_buckethashfunction();
   inline void clear_has_buckethashfunction();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::google::protobuf::RepeatedPtrField< ::TSP::Reference > buckets_;
   ::google::protobuf::uint32 buckethashfunction_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static HeaderStorage* default_instance_;
 };
@@ -2328,29 +2305,29 @@ class DataStore : public ::google::protobuf::Message {
  public:
   DataStore();
   virtual ~DataStore();
-
+  
   DataStore(const DataStore& from);
-
+  
   inline DataStore& operator=(const DataStore& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const DataStore& default_instance();
-
+  
   void Swap(DataStore* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   DataStore* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -2358,7 +2335,7 @@ class DataStore : public ::google::protobuf::Message {
   void MergeFrom(const DataStore& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -2371,13 +2348,13 @@ class DataStore : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TST.HeaderStorage rowHeaders = 1;
   inline bool has_rowheaders() const;
   inline void clear_rowheaders();
@@ -2385,8 +2362,7 @@ class DataStore : public ::google::protobuf::Message {
   inline const ::TST::HeaderStorage& rowheaders() const;
   inline ::TST::HeaderStorage* mutable_rowheaders();
   inline ::TST::HeaderStorage* release_rowheaders();
-  inline void set_allocated_rowheaders(::TST::HeaderStorage* rowheaders);
-
+  
   // required .TSP.Reference columnHeaders = 2;
   inline bool has_columnheaders() const;
   inline void clear_columnheaders();
@@ -2394,8 +2370,7 @@ class DataStore : public ::google::protobuf::Message {
   inline const ::TSP::Reference& columnheaders() const;
   inline ::TSP::Reference* mutable_columnheaders();
   inline ::TSP::Reference* release_columnheaders();
-  inline void set_allocated_columnheaders(::TSP::Reference* columnheaders);
-
+  
   // required .TST.TileStorage tiles = 3;
   inline bool has_tiles() const;
   inline void clear_tiles();
@@ -2403,8 +2378,7 @@ class DataStore : public ::google::protobuf::Message {
   inline const ::TST::TileStorage& tiles() const;
   inline ::TST::TileStorage* mutable_tiles();
   inline ::TST::TileStorage* release_tiles();
-  inline void set_allocated_tiles(::TST::TileStorage* tiles);
-
+  
   // required .TSP.Reference stringTable = 4;
   inline bool has_stringtable() const;
   inline void clear_stringtable();
@@ -2412,8 +2386,7 @@ class DataStore : public ::google::protobuf::Message {
   inline const ::TSP::Reference& stringtable() const;
   inline ::TSP::Reference* mutable_stringtable();
   inline ::TSP::Reference* release_stringtable();
-  inline void set_allocated_stringtable(::TSP::Reference* stringtable);
-
+  
   // required .TSP.Reference styleTable = 5;
   inline bool has_styletable() const;
   inline void clear_styletable();
@@ -2421,8 +2394,7 @@ class DataStore : public ::google::protobuf::Message {
   inline const ::TSP::Reference& styletable() const;
   inline ::TSP::Reference* mutable_styletable();
   inline ::TSP::Reference* release_styletable();
-  inline void set_allocated_styletable(::TSP::Reference* styletable);
-
+  
   // required .TSP.Reference formulaTable = 6;
   inline bool has_formulatable() const;
   inline void clear_formulatable();
@@ -2430,8 +2402,7 @@ class DataStore : public ::google::protobuf::Message {
   inline const ::TSP::Reference& formulatable() const;
   inline ::TSP::Reference* mutable_formulatable();
   inline ::TSP::Reference* release_formulatable();
-  inline void set_allocated_formulatable(::TSP::Reference* formulatable);
-
+  
   // optional .TSP.Reference formulaErrorTable = 12;
   inline bool has_formulaerrortable() const;
   inline void clear_formulaerrortable();
@@ -2439,8 +2410,7 @@ class DataStore : public ::google::protobuf::Message {
   inline const ::TSP::Reference& formulaerrortable() const;
   inline ::TSP::Reference* mutable_formulaerrortable();
   inline ::TSP::Reference* release_formulaerrortable();
-  inline void set_allocated_formulaerrortable(::TSP::Reference* formulaerrortable);
-
+  
   // required .TSP.Reference formatTable = 11;
   inline bool has_formattable() const;
   inline void clear_formattable();
@@ -2448,8 +2418,7 @@ class DataStore : public ::google::protobuf::Message {
   inline const ::TSP::Reference& formattable() const;
   inline ::TSP::Reference* mutable_formattable();
   inline ::TSP::Reference* release_formattable();
-  inline void set_allocated_formattable(::TSP::Reference* formattable);
-
+  
   // optional .TSP.Reference multipleChoiceListFormatTable = 16;
   inline bool has_multiplechoicelistformattable() const;
   inline void clear_multiplechoicelistformattable();
@@ -2457,8 +2426,7 @@ class DataStore : public ::google::protobuf::Message {
   inline const ::TSP::Reference& multiplechoicelistformattable() const;
   inline ::TSP::Reference* mutable_multiplechoicelistformattable();
   inline ::TSP::Reference* release_multiplechoicelistformattable();
-  inline void set_allocated_multiplechoicelistformattable(::TSP::Reference* multiplechoicelistformattable);
-
+  
   // optional .TSP.Reference merge_region_map = 13;
   inline bool has_merge_region_map() const;
   inline void clear_merge_region_map();
@@ -2466,8 +2434,7 @@ class DataStore : public ::google::protobuf::Message {
   inline const ::TSP::Reference& merge_region_map() const;
   inline ::TSP::Reference* mutable_merge_region_map();
   inline ::TSP::Reference* release_merge_region_map();
-  inline void set_allocated_merge_region_map(::TSP::Reference* merge_region_map);
-
+  
   // optional .TSP.Reference customFormatTable = 15;
   inline bool has_customformattable() const;
   inline void clear_customformattable();
@@ -2475,22 +2442,21 @@ class DataStore : public ::google::protobuf::Message {
   inline const ::TSP::Reference& customformattable() const;
   inline ::TSP::Reference* mutable_customformattable();
   inline ::TSP::Reference* release_customformattable();
-  inline void set_allocated_customformattable(::TSP::Reference* customformattable);
-
+  
   // required uint32 nextRowStripID = 7;
   inline bool has_nextrowstripid() const;
   inline void clear_nextrowstripid();
   static const int kNextRowStripIDFieldNumber = 7;
   inline ::google::protobuf::uint32 nextrowstripid() const;
   inline void set_nextrowstripid(::google::protobuf::uint32 value);
-
+  
   // required uint32 nextColumnStripID = 8;
   inline bool has_nextcolumnstripid() const;
   inline void clear_nextcolumnstripid();
   static const int kNextColumnStripIDFieldNumber = 8;
   inline ::google::protobuf::uint32 nextcolumnstripid() const;
   inline void set_nextcolumnstripid(::google::protobuf::uint32 value);
-
+  
   // required .TST.TableRBTree rowTileTree = 9;
   inline bool has_rowtiletree() const;
   inline void clear_rowtiletree();
@@ -2498,8 +2464,7 @@ class DataStore : public ::google::protobuf::Message {
   inline const ::TST::TableRBTree& rowtiletree() const;
   inline ::TST::TableRBTree* mutable_rowtiletree();
   inline ::TST::TableRBTree* release_rowtiletree();
-  inline void set_allocated_rowtiletree(::TST::TableRBTree* rowtiletree);
-
+  
   // required .TST.TableRBTree columnTileTree = 10;
   inline bool has_columntiletree() const;
   inline void clear_columntiletree();
@@ -2507,15 +2472,14 @@ class DataStore : public ::google::protobuf::Message {
   inline const ::TST::TableRBTree& columntiletree() const;
   inline ::TST::TableRBTree* mutable_columntiletree();
   inline ::TST::TableRBTree* release_columntiletree();
-  inline void set_allocated_columntiletree(::TST::TableRBTree* columntiletree);
-
+  
   // optional uint32 storage_version = 14;
   inline bool has_storage_version() const;
   inline void clear_storage_version();
   static const int kStorageVersionFieldNumber = 14;
   inline ::google::protobuf::uint32 storage_version() const;
   inline void set_storage_version(::google::protobuf::uint32 value);
-
+  
   // optional .TSP.Reference richTextPayloadTable = 17;
   inline bool has_richtextpayloadtable() const;
   inline void clear_richtextpayloadtable();
@@ -2523,8 +2487,7 @@ class DataStore : public ::google::protobuf::Message {
   inline const ::TSP::Reference& richtextpayloadtable() const;
   inline ::TSP::Reference* mutable_richtextpayloadtable();
   inline ::TSP::Reference* release_richtextpayloadtable();
-  inline void set_allocated_richtextpayloadtable(::TSP::Reference* richtextpayloadtable);
-
+  
   // optional .TSP.Reference conditionalstyletable = 18;
   inline bool has_conditionalstyletable() const;
   inline void clear_conditionalstyletable();
@@ -2532,8 +2495,7 @@ class DataStore : public ::google::protobuf::Message {
   inline const ::TSP::Reference& conditionalstyletable() const;
   inline ::TSP::Reference* mutable_conditionalstyletable();
   inline ::TSP::Reference* release_conditionalstyletable();
-  inline void set_allocated_conditionalstyletable(::TSP::Reference* conditionalstyletable);
-
+  
   // optional .TSP.Reference commentStorageTable = 19;
   inline bool has_commentstoragetable() const;
   inline void clear_commentstoragetable();
@@ -2541,8 +2503,7 @@ class DataStore : public ::google::protobuf::Message {
   inline const ::TSP::Reference& commentstoragetable() const;
   inline ::TSP::Reference* mutable_commentstoragetable();
   inline ::TSP::Reference* release_commentstoragetable();
-  inline void set_allocated_commentstoragetable(::TSP::Reference* commentstoragetable);
-
+  
   // @@protoc_insertion_point(class_scope:TST.DataStore)
  private:
   inline void set_has_rowheaders();
@@ -2583,9 +2544,9 @@ class DataStore : public ::google::protobuf::Message {
   inline void clear_has_conditionalstyletable();
   inline void set_has_commentstoragetable();
   inline void clear_has_commentstoragetable();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TST::HeaderStorage* rowheaders_;
   ::TSP::Reference* columnheaders_;
   ::TST::TileStorage* tiles_;
@@ -2605,14 +2566,14 @@ class DataStore : public ::google::protobuf::Message {
   ::TSP::Reference* conditionalstyletable_;
   ::TSP::Reference* commentstoragetable_;
   ::google::protobuf::uint32 storage_version_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(19 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static DataStore* default_instance_;
 };
@@ -2622,29 +2583,29 @@ class TableInfoArchive : public ::google::protobuf::Message {
  public:
   TableInfoArchive();
   virtual ~TableInfoArchive();
-
+  
   TableInfoArchive(const TableInfoArchive& from);
-
+  
   inline TableInfoArchive& operator=(const TableInfoArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const TableInfoArchive& default_instance();
-
+  
   void Swap(TableInfoArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   TableInfoArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -2652,7 +2613,7 @@ class TableInfoArchive : public ::google::protobuf::Message {
   void MergeFrom(const TableInfoArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -2665,13 +2626,13 @@ class TableInfoArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TSD.DrawableArchive super = 1;
   inline bool has_super() const;
   inline void clear_super();
@@ -2679,8 +2640,7 @@ class TableInfoArchive : public ::google::protobuf::Message {
   inline const ::TSD::DrawableArchive& super() const;
   inline ::TSD::DrawableArchive* mutable_super();
   inline ::TSD::DrawableArchive* release_super();
-  inline void set_allocated_super(::TSD::DrawableArchive* super);
-
+  
   // required .TSP.Reference tableModel = 2;
   inline bool has_tablemodel() const;
   inline void clear_tablemodel();
@@ -2688,8 +2648,7 @@ class TableInfoArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& tablemodel() const;
   inline ::TSP::Reference* mutable_tablemodel();
   inline ::TSP::Reference* release_tablemodel();
-  inline void set_allocated_tablemodel(::TSP::Reference* tablemodel);
-
+  
   // optional .TSP.Reference editingState = 3;
   inline bool has_editingstate() const;
   inline void clear_editingstate();
@@ -2697,8 +2656,7 @@ class TableInfoArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& editingstate() const;
   inline ::TSP::Reference* mutable_editingstate();
   inline ::TSP::Reference* release_editingstate();
-  inline void set_allocated_editingstate(::TSP::Reference* editingstate);
-
+  
   // @@protoc_insertion_point(class_scope:TST.TableInfoArchive)
  private:
   inline void set_has_super();
@@ -2707,20 +2665,20 @@ class TableInfoArchive : public ::google::protobuf::Message {
   inline void clear_has_tablemodel();
   inline void set_has_editingstate();
   inline void clear_has_editingstate();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TSD::DrawableArchive* super_;
   ::TSP::Reference* tablemodel_;
   ::TSP::Reference* editingstate_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(3 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static TableInfoArchive* default_instance_;
 };
@@ -2730,29 +2688,29 @@ class EditingStateArchive : public ::google::protobuf::Message {
  public:
   EditingStateArchive();
   virtual ~EditingStateArchive();
-
+  
   EditingStateArchive(const EditingStateArchive& from);
-
+  
   inline EditingStateArchive& operator=(const EditingStateArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const EditingStateArchive& default_instance();
-
+  
   void Swap(EditingStateArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   EditingStateArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -2760,7 +2718,7 @@ class EditingStateArchive : public ::google::protobuf::Message {
   void MergeFrom(const EditingStateArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -2773,13 +2731,13 @@ class EditingStateArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // optional .TSP.Reference editingStorage = 1;
   inline bool has_editingstorage() const;
   inline void clear_editingstorage();
@@ -2787,8 +2745,7 @@ class EditingStateArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& editingstorage() const;
   inline ::TSP::Reference* mutable_editingstorage();
   inline ::TSP::Reference* release_editingstorage();
-  inline void set_allocated_editingstorage(::TSP::Reference* editingstorage);
-
+  
   // required .TST.Cell editingCell = 2;
   inline bool has_editingcell() const;
   inline void clear_editingcell();
@@ -2796,8 +2753,7 @@ class EditingStateArchive : public ::google::protobuf::Message {
   inline const ::TST::Cell& editingcell() const;
   inline ::TST::Cell* mutable_editingcell();
   inline ::TST::Cell* release_editingcell();
-  inline void set_allocated_editingcell(::TST::Cell* editingcell);
-
+  
   // optional .TST.SelectionArchive selection = 3;
   inline bool has_selection() const;
   inline void clear_selection();
@@ -2805,8 +2761,7 @@ class EditingStateArchive : public ::google::protobuf::Message {
   inline const ::TST::SelectionArchive& selection() const;
   inline ::TST::SelectionArchive* mutable_selection();
   inline ::TST::SelectionArchive* release_selection();
-  inline void set_allocated_selection(::TST::SelectionArchive* selection);
-
+  
   // optional .TST.CellID lasteditingcellid = 4;
   inline bool has_lasteditingcellid() const;
   inline void clear_lasteditingcellid();
@@ -2814,8 +2769,7 @@ class EditingStateArchive : public ::google::protobuf::Message {
   inline const ::TST::CellID& lasteditingcellid() const;
   inline ::TST::CellID* mutable_lasteditingcellid();
   inline ::TST::CellID* release_lasteditingcellid();
-  inline void set_allocated_lasteditingcellid(::TST::CellID* lasteditingcellid);
-
+  
   // optional .TST.CellID editingcellid = 5;
   inline bool has_editingcellid() const;
   inline void clear_editingcellid();
@@ -2823,8 +2777,7 @@ class EditingStateArchive : public ::google::protobuf::Message {
   inline const ::TST::CellID& editingcellid() const;
   inline ::TST::CellID* mutable_editingcellid();
   inline ::TST::CellID* release_editingcellid();
-  inline void set_allocated_editingcellid(::TST::CellID* editingcellid);
-
+  
   // optional .TSWP.UndoTransaction deprecated_setup_textUndoRedoTransaction = 6;
   inline bool has_deprecated_setup_textundoredotransaction() const;
   inline void clear_deprecated_setup_textundoredotransaction();
@@ -2832,15 +2785,14 @@ class EditingStateArchive : public ::google::protobuf::Message {
   inline const ::TSWP::UndoTransaction& deprecated_setup_textundoredotransaction() const;
   inline ::TSWP::UndoTransaction* mutable_deprecated_setup_textundoredotransaction();
   inline ::TSWP::UndoTransaction* release_deprecated_setup_textundoredotransaction();
-  inline void set_allocated_deprecated_setup_textundoredotransaction(::TSWP::UndoTransaction* deprecated_setup_textundoredotransaction);
-
+  
   // optional bool cell_was_edited_in_current_session = 7;
   inline bool has_cell_was_edited_in_current_session() const;
   inline void clear_cell_was_edited_in_current_session();
   static const int kCellWasEditedInCurrentSessionFieldNumber = 7;
   inline bool cell_was_edited_in_current_session() const;
   inline void set_cell_was_edited_in_current_session(bool value);
-
+  
   // @@protoc_insertion_point(class_scope:TST.EditingStateArchive)
  private:
   inline void set_has_editingstorage();
@@ -2857,9 +2809,9 @@ class EditingStateArchive : public ::google::protobuf::Message {
   inline void clear_has_deprecated_setup_textundoredotransaction();
   inline void set_has_cell_was_edited_in_current_session();
   inline void clear_has_cell_was_edited_in_current_session();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TSP::Reference* editingstorage_;
   ::TST::Cell* editingcell_;
   ::TST::SelectionArchive* selection_;
@@ -2867,14 +2819,14 @@ class EditingStateArchive : public ::google::protobuf::Message {
   ::TST::CellID* editingcellid_;
   ::TSWP::UndoTransaction* deprecated_setup_textundoredotransaction_;
   bool cell_was_edited_in_current_session_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(7 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static EditingStateArchive* default_instance_;
 };
@@ -2884,29 +2836,29 @@ class WPTableInfoArchive : public ::google::protobuf::Message {
  public:
   WPTableInfoArchive();
   virtual ~WPTableInfoArchive();
-
+  
   WPTableInfoArchive(const WPTableInfoArchive& from);
-
+  
   inline WPTableInfoArchive& operator=(const WPTableInfoArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const WPTableInfoArchive& default_instance();
-
+  
   void Swap(WPTableInfoArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   WPTableInfoArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -2914,7 +2866,7 @@ class WPTableInfoArchive : public ::google::protobuf::Message {
   void MergeFrom(const WPTableInfoArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -2927,13 +2879,13 @@ class WPTableInfoArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TST.TableInfoArchive super = 1;
   inline bool has_super() const;
   inline void clear_super();
@@ -2941,8 +2893,7 @@ class WPTableInfoArchive : public ::google::protobuf::Message {
   inline const ::TST::TableInfoArchive& super() const;
   inline ::TST::TableInfoArchive* mutable_super();
   inline ::TST::TableInfoArchive* release_super();
-  inline void set_allocated_super(::TST::TableInfoArchive* super);
-
+  
   // optional .TSP.Reference storage = 2;
   inline bool has_storage() const;
   inline void clear_storage();
@@ -2950,27 +2901,26 @@ class WPTableInfoArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& storage() const;
   inline ::TSP::Reference* mutable_storage();
   inline ::TSP::Reference* release_storage();
-  inline void set_allocated_storage(::TSP::Reference* storage);
-
+  
   // @@protoc_insertion_point(class_scope:TST.WPTableInfoArchive)
  private:
   inline void set_has_super();
   inline void clear_has_super();
   inline void set_has_storage();
   inline void clear_has_storage();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TST::TableInfoArchive* super_;
   ::TSP::Reference* storage_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static WPTableInfoArchive* default_instance_;
 };
@@ -2980,29 +2930,29 @@ class TableStyleNetworkArchive : public ::google::protobuf::Message {
  public:
   TableStyleNetworkArchive();
   virtual ~TableStyleNetworkArchive();
-
+  
   TableStyleNetworkArchive(const TableStyleNetworkArchive& from);
-
+  
   inline TableStyleNetworkArchive& operator=(const TableStyleNetworkArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const TableStyleNetworkArchive& default_instance();
-
+  
   void Swap(TableStyleNetworkArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   TableStyleNetworkArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -3010,7 +2960,7 @@ class TableStyleNetworkArchive : public ::google::protobuf::Message {
   void MergeFrom(const TableStyleNetworkArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -3023,13 +2973,13 @@ class TableStyleNetworkArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TSP.Reference table_style = 9;
   inline bool has_table_style() const;
   inline void clear_table_style();
@@ -3037,8 +2987,7 @@ class TableStyleNetworkArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& table_style() const;
   inline ::TSP::Reference* mutable_table_style();
   inline ::TSP::Reference* release_table_style();
-  inline void set_allocated_table_style(::TSP::Reference* table_style);
-
+  
   // required .TSP.Reference body_text_style = 1;
   inline bool has_body_text_style() const;
   inline void clear_body_text_style();
@@ -3046,8 +2995,7 @@ class TableStyleNetworkArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& body_text_style() const;
   inline ::TSP::Reference* mutable_body_text_style();
   inline ::TSP::Reference* release_body_text_style();
-  inline void set_allocated_body_text_style(::TSP::Reference* body_text_style);
-
+  
   // required .TSP.Reference header_row_text_style = 2;
   inline bool has_header_row_text_style() const;
   inline void clear_header_row_text_style();
@@ -3055,8 +3003,7 @@ class TableStyleNetworkArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& header_row_text_style() const;
   inline ::TSP::Reference* mutable_header_row_text_style();
   inline ::TSP::Reference* release_header_row_text_style();
-  inline void set_allocated_header_row_text_style(::TSP::Reference* header_row_text_style);
-
+  
   // required .TSP.Reference header_column_text_style = 3;
   inline bool has_header_column_text_style() const;
   inline void clear_header_column_text_style();
@@ -3064,8 +3011,7 @@ class TableStyleNetworkArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& header_column_text_style() const;
   inline ::TSP::Reference* mutable_header_column_text_style();
   inline ::TSP::Reference* release_header_column_text_style();
-  inline void set_allocated_header_column_text_style(::TSP::Reference* header_column_text_style);
-
+  
   // required .TSP.Reference footer_row_text_style = 4;
   inline bool has_footer_row_text_style() const;
   inline void clear_footer_row_text_style();
@@ -3073,8 +3019,7 @@ class TableStyleNetworkArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& footer_row_text_style() const;
   inline ::TSP::Reference* mutable_footer_row_text_style();
   inline ::TSP::Reference* release_footer_row_text_style();
-  inline void set_allocated_footer_row_text_style(::TSP::Reference* footer_row_text_style);
-
+  
   // required .TSP.Reference body_cell_style = 5;
   inline bool has_body_cell_style() const;
   inline void clear_body_cell_style();
@@ -3082,8 +3027,7 @@ class TableStyleNetworkArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& body_cell_style() const;
   inline ::TSP::Reference* mutable_body_cell_style();
   inline ::TSP::Reference* release_body_cell_style();
-  inline void set_allocated_body_cell_style(::TSP::Reference* body_cell_style);
-
+  
   // required .TSP.Reference header_row_style = 6;
   inline bool has_header_row_style() const;
   inline void clear_header_row_style();
@@ -3091,8 +3035,7 @@ class TableStyleNetworkArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& header_row_style() const;
   inline ::TSP::Reference* mutable_header_row_style();
   inline ::TSP::Reference* release_header_row_style();
-  inline void set_allocated_header_row_style(::TSP::Reference* header_row_style);
-
+  
   // required .TSP.Reference header_column_style = 7;
   inline bool has_header_column_style() const;
   inline void clear_header_column_style();
@@ -3100,8 +3043,7 @@ class TableStyleNetworkArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& header_column_style() const;
   inline ::TSP::Reference* mutable_header_column_style();
   inline ::TSP::Reference* release_header_column_style();
-  inline void set_allocated_header_column_style(::TSP::Reference* header_column_style);
-
+  
   // required .TSP.Reference footer_row_style = 8;
   inline bool has_footer_row_style() const;
   inline void clear_footer_row_style();
@@ -3109,8 +3051,7 @@ class TableStyleNetworkArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& footer_row_style() const;
   inline ::TSP::Reference* mutable_footer_row_style();
   inline ::TSP::Reference* release_footer_row_style();
-  inline void set_allocated_footer_row_style(::TSP::Reference* footer_row_style);
-
+  
   // optional .TSP.Reference table_name_style = 10;
   inline bool has_table_name_style() const;
   inline void clear_table_name_style();
@@ -3118,8 +3059,7 @@ class TableStyleNetworkArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& table_name_style() const;
   inline ::TSP::Reference* mutable_table_name_style();
   inline ::TSP::Reference* release_table_name_style();
-  inline void set_allocated_table_name_style(::TSP::Reference* table_name_style);
-
+  
   // optional .TSP.Reference table_name_shape_style = 11;
   inline bool has_table_name_shape_style() const;
   inline void clear_table_name_shape_style();
@@ -3127,15 +3067,14 @@ class TableStyleNetworkArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& table_name_shape_style() const;
   inline ::TSP::Reference* mutable_table_name_shape_style();
   inline ::TSP::Reference* release_table_name_shape_style();
-  inline void set_allocated_table_name_shape_style(::TSP::Reference* table_name_shape_style);
-
+  
   // optional uint32 preset_index = 12;
   inline bool has_preset_index() const;
   inline void clear_preset_index();
   static const int kPresetIndexFieldNumber = 12;
   inline ::google::protobuf::uint32 preset_index() const;
   inline void set_preset_index(::google::protobuf::uint32 value);
-
+  
   // @@protoc_insertion_point(class_scope:TST.TableStyleNetworkArchive)
  private:
   inline void set_has_table_style();
@@ -3162,9 +3101,9 @@ class TableStyleNetworkArchive : public ::google::protobuf::Message {
   inline void clear_has_table_name_shape_style();
   inline void set_has_preset_index();
   inline void clear_has_preset_index();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TSP::Reference* table_style_;
   ::TSP::Reference* body_text_style_;
   ::TSP::Reference* header_row_text_style_;
@@ -3177,14 +3116,14 @@ class TableStyleNetworkArchive : public ::google::protobuf::Message {
   ::TSP::Reference* table_name_style_;
   ::TSP::Reference* table_name_shape_style_;
   ::google::protobuf::uint32 preset_index_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(12 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static TableStyleNetworkArchive* default_instance_;
 };
@@ -3194,29 +3133,29 @@ class TableModelArchive : public ::google::protobuf::Message {
  public:
   TableModelArchive();
   virtual ~TableModelArchive();
-
+  
   TableModelArchive(const TableModelArchive& from);
-
+  
   inline TableModelArchive& operator=(const TableModelArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const TableModelArchive& default_instance();
-
+  
   void Swap(TableModelArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   TableModelArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -3224,7 +3163,7 @@ class TableModelArchive : public ::google::protobuf::Message {
   void MergeFrom(const TableModelArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -3237,13 +3176,13 @@ class TableModelArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required string table_id = 1;
   inline bool has_table_id() const;
   inline void clear_table_id();
@@ -3254,8 +3193,7 @@ class TableModelArchive : public ::google::protobuf::Message {
   inline void set_table_id(const char* value, size_t size);
   inline ::std::string* mutable_table_id();
   inline ::std::string* release_table_id();
-  inline void set_allocated_table_id(::std::string* table_id);
-
+  
   // optional string from_table_id = 43;
   inline bool has_from_table_id() const;
   inline void clear_from_table_id();
@@ -3266,8 +3204,7 @@ class TableModelArchive : public ::google::protobuf::Message {
   inline void set_from_table_id(const char* value, size_t size);
   inline ::std::string* mutable_from_table_id();
   inline ::std::string* release_from_table_id();
-  inline void set_allocated_from_table_id(::std::string* from_table_id);
-
+  
   // required .TSP.Reference table_style = 3;
   inline bool has_table_style() const;
   inline void clear_table_style();
@@ -3275,8 +3212,7 @@ class TableModelArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& table_style() const;
   inline ::TSP::Reference* mutable_table_style();
   inline ::TSP::Reference* release_table_style();
-  inline void set_allocated_table_style(::TSP::Reference* table_style);
-
+  
   // required .TSP.Reference body_text_style = 24;
   inline bool has_body_text_style() const;
   inline void clear_body_text_style();
@@ -3284,8 +3220,7 @@ class TableModelArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& body_text_style() const;
   inline ::TSP::Reference* mutable_body_text_style();
   inline ::TSP::Reference* release_body_text_style();
-  inline void set_allocated_body_text_style(::TSP::Reference* body_text_style);
-
+  
   // required .TSP.Reference header_row_text_style = 25;
   inline bool has_header_row_text_style() const;
   inline void clear_header_row_text_style();
@@ -3293,8 +3228,7 @@ class TableModelArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& header_row_text_style() const;
   inline ::TSP::Reference* mutable_header_row_text_style();
   inline ::TSP::Reference* release_header_row_text_style();
-  inline void set_allocated_header_row_text_style(::TSP::Reference* header_row_text_style);
-
+  
   // required .TSP.Reference header_column_text_style = 26;
   inline bool has_header_column_text_style() const;
   inline void clear_header_column_text_style();
@@ -3302,8 +3236,7 @@ class TableModelArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& header_column_text_style() const;
   inline ::TSP::Reference* mutable_header_column_text_style();
   inline ::TSP::Reference* release_header_column_text_style();
-  inline void set_allocated_header_column_text_style(::TSP::Reference* header_column_text_style);
-
+  
   // required .TSP.Reference footer_row_text_style = 27;
   inline bool has_footer_row_text_style() const;
   inline void clear_footer_row_text_style();
@@ -3311,8 +3244,7 @@ class TableModelArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& footer_row_text_style() const;
   inline ::TSP::Reference* mutable_footer_row_text_style();
   inline ::TSP::Reference* release_footer_row_text_style();
-  inline void set_allocated_footer_row_text_style(::TSP::Reference* footer_row_text_style);
-
+  
   // required .TSP.Reference body_cell_style = 18;
   inline bool has_body_cell_style() const;
   inline void clear_body_cell_style();
@@ -3320,8 +3252,7 @@ class TableModelArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& body_cell_style() const;
   inline ::TSP::Reference* mutable_body_cell_style();
   inline ::TSP::Reference* release_body_cell_style();
-  inline void set_allocated_body_cell_style(::TSP::Reference* body_cell_style);
-
+  
   // required .TSP.Reference header_row_style = 19;
   inline bool has_header_row_style() const;
   inline void clear_header_row_style();
@@ -3329,8 +3260,7 @@ class TableModelArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& header_row_style() const;
   inline ::TSP::Reference* mutable_header_row_style();
   inline ::TSP::Reference* release_header_row_style();
-  inline void set_allocated_header_row_style(::TSP::Reference* header_row_style);
-
+  
   // required .TSP.Reference header_column_style = 20;
   inline bool has_header_column_style() const;
   inline void clear_header_column_style();
@@ -3338,8 +3268,7 @@ class TableModelArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& header_column_style() const;
   inline ::TSP::Reference* mutable_header_column_style();
   inline ::TSP::Reference* release_header_column_style();
-  inline void set_allocated_header_column_style(::TSP::Reference* header_column_style);
-
+  
   // required .TSP.Reference footer_row_style = 21;
   inline bool has_footer_row_style() const;
   inline void clear_footer_row_style();
@@ -3347,8 +3276,7 @@ class TableModelArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& footer_row_style() const;
   inline ::TSP::Reference* mutable_footer_row_style();
   inline ::TSP::Reference* release_footer_row_style();
-  inline void set_allocated_footer_row_style(::TSP::Reference* footer_row_style);
-
+  
   // optional .TSP.Reference table_name_style = 30;
   inline bool has_table_name_style() const;
   inline void clear_table_name_style();
@@ -3356,8 +3284,7 @@ class TableModelArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& table_name_style() const;
   inline ::TSP::Reference* mutable_table_name_style();
   inline ::TSP::Reference* release_table_name_style();
-  inline void set_allocated_table_name_style(::TSP::Reference* table_name_style);
-
+  
   // optional .TSP.Reference table_name_shape_style = 36;
   inline bool has_table_name_shape_style() const;
   inline void clear_table_name_shape_style();
@@ -3365,8 +3292,7 @@ class TableModelArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& table_name_shape_style() const;
   inline ::TSP::Reference* mutable_table_name_shape_style();
   inline ::TSP::Reference* release_table_name_shape_style();
-  inline void set_allocated_table_name_shape_style(::TSP::Reference* table_name_shape_style);
-
+  
   // required .TST.DataStore data_store = 4;
   inline bool has_data_store() const;
   inline void clear_data_store();
@@ -3374,8 +3300,7 @@ class TableModelArchive : public ::google::protobuf::Message {
   inline const ::TST::DataStore& data_store() const;
   inline ::TST::DataStore* mutable_data_store();
   inline ::TST::DataStore* release_data_store();
-  inline void set_allocated_data_store(::TST::DataStore* data_store);
-
+  
   // optional .TSP.Reference provider = 5;
   inline bool has_provider() const;
   inline void clear_provider();
@@ -3383,22 +3308,21 @@ class TableModelArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& provider() const;
   inline ::TSP::Reference* mutable_provider();
   inline ::TSP::Reference* release_provider();
-  inline void set_allocated_provider(::TSP::Reference* provider);
-
+  
   // required uint32 number_of_rows = 6;
   inline bool has_number_of_rows() const;
   inline void clear_number_of_rows();
   static const int kNumberOfRowsFieldNumber = 6;
   inline ::google::protobuf::uint32 number_of_rows() const;
   inline void set_number_of_rows(::google::protobuf::uint32 value);
-
+  
   // required uint32 number_of_columns = 7;
   inline bool has_number_of_columns() const;
   inline void clear_number_of_columns();
   static const int kNumberOfColumnsFieldNumber = 7;
   inline ::google::protobuf::uint32 number_of_columns() const;
   inline void set_number_of_columns(::google::protobuf::uint32 value);
-
+  
   // required string table_name = 8;
   inline bool has_table_name() const;
   inline void clear_table_name();
@@ -3409,113 +3333,112 @@ class TableModelArchive : public ::google::protobuf::Message {
   inline void set_table_name(const char* value, size_t size);
   inline ::std::string* mutable_table_name();
   inline ::std::string* release_table_name();
-  inline void set_allocated_table_name(::std::string* table_name);
-
+  
   // optional bool table_name_enabled = 22;
   inline bool has_table_name_enabled() const;
   inline void clear_table_name_enabled();
   static const int kTableNameEnabledFieldNumber = 22;
   inline bool table_name_enabled() const;
   inline void set_table_name_enabled(bool value);
-
+  
   // optional double table_name_height = 33;
   inline bool has_table_name_height() const;
   inline void clear_table_name_height();
   static const int kTableNameHeightFieldNumber = 33;
   inline double table_name_height() const;
   inline void set_table_name_height(double value);
-
+  
   // optional bool table_name_border_enabled = 37;
   inline bool has_table_name_border_enabled() const;
   inline void clear_table_name_border_enabled();
   static const int kTableNameBorderEnabledFieldNumber = 37;
   inline bool table_name_border_enabled() const;
   inline void set_table_name_border_enabled(bool value);
-
+  
   // optional uint32 number_of_header_rows = 9;
   inline bool has_number_of_header_rows() const;
   inline void clear_number_of_header_rows();
   static const int kNumberOfHeaderRowsFieldNumber = 9;
   inline ::google::protobuf::uint32 number_of_header_rows() const;
   inline void set_number_of_header_rows(::google::protobuf::uint32 value);
-
+  
   // optional uint32 number_of_header_columns = 10;
   inline bool has_number_of_header_columns() const;
   inline void clear_number_of_header_columns();
   static const int kNumberOfHeaderColumnsFieldNumber = 10;
   inline ::google::protobuf::uint32 number_of_header_columns() const;
   inline void set_number_of_header_columns(::google::protobuf::uint32 value);
-
+  
   // optional uint32 number_of_footer_rows = 11;
   inline bool has_number_of_footer_rows() const;
   inline void clear_number_of_footer_rows();
   static const int kNumberOfFooterRowsFieldNumber = 11;
   inline ::google::protobuf::uint32 number_of_footer_rows() const;
   inline void set_number_of_footer_rows(::google::protobuf::uint32 value);
-
+  
   // optional bool header_rows_frozen = 12;
   inline bool has_header_rows_frozen() const;
   inline void clear_header_rows_frozen();
   static const int kHeaderRowsFrozenFieldNumber = 12;
   inline bool header_rows_frozen() const;
   inline void set_header_rows_frozen(bool value);
-
+  
   // optional bool header_columns_frozen = 13;
   inline bool has_header_columns_frozen() const;
   inline void clear_header_columns_frozen();
   static const int kHeaderColumnsFrozenFieldNumber = 13;
   inline bool header_columns_frozen() const;
   inline void set_header_columns_frozen(bool value);
-
+  
   // optional uint32 number_of_hidden_rows = 14;
   inline bool has_number_of_hidden_rows() const;
   inline void clear_number_of_hidden_rows();
   static const int kNumberOfHiddenRowsFieldNumber = 14;
   inline ::google::protobuf::uint32 number_of_hidden_rows() const;
   inline void set_number_of_hidden_rows(::google::protobuf::uint32 value);
-
+  
   // optional uint32 number_of_hidden_columns = 15;
   inline bool has_number_of_hidden_columns() const;
   inline void clear_number_of_hidden_columns();
   static const int kNumberOfHiddenColumnsFieldNumber = 15;
   inline ::google::protobuf::uint32 number_of_hidden_columns() const;
   inline void set_number_of_hidden_columns(::google::protobuf::uint32 value);
-
+  
   // optional uint32 number_of_user_hidden_rows = 41;
   inline bool has_number_of_user_hidden_rows() const;
   inline void clear_number_of_user_hidden_rows();
   static const int kNumberOfUserHiddenRowsFieldNumber = 41;
   inline ::google::protobuf::uint32 number_of_user_hidden_rows() const;
   inline void set_number_of_user_hidden_rows(::google::protobuf::uint32 value);
-
+  
   // optional uint32 number_of_user_hidden_columns = 42;
   inline bool has_number_of_user_hidden_columns() const;
   inline void clear_number_of_user_hidden_columns();
   static const int kNumberOfUserHiddenColumnsFieldNumber = 42;
   inline ::google::protobuf::uint32 number_of_user_hidden_columns() const;
   inline void set_number_of_user_hidden_columns(::google::protobuf::uint32 value);
-
+  
   // optional uint32 number_of_filtered_rows = 40;
   inline bool has_number_of_filtered_rows() const;
   inline void clear_number_of_filtered_rows();
   static const int kNumberOfFilteredRowsFieldNumber = 40;
   inline ::google::protobuf::uint32 number_of_filtered_rows() const;
   inline void set_number_of_filtered_rows(::google::protobuf::uint32 value);
-
+  
   // required double default_row_height = 16;
   inline bool has_default_row_height() const;
   inline void clear_default_row_height();
   static const int kDefaultRowHeightFieldNumber = 16;
   inline double default_row_height() const;
   inline void set_default_row_height(double value);
-
+  
   // required double default_column_width = 17;
   inline bool has_default_column_width() const;
   inline void clear_default_column_width();
   static const int kDefaultColumnWidthFieldNumber = 17;
   inline double default_column_width() const;
   inline void set_default_column_width(double value);
-
+  
   // optional .TST.CellID origin_offset = 23 [deprecated = true];
   inline bool has_origin_offset() const PROTOBUF_DEPRECATED;
   inline void clear_origin_offset() PROTOBUF_DEPRECATED;
@@ -3523,36 +3446,35 @@ class TableModelArchive : public ::google::protobuf::Message {
   inline const ::TST::CellID& origin_offset() const PROTOBUF_DEPRECATED;
   inline ::TST::CellID* mutable_origin_offset() PROTOBUF_DEPRECATED;
   inline ::TST::CellID* release_origin_offset() PROTOBUF_DEPRECATED;
-  inline void set_allocated_origin_offset(::TST::CellID* origin_offset) PROTOBUF_DEPRECATED;
-
+  
   // required uint32 preset_index = 28;
   inline bool has_preset_index() const;
   inline void clear_preset_index();
   static const int kPresetIndexFieldNumber = 28;
   inline ::google::protobuf::uint32 preset_index() const;
   inline void set_preset_index(::google::protobuf::uint32 value);
-
+  
   // optional bool repeating_header_rows_enabled = 29;
   inline bool has_repeating_header_rows_enabled() const;
   inline void clear_repeating_header_rows_enabled();
   static const int kRepeatingHeaderRowsEnabledFieldNumber = 29;
   inline bool repeating_header_rows_enabled() const;
   inline void set_repeating_header_rows_enabled(bool value);
-
+  
   // optional bool repeating_header_columns_enabled = 32;
   inline bool has_repeating_header_columns_enabled() const;
   inline void clear_repeating_header_columns_enabled();
   static const int kRepeatingHeaderColumnsEnabledFieldNumber = 32;
   inline bool repeating_header_columns_enabled() const;
   inline void set_repeating_header_columns_enabled(bool value);
-
+  
   // optional bool style_apply_clears_all = 31;
   inline bool has_style_apply_clears_all() const;
   inline void clear_style_apply_clears_all();
   static const int kStyleApplyClearsAllFieldNumber = 31;
   inline bool style_apply_clears_all() const;
   inline void set_style_apply_clears_all(bool value);
-
+  
   // optional .TSP.Reference hidden_state_formula_owner_for_columns = 34;
   inline bool has_hidden_state_formula_owner_for_columns() const;
   inline void clear_hidden_state_formula_owner_for_columns();
@@ -3560,8 +3482,7 @@ class TableModelArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& hidden_state_formula_owner_for_columns() const;
   inline ::TSP::Reference* mutable_hidden_state_formula_owner_for_columns();
   inline ::TSP::Reference* release_hidden_state_formula_owner_for_columns();
-  inline void set_allocated_hidden_state_formula_owner_for_columns(::TSP::Reference* hidden_state_formula_owner_for_columns);
-
+  
   // optional .TSP.Reference hidden_state_formula_owner_for_rows = 35;
   inline bool has_hidden_state_formula_owner_for_rows() const;
   inline void clear_hidden_state_formula_owner_for_rows();
@@ -3569,8 +3490,7 @@ class TableModelArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& hidden_state_formula_owner_for_rows() const;
   inline ::TSP::Reference* mutable_hidden_state_formula_owner_for_rows();
   inline ::TSP::Reference* release_hidden_state_formula_owner_for_rows();
-  inline void set_allocated_hidden_state_formula_owner_for_rows(::TSP::Reference* hidden_state_formula_owner_for_rows);
-
+  
   // optional .TSP.Reference filter_set = 38;
   inline bool has_filter_set() const;
   inline void clear_filter_set();
@@ -3578,8 +3498,7 @@ class TableModelArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& filter_set() const;
   inline ::TSP::Reference* mutable_filter_set();
   inline ::TSP::Reference* release_filter_set();
-  inline void set_allocated_filter_set(::TSP::Reference* filter_set);
-
+  
   // optional .TSCE.CFUUIDArchive conditional_style_formula_owner_id = 39;
   inline bool has_conditional_style_formula_owner_id() const;
   inline void clear_conditional_style_formula_owner_id();
@@ -3587,8 +3506,7 @@ class TableModelArchive : public ::google::protobuf::Message {
   inline const ::TSCE::CFUUIDArchive& conditional_style_formula_owner_id() const;
   inline ::TSCE::CFUUIDArchive* mutable_conditional_style_formula_owner_id();
   inline ::TSCE::CFUUIDArchive* release_conditional_style_formula_owner_id();
-  inline void set_allocated_conditional_style_formula_owner_id(::TSCE::CFUUIDArchive* conditional_style_formula_owner_id);
-
+  
   // @@protoc_insertion_point(class_scope:TST.TableModelArchive)
  private:
   inline void set_has_table_id();
@@ -3675,9 +3593,9 @@ class TableModelArchive : public ::google::protobuf::Message {
   inline void clear_has_filter_set();
   inline void set_has_conditional_style_formula_owner_id();
   inline void clear_has_conditional_style_formula_owner_id();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::std::string* table_id_;
   ::std::string* from_table_id_;
   ::TSP::Reference* table_style_;
@@ -3709,9 +3627,9 @@ class TableModelArchive : public ::google::protobuf::Message {
   ::google::protobuf::uint32 number_of_user_hidden_rows_;
   ::google::protobuf::uint32 number_of_user_hidden_columns_;
   double default_row_height_;
+  double default_column_width_;
   ::google::protobuf::uint32 number_of_filtered_rows_;
   ::google::protobuf::uint32 preset_index_;
-  double default_column_width_;
   ::TST::CellID* origin_offset_;
   ::TSP::Reference* hidden_state_formula_owner_for_columns_;
   ::TSP::Reference* hidden_state_formula_owner_for_rows_;
@@ -3720,14 +3638,14 @@ class TableModelArchive : public ::google::protobuf::Message {
   bool repeating_header_rows_enabled_;
   bool repeating_header_columns_enabled_;
   bool style_apply_clears_all_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(42 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static TableModelArchive* default_instance_;
 };
@@ -3737,29 +3655,29 @@ class DurationWrapperArchive : public ::google::protobuf::Message {
  public:
   DurationWrapperArchive();
   virtual ~DurationWrapperArchive();
-
+  
   DurationWrapperArchive(const DurationWrapperArchive& from);
-
+  
   inline DurationWrapperArchive& operator=(const DurationWrapperArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const DurationWrapperArchive& default_instance();
-
+  
   void Swap(DurationWrapperArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   DurationWrapperArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -3767,7 +3685,7 @@ class DurationWrapperArchive : public ::google::protobuf::Message {
   void MergeFrom(const DurationWrapperArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -3780,26 +3698,26 @@ class DurationWrapperArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // @@protoc_insertion_point(class_scope:TST.DurationWrapperArchive)
  private:
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
-
+  
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[1];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static DurationWrapperArchive* default_instance_;
 };
@@ -3809,29 +3727,29 @@ class Cell : public ::google::protobuf::Message {
  public:
   Cell();
   virtual ~Cell();
-
+  
   Cell(const Cell& from);
-
+  
   inline Cell& operator=(const Cell& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const Cell& default_instance();
-
+  
   void Swap(Cell* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   Cell* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -3839,7 +3757,7 @@ class Cell : public ::google::protobuf::Message {
   void MergeFrom(const Cell& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -3852,27 +3770,27 @@ class Cell : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TST.CellValueType valueType = 2;
   inline bool has_valuetype() const;
   inline void clear_valuetype();
   static const int kValueTypeFieldNumber = 2;
-  inline ::TST::CellValueType valuetype() const;
-  inline void set_valuetype(::TST::CellValueType value);
-
+  inline TST::CellValueType valuetype() const;
+  inline void set_valuetype(TST::CellValueType value);
+  
   // optional double numberValue = 5;
   inline bool has_numbervalue() const;
   inline void clear_numbervalue();
   static const int kNumberValueFieldNumber = 5;
   inline double numbervalue() const;
   inline void set_numbervalue(double value);
-
+  
   // optional string stringValue = 6;
   inline bool has_stringvalue() const;
   inline void clear_stringvalue();
@@ -3883,15 +3801,14 @@ class Cell : public ::google::protobuf::Message {
   inline void set_stringvalue(const char* value, size_t size);
   inline ::std::string* mutable_stringvalue();
   inline ::std::string* release_stringvalue();
-  inline void set_allocated_stringvalue(::std::string* stringvalue);
-
+  
   // optional bool boolValue = 7;
   inline bool has_boolvalue() const;
   inline void clear_boolvalue();
   static const int kBoolValueFieldNumber = 7;
   inline bool boolvalue() const;
   inline void set_boolvalue(bool value);
-
+  
   // optional .TSP.Reference cell_style = 3;
   inline bool has_cell_style() const;
   inline void clear_cell_style();
@@ -3899,8 +3816,7 @@ class Cell : public ::google::protobuf::Message {
   inline const ::TSP::Reference& cell_style() const;
   inline ::TSP::Reference* mutable_cell_style();
   inline ::TSP::Reference* release_cell_style();
-  inline void set_allocated_cell_style(::TSP::Reference* cell_style);
-
+  
   // optional .TSP.Reference text_style = 4;
   inline bool has_text_style() const;
   inline void clear_text_style();
@@ -3908,8 +3824,7 @@ class Cell : public ::google::protobuf::Message {
   inline const ::TSP::Reference& text_style() const;
   inline ::TSP::Reference* mutable_text_style();
   inline ::TSP::Reference* release_text_style();
-  inline void set_allocated_text_style(::TSP::Reference* text_style);
-
+  
   // optional .TSCE.FormulaArchive formula = 8;
   inline bool has_formula() const;
   inline void clear_formula();
@@ -3917,8 +3832,7 @@ class Cell : public ::google::protobuf::Message {
   inline const ::TSCE::FormulaArchive& formula() const;
   inline ::TSCE::FormulaArchive* mutable_formula();
   inline ::TSCE::FormulaArchive* release_formula();
-  inline void set_allocated_formula(::TSCE::FormulaArchive* formula);
-
+  
   // optional .TSP.Reference formulaError = 10;
   inline bool has_formulaerror() const;
   inline void clear_formulaerror();
@@ -3926,8 +3840,7 @@ class Cell : public ::google::protobuf::Message {
   inline const ::TSP::Reference& formulaerror() const;
   inline ::TSP::Reference* mutable_formulaerror();
   inline ::TSP::Reference* release_formulaerror();
-  inline void set_allocated_formulaerror(::TSP::Reference* formulaerror);
-
+  
   // optional .TSK.FormatStructArchive current_format = 9;
   inline bool has_current_format() const;
   inline void clear_current_format();
@@ -3935,8 +3848,7 @@ class Cell : public ::google::protobuf::Message {
   inline const ::TSK::FormatStructArchive& current_format() const;
   inline ::TSK::FormatStructArchive* mutable_current_format();
   inline ::TSK::FormatStructArchive* release_current_format();
-  inline void set_allocated_current_format(::TSK::FormatStructArchive* current_format);
-
+  
   // optional .TSK.FormatStructArchive number_format = 11;
   inline bool has_number_format() const;
   inline void clear_number_format();
@@ -3944,8 +3856,7 @@ class Cell : public ::google::protobuf::Message {
   inline const ::TSK::FormatStructArchive& number_format() const;
   inline ::TSK::FormatStructArchive* mutable_number_format();
   inline ::TSK::FormatStructArchive* release_number_format();
-  inline void set_allocated_number_format(::TSK::FormatStructArchive* number_format);
-
+  
   // optional .TSK.FormatStructArchive currency_format = 12;
   inline bool has_currency_format() const;
   inline void clear_currency_format();
@@ -3953,8 +3864,7 @@ class Cell : public ::google::protobuf::Message {
   inline const ::TSK::FormatStructArchive& currency_format() const;
   inline ::TSK::FormatStructArchive* mutable_currency_format();
   inline ::TSK::FormatStructArchive* release_currency_format();
-  inline void set_allocated_currency_format(::TSK::FormatStructArchive* currency_format);
-
+  
   // optional .TSK.FormatStructArchive duration_format = 13;
   inline bool has_duration_format() const;
   inline void clear_duration_format();
@@ -3962,8 +3872,7 @@ class Cell : public ::google::protobuf::Message {
   inline const ::TSK::FormatStructArchive& duration_format() const;
   inline ::TSK::FormatStructArchive* mutable_duration_format();
   inline ::TSK::FormatStructArchive* release_duration_format();
-  inline void set_allocated_duration_format(::TSK::FormatStructArchive* duration_format);
-
+  
   // optional .TSK.FormatStructArchive date_format = 14;
   inline bool has_date_format() const;
   inline void clear_date_format();
@@ -3971,8 +3880,7 @@ class Cell : public ::google::protobuf::Message {
   inline const ::TSK::FormatStructArchive& date_format() const;
   inline ::TSK::FormatStructArchive* mutable_date_format();
   inline ::TSK::FormatStructArchive* release_date_format();
-  inline void set_allocated_date_format(::TSK::FormatStructArchive* date_format);
-
+  
   // optional .TSK.FormatStructArchive control_format = 15;
   inline bool has_control_format() const;
   inline void clear_control_format();
@@ -3980,8 +3888,7 @@ class Cell : public ::google::protobuf::Message {
   inline const ::TSK::FormatStructArchive& control_format() const;
   inline ::TSK::FormatStructArchive* mutable_control_format();
   inline ::TSK::FormatStructArchive* release_control_format();
-  inline void set_allocated_control_format(::TSK::FormatStructArchive* control_format);
-
+  
   // optional .TSK.FormatStructArchive custom_format = 16;
   inline bool has_custom_format() const;
   inline void clear_custom_format();
@@ -3989,8 +3896,7 @@ class Cell : public ::google::protobuf::Message {
   inline const ::TSK::FormatStructArchive& custom_format() const;
   inline ::TSK::FormatStructArchive* mutable_custom_format();
   inline ::TSK::FormatStructArchive* release_custom_format();
-  inline void set_allocated_custom_format(::TSK::FormatStructArchive* custom_format);
-
+  
   // optional .TSK.FormatStructArchive base_format = 17;
   inline bool has_base_format() const;
   inline void clear_base_format();
@@ -3998,8 +3904,7 @@ class Cell : public ::google::protobuf::Message {
   inline const ::TSK::FormatStructArchive& base_format() const;
   inline ::TSK::FormatStructArchive* mutable_base_format();
   inline ::TSK::FormatStructArchive* release_base_format();
-  inline void set_allocated_base_format(::TSK::FormatStructArchive* base_format);
-
+  
   // optional .TSK.FormatStructArchive multiple_choice_list_format = 18;
   inline bool has_multiple_choice_list_format() const;
   inline void clear_multiple_choice_list_format();
@@ -4007,15 +3912,14 @@ class Cell : public ::google::protobuf::Message {
   inline const ::TSK::FormatStructArchive& multiple_choice_list_format() const;
   inline ::TSK::FormatStructArchive* mutable_multiple_choice_list_format();
   inline ::TSK::FormatStructArchive* release_multiple_choice_list_format();
-  inline void set_allocated_multiple_choice_list_format(::TSK::FormatStructArchive* multiple_choice_list_format);
-
+  
   // optional uint32 explicit_format_flags = 19;
   inline bool has_explicit_format_flags() const;
   inline void clear_explicit_format_flags();
   static const int kExplicitFormatFlagsFieldNumber = 19;
   inline ::google::protobuf::uint32 explicit_format_flags() const;
   inline void set_explicit_format_flags(::google::protobuf::uint32 value);
-
+  
   // optional .TSP.Reference richTextPayload = 20;
   inline bool has_richtextpayload() const;
   inline void clear_richtextpayload();
@@ -4023,8 +3927,7 @@ class Cell : public ::google::protobuf::Message {
   inline const ::TSP::Reference& richtextpayload() const;
   inline ::TSP::Reference* mutable_richtextpayload();
   inline ::TSP::Reference* release_richtextpayload();
-  inline void set_allocated_richtextpayload(::TSP::Reference* richtextpayload);
-
+  
   // optional .TSP.Reference conditional_style = 21;
   inline bool has_conditional_style() const;
   inline void clear_conditional_style();
@@ -4032,8 +3935,7 @@ class Cell : public ::google::protobuf::Message {
   inline const ::TSP::Reference& conditional_style() const;
   inline ::TSP::Reference* mutable_conditional_style();
   inline ::TSP::Reference* release_conditional_style();
-  inline void set_allocated_conditional_style(::TSP::Reference* conditional_style);
-
+  
   // optional .TSP.Reference multiple_choice_list = 22;
   inline bool has_multiple_choice_list() const;
   inline void clear_multiple_choice_list();
@@ -4041,8 +3943,7 @@ class Cell : public ::google::protobuf::Message {
   inline const ::TSP::Reference& multiple_choice_list() const;
   inline ::TSP::Reference* mutable_multiple_choice_list();
   inline ::TSP::Reference* release_multiple_choice_list();
-  inline void set_allocated_multiple_choice_list(::TSP::Reference* multiple_choice_list);
-
+  
   // optional .TSP.Reference comment_storage = 23;
   inline bool has_comment_storage() const;
   inline void clear_comment_storage();
@@ -4050,15 +3951,14 @@ class Cell : public ::google::protobuf::Message {
   inline const ::TSP::Reference& comment_storage() const;
   inline ::TSP::Reference* mutable_comment_storage();
   inline ::TSP::Reference* release_comment_storage();
-  inline void set_allocated_comment_storage(::TSP::Reference* comment_storage);
-
+  
   // optional uint32 conditional_style_applied_rule = 24;
   inline bool has_conditional_style_applied_rule() const;
   inline void clear_conditional_style_applied_rule();
   static const int kConditionalStyleAppliedRuleFieldNumber = 24;
   inline ::google::protobuf::uint32 conditional_style_applied_rule() const;
   inline void set_conditional_style_applied_rule(::google::protobuf::uint32 value);
-
+  
   // @@protoc_insertion_point(class_scope:TST.Cell)
  private:
   inline void set_has_valuetype();
@@ -4107,9 +4007,9 @@ class Cell : public ::google::protobuf::Message {
   inline void clear_has_comment_storage();
   inline void set_has_conditional_style_applied_rule();
   inline void clear_has_conditional_style_applied_rule();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   double numbervalue_;
   int valuetype_;
   bool boolvalue_;
@@ -4133,14 +4033,14 @@ class Cell : public ::google::protobuf::Message {
   ::google::protobuf::uint32 conditional_style_applied_rule_;
   ::TSP::Reference* multiple_choice_list_;
   ::TSP::Reference* comment_storage_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(23 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static Cell* default_instance_;
 };
@@ -4150,29 +4050,29 @@ class MergeRegionMapArchive : public ::google::protobuf::Message {
  public:
   MergeRegionMapArchive();
   virtual ~MergeRegionMapArchive();
-
+  
   MergeRegionMapArchive(const MergeRegionMapArchive& from);
-
+  
   inline MergeRegionMapArchive& operator=(const MergeRegionMapArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const MergeRegionMapArchive& default_instance();
-
+  
   void Swap(MergeRegionMapArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   MergeRegionMapArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -4180,7 +4080,7 @@ class MergeRegionMapArchive : public ::google::protobuf::Message {
   void MergeFrom(const MergeRegionMapArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -4193,13 +4093,13 @@ class MergeRegionMapArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // repeated .TST.CellRange cell_range = 1;
   inline int cell_range_size() const;
   inline void clear_cell_range();
@@ -4211,21 +4111,21 @@ class MergeRegionMapArchive : public ::google::protobuf::Message {
       cell_range() const;
   inline ::google::protobuf::RepeatedPtrField< ::TST::CellRange >*
       mutable_cell_range();
-
+  
   // @@protoc_insertion_point(class_scope:TST.MergeRegionMapArchive)
  private:
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::google::protobuf::RepeatedPtrField< ::TST::CellRange > cell_range_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(1 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static MergeRegionMapArchive* default_instance_;
 };
@@ -4235,29 +4135,29 @@ class CellMapArchive_CellMapEntry : public ::google::protobuf::Message {
  public:
   CellMapArchive_CellMapEntry();
   virtual ~CellMapArchive_CellMapEntry();
-
+  
   CellMapArchive_CellMapEntry(const CellMapArchive_CellMapEntry& from);
-
+  
   inline CellMapArchive_CellMapEntry& operator=(const CellMapArchive_CellMapEntry& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const CellMapArchive_CellMapEntry& default_instance();
-
+  
   void Swap(CellMapArchive_CellMapEntry* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   CellMapArchive_CellMapEntry* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -4265,7 +4165,7 @@ class CellMapArchive_CellMapEntry : public ::google::protobuf::Message {
   void MergeFrom(const CellMapArchive_CellMapEntry& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -4278,13 +4178,13 @@ class CellMapArchive_CellMapEntry : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TST.CellID cellID = 1;
   inline bool has_cellid() const;
   inline void clear_cellid();
@@ -4292,8 +4192,7 @@ class CellMapArchive_CellMapEntry : public ::google::protobuf::Message {
   inline const ::TST::CellID& cellid() const;
   inline ::TST::CellID* mutable_cellid();
   inline ::TST::CellID* release_cellid();
-  inline void set_allocated_cellid(::TST::CellID* cellid);
-
+  
   // optional .TST.Cell cell = 2;
   inline bool has_cell() const;
   inline void clear_cell();
@@ -4301,27 +4200,26 @@ class CellMapArchive_CellMapEntry : public ::google::protobuf::Message {
   inline const ::TST::Cell& cell() const;
   inline ::TST::Cell* mutable_cell();
   inline ::TST::Cell* release_cell();
-  inline void set_allocated_cell(::TST::Cell* cell);
-
+  
   // @@protoc_insertion_point(class_scope:TST.CellMapArchive.CellMapEntry)
  private:
   inline void set_has_cellid();
   inline void clear_has_cellid();
   inline void set_has_cell();
   inline void clear_has_cell();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TST::CellID* cellid_;
   ::TST::Cell* cell_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static CellMapArchive_CellMapEntry* default_instance_;
 };
@@ -4331,29 +4229,29 @@ class CellMapArchive : public ::google::protobuf::Message {
  public:
   CellMapArchive();
   virtual ~CellMapArchive();
-
+  
   CellMapArchive(const CellMapArchive& from);
-
+  
   inline CellMapArchive& operator=(const CellMapArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const CellMapArchive& default_instance();
-
+  
   void Swap(CellMapArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   CellMapArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -4361,7 +4259,7 @@ class CellMapArchive : public ::google::protobuf::Message {
   void MergeFrom(const CellMapArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -4374,29 +4272,29 @@ class CellMapArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   typedef CellMapArchive_CellMapEntry CellMapEntry;
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required uint32 capacity = 1;
   inline bool has_capacity() const;
   inline void clear_capacity();
   static const int kCapacityFieldNumber = 1;
   inline ::google::protobuf::uint32 capacity() const;
   inline void set_capacity(::google::protobuf::uint32 value);
-
+  
   // required uint32 count = 2;
   inline bool has_count() const;
   inline void clear_count();
   static const int kCountFieldNumber = 2;
   inline ::google::protobuf::uint32 count() const;
   inline void set_count(::google::protobuf::uint32 value);
-
+  
   // repeated .TST.CellMapArchive.CellMapEntry cellMapEntry = 3;
   inline int cellmapentry_size() const;
   inline void clear_cellmapentry();
@@ -4408,28 +4306,28 @@ class CellMapArchive : public ::google::protobuf::Message {
       cellmapentry() const;
   inline ::google::protobuf::RepeatedPtrField< ::TST::CellMapArchive_CellMapEntry >*
       mutable_cellmapentry();
-
+  
   // optional bool may_modify_formulas_in_cells = 4 [default = true];
   inline bool has_may_modify_formulas_in_cells() const;
   inline void clear_may_modify_formulas_in_cells();
   static const int kMayModifyFormulasInCellsFieldNumber = 4;
   inline bool may_modify_formulas_in_cells() const;
   inline void set_may_modify_formulas_in_cells(bool value);
-
+  
   // optional bool may_modify_values_referenced_by_formulas = 5 [default = true];
   inline bool has_may_modify_values_referenced_by_formulas() const;
   inline void clear_may_modify_values_referenced_by_formulas();
   static const int kMayModifyValuesReferencedByFormulasFieldNumber = 5;
   inline bool may_modify_values_referenced_by_formulas() const;
   inline void set_may_modify_values_referenced_by_formulas(bool value);
-
+  
   // optional bool applies_to_hidden = 6 [default = false];
   inline bool has_applies_to_hidden() const;
   inline void clear_applies_to_hidden();
   static const int kAppliesToHiddenFieldNumber = 6;
   inline bool applies_to_hidden() const;
   inline void set_applies_to_hidden(bool value);
-
+  
   // @@protoc_insertion_point(class_scope:TST.CellMapArchive)
  private:
   inline void set_has_capacity();
@@ -4442,23 +4340,23 @@ class CellMapArchive : public ::google::protobuf::Message {
   inline void clear_has_may_modify_values_referenced_by_formulas();
   inline void set_has_applies_to_hidden();
   inline void clear_has_applies_to_hidden();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::google::protobuf::uint32 capacity_;
   ::google::protobuf::uint32 count_;
   ::google::protobuf::RepeatedPtrField< ::TST::CellMapArchive_CellMapEntry > cellmapentry_;
   bool may_modify_formulas_in_cells_;
   bool may_modify_values_referenced_by_formulas_;
   bool applies_to_hidden_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(6 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static CellMapArchive* default_instance_;
 };
@@ -4468,29 +4366,29 @@ class DoubleStyleMapArchive_DoubleStyleMapEntryArchive : public ::google::protob
  public:
   DoubleStyleMapArchive_DoubleStyleMapEntryArchive();
   virtual ~DoubleStyleMapArchive_DoubleStyleMapEntryArchive();
-
+  
   DoubleStyleMapArchive_DoubleStyleMapEntryArchive(const DoubleStyleMapArchive_DoubleStyleMapEntryArchive& from);
-
+  
   inline DoubleStyleMapArchive_DoubleStyleMapEntryArchive& operator=(const DoubleStyleMapArchive_DoubleStyleMapEntryArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const DoubleStyleMapArchive_DoubleStyleMapEntryArchive& default_instance();
-
+  
   void Swap(DoubleStyleMapArchive_DoubleStyleMapEntryArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   DoubleStyleMapArchive_DoubleStyleMapEntryArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -4498,7 +4396,7 @@ class DoubleStyleMapArchive_DoubleStyleMapEntryArchive : public ::google::protob
   void MergeFrom(const DoubleStyleMapArchive_DoubleStyleMapEntryArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -4511,13 +4409,13 @@ class DoubleStyleMapArchive_DoubleStyleMapEntryArchive : public ::google::protob
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TST.CellID cell_id = 1;
   inline bool has_cell_id() const;
   inline void clear_cell_id();
@@ -4525,8 +4423,7 @@ class DoubleStyleMapArchive_DoubleStyleMapEntryArchive : public ::google::protob
   inline const ::TST::CellID& cell_id() const;
   inline ::TST::CellID* mutable_cell_id();
   inline ::TST::CellID* release_cell_id();
-  inline void set_allocated_cell_id(::TST::CellID* cell_id);
-
+  
   // required .TSP.Reference old_style = 2;
   inline bool has_old_style() const;
   inline void clear_old_style();
@@ -4534,8 +4431,7 @@ class DoubleStyleMapArchive_DoubleStyleMapEntryArchive : public ::google::protob
   inline const ::TSP::Reference& old_style() const;
   inline ::TSP::Reference* mutable_old_style();
   inline ::TSP::Reference* release_old_style();
-  inline void set_allocated_old_style(::TSP::Reference* old_style);
-
+  
   // required .TSP.Reference new_style = 3;
   inline bool has_new_style() const;
   inline void clear_new_style();
@@ -4543,8 +4439,7 @@ class DoubleStyleMapArchive_DoubleStyleMapEntryArchive : public ::google::protob
   inline const ::TSP::Reference& new_style() const;
   inline ::TSP::Reference* mutable_new_style();
   inline ::TSP::Reference* release_new_style();
-  inline void set_allocated_new_style(::TSP::Reference* new_style);
-
+  
   // @@protoc_insertion_point(class_scope:TST.DoubleStyleMapArchive.DoubleStyleMapEntryArchive)
  private:
   inline void set_has_cell_id();
@@ -4553,20 +4448,20 @@ class DoubleStyleMapArchive_DoubleStyleMapEntryArchive : public ::google::protob
   inline void clear_has_old_style();
   inline void set_has_new_style();
   inline void clear_has_new_style();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TST::CellID* cell_id_;
   ::TSP::Reference* old_style_;
   ::TSP::Reference* new_style_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(3 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static DoubleStyleMapArchive_DoubleStyleMapEntryArchive* default_instance_;
 };
@@ -4576,29 +4471,29 @@ class DoubleStyleMapArchive : public ::google::protobuf::Message {
  public:
   DoubleStyleMapArchive();
   virtual ~DoubleStyleMapArchive();
-
+  
   DoubleStyleMapArchive(const DoubleStyleMapArchive& from);
-
+  
   inline DoubleStyleMapArchive& operator=(const DoubleStyleMapArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const DoubleStyleMapArchive& default_instance();
-
+  
   void Swap(DoubleStyleMapArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   DoubleStyleMapArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -4606,7 +4501,7 @@ class DoubleStyleMapArchive : public ::google::protobuf::Message {
   void MergeFrom(const DoubleStyleMapArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -4619,29 +4514,29 @@ class DoubleStyleMapArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   typedef DoubleStyleMapArchive_DoubleStyleMapEntryArchive DoubleStyleMapEntryArchive;
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required uint32 capacity = 1;
   inline bool has_capacity() const;
   inline void clear_capacity();
   static const int kCapacityFieldNumber = 1;
   inline ::google::protobuf::uint32 capacity() const;
   inline void set_capacity(::google::protobuf::uint32 value);
-
+  
   // required uint32 count = 2;
   inline bool has_count() const;
   inline void clear_count();
   static const int kCountFieldNumber = 2;
   inline ::google::protobuf::uint32 count() const;
   inline void set_count(::google::protobuf::uint32 value);
-
+  
   // repeated .TST.DoubleStyleMapArchive.DoubleStyleMapEntryArchive cell_map_entry = 3;
   inline int cell_map_entry_size() const;
   inline void clear_cell_map_entry();
@@ -4653,27 +4548,27 @@ class DoubleStyleMapArchive : public ::google::protobuf::Message {
       cell_map_entry() const;
   inline ::google::protobuf::RepeatedPtrField< ::TST::DoubleStyleMapArchive_DoubleStyleMapEntryArchive >*
       mutable_cell_map_entry();
-
+  
   // @@protoc_insertion_point(class_scope:TST.DoubleStyleMapArchive)
  private:
   inline void set_has_capacity();
   inline void clear_has_capacity();
   inline void set_has_count();
   inline void clear_has_count();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::google::protobuf::uint32 capacity_;
   ::google::protobuf::uint32 count_;
   ::google::protobuf::RepeatedPtrField< ::TST::DoubleStyleMapArchive_DoubleStyleMapEntryArchive > cell_map_entry_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(3 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static DoubleStyleMapArchive* default_instance_;
 };
@@ -4683,29 +4578,29 @@ class StyleTableMapArchive_StyleTableMapEntryArchive : public ::google::protobuf
  public:
   StyleTableMapArchive_StyleTableMapEntryArchive();
   virtual ~StyleTableMapArchive_StyleTableMapEntryArchive();
-
+  
   StyleTableMapArchive_StyleTableMapEntryArchive(const StyleTableMapArchive_StyleTableMapEntryArchive& from);
-
+  
   inline StyleTableMapArchive_StyleTableMapEntryArchive& operator=(const StyleTableMapArchive_StyleTableMapEntryArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const StyleTableMapArchive_StyleTableMapEntryArchive& default_instance();
-
+  
   void Swap(StyleTableMapArchive_StyleTableMapEntryArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   StyleTableMapArchive_StyleTableMapEntryArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -4713,7 +4608,7 @@ class StyleTableMapArchive_StyleTableMapEntryArchive : public ::google::protobuf
   void MergeFrom(const StyleTableMapArchive_StyleTableMapEntryArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -4726,20 +4621,20 @@ class StyleTableMapArchive_StyleTableMapEntryArchive : public ::google::protobuf
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required uint32 key = 1;
   inline bool has_key() const;
   inline void clear_key();
   static const int kKeyFieldNumber = 1;
   inline ::google::protobuf::uint32 key() const;
   inline void set_key(::google::protobuf::uint32 value);
-
+  
   // required .TSP.Reference old_style = 2;
   inline bool has_old_style() const;
   inline void clear_old_style();
@@ -4747,8 +4642,7 @@ class StyleTableMapArchive_StyleTableMapEntryArchive : public ::google::protobuf
   inline const ::TSP::Reference& old_style() const;
   inline ::TSP::Reference* mutable_old_style();
   inline ::TSP::Reference* release_old_style();
-  inline void set_allocated_old_style(::TSP::Reference* old_style);
-
+  
   // required .TSP.Reference new_style = 3;
   inline bool has_new_style() const;
   inline void clear_new_style();
@@ -4756,8 +4650,7 @@ class StyleTableMapArchive_StyleTableMapEntryArchive : public ::google::protobuf
   inline const ::TSP::Reference& new_style() const;
   inline ::TSP::Reference* mutable_new_style();
   inline ::TSP::Reference* release_new_style();
-  inline void set_allocated_new_style(::TSP::Reference* new_style);
-
+  
   // @@protoc_insertion_point(class_scope:TST.StyleTableMapArchive.StyleTableMapEntryArchive)
  private:
   inline void set_has_key();
@@ -4766,20 +4659,20 @@ class StyleTableMapArchive_StyleTableMapEntryArchive : public ::google::protobuf
   inline void clear_has_old_style();
   inline void set_has_new_style();
   inline void clear_has_new_style();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TSP::Reference* old_style_;
   ::TSP::Reference* new_style_;
   ::google::protobuf::uint32 key_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(3 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static StyleTableMapArchive_StyleTableMapEntryArchive* default_instance_;
 };
@@ -4789,29 +4682,29 @@ class StyleTableMapArchive : public ::google::protobuf::Message {
  public:
   StyleTableMapArchive();
   virtual ~StyleTableMapArchive();
-
+  
   StyleTableMapArchive(const StyleTableMapArchive& from);
-
+  
   inline StyleTableMapArchive& operator=(const StyleTableMapArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const StyleTableMapArchive& default_instance();
-
+  
   void Swap(StyleTableMapArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   StyleTableMapArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -4819,7 +4712,7 @@ class StyleTableMapArchive : public ::google::protobuf::Message {
   void MergeFrom(const StyleTableMapArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -4832,29 +4725,29 @@ class StyleTableMapArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   typedef StyleTableMapArchive_StyleTableMapEntryArchive StyleTableMapEntryArchive;
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required uint32 capacity = 1;
   inline bool has_capacity() const;
   inline void clear_capacity();
   static const int kCapacityFieldNumber = 1;
   inline ::google::protobuf::uint32 capacity() const;
   inline void set_capacity(::google::protobuf::uint32 value);
-
+  
   // required uint32 count = 2;
   inline bool has_count() const;
   inline void clear_count();
   static const int kCountFieldNumber = 2;
   inline ::google::protobuf::uint32 count() const;
   inline void set_count(::google::protobuf::uint32 value);
-
+  
   // repeated .TST.StyleTableMapArchive.StyleTableMapEntryArchive map_entry = 3;
   inline int map_entry_size() const;
   inline void clear_map_entry();
@@ -4866,27 +4759,27 @@ class StyleTableMapArchive : public ::google::protobuf::Message {
       map_entry() const;
   inline ::google::protobuf::RepeatedPtrField< ::TST::StyleTableMapArchive_StyleTableMapEntryArchive >*
       mutable_map_entry();
-
+  
   // @@protoc_insertion_point(class_scope:TST.StyleTableMapArchive)
  private:
   inline void set_has_capacity();
   inline void clear_has_capacity();
   inline void set_has_count();
   inline void clear_has_count();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::google::protobuf::uint32 capacity_;
   ::google::protobuf::uint32 count_;
   ::google::protobuf::RepeatedPtrField< ::TST::StyleTableMapArchive_StyleTableMapEntryArchive > map_entry_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(3 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static StyleTableMapArchive* default_instance_;
 };
@@ -4896,29 +4789,29 @@ class SelectionArchive : public ::google::protobuf::Message {
  public:
   SelectionArchive();
   virtual ~SelectionArchive();
-
+  
   SelectionArchive(const SelectionArchive& from);
-
+  
   inline SelectionArchive& operator=(const SelectionArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const SelectionArchive& default_instance();
-
+  
   void Swap(SelectionArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   SelectionArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -4926,7 +4819,7 @@ class SelectionArchive : public ::google::protobuf::Message {
   void MergeFrom(const SelectionArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -4939,13 +4832,13 @@ class SelectionArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // optional .TSP.Reference tableModel = 1 [deprecated = true];
   inline bool has_tablemodel() const PROTOBUF_DEPRECATED;
   inline void clear_tablemodel() PROTOBUF_DEPRECATED;
@@ -4953,15 +4846,14 @@ class SelectionArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& tablemodel() const PROTOBUF_DEPRECATED;
   inline ::TSP::Reference* mutable_tablemodel() PROTOBUF_DEPRECATED;
   inline ::TSP::Reference* release_tablemodel() PROTOBUF_DEPRECATED;
-  inline void set_allocated_tablemodel(::TSP::Reference* tablemodel) PROTOBUF_DEPRECATED;
-
+  
   // required .TST.SelectionTypeArchive selection_type = 4;
   inline bool has_selection_type() const;
   inline void clear_selection_type();
   static const int kSelectionTypeFieldNumber = 4;
-  inline ::TST::SelectionTypeArchive selection_type() const;
-  inline void set_selection_type(::TST::SelectionTypeArchive value);
-
+  inline TST::SelectionTypeArchive selection_type() const;
+  inline void set_selection_type(TST::SelectionTypeArchive value);
+  
   // optional .TST.CellID anchor_cell = 5;
   inline bool has_anchor_cell() const;
   inline void clear_anchor_cell();
@@ -4969,8 +4861,7 @@ class SelectionArchive : public ::google::protobuf::Message {
   inline const ::TST::CellID& anchor_cell() const;
   inline ::TST::CellID* mutable_anchor_cell();
   inline ::TST::CellID* release_anchor_cell();
-  inline void set_allocated_anchor_cell(::TST::CellID* anchor_cell);
-
+  
   // repeated .TST.CellRange cell_ranges = 6;
   inline int cell_ranges_size() const;
   inline void clear_cell_ranges();
@@ -4982,7 +4873,7 @@ class SelectionArchive : public ::google::protobuf::Message {
       cell_ranges() const;
   inline ::google::protobuf::RepeatedPtrField< ::TST::CellRange >*
       mutable_cell_ranges();
-
+  
   // repeated .TST.CellRange base_ranges = 7;
   inline int base_ranges_size() const;
   inline void clear_base_ranges();
@@ -4994,7 +4885,7 @@ class SelectionArchive : public ::google::protobuf::Message {
       base_ranges() const;
   inline ::google::protobuf::RepeatedPtrField< ::TST::CellRange >*
       mutable_base_ranges();
-
+  
   // optional .TST.CellID cursor_cell = 8;
   inline bool has_cursor_cell() const;
   inline void clear_cursor_cell();
@@ -5002,8 +4893,7 @@ class SelectionArchive : public ::google::protobuf::Message {
   inline const ::TST::CellID& cursor_cell() const;
   inline ::TST::CellID* mutable_cursor_cell();
   inline ::TST::CellID* release_cursor_cell();
-  inline void set_allocated_cursor_cell(::TST::CellID* cursor_cell);
-
+  
   // @@protoc_insertion_point(class_scope:TST.SelectionArchive)
  private:
   inline void set_has_tablemodel();
@@ -5014,23 +4904,23 @@ class SelectionArchive : public ::google::protobuf::Message {
   inline void clear_has_anchor_cell();
   inline void set_has_cursor_cell();
   inline void clear_has_cursor_cell();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TSP::Reference* tablemodel_;
   ::TST::CellID* anchor_cell_;
   ::google::protobuf::RepeatedPtrField< ::TST::CellRange > cell_ranges_;
   ::google::protobuf::RepeatedPtrField< ::TST::CellRange > base_ranges_;
   ::TST::CellID* cursor_cell_;
   int selection_type_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(6 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static SelectionArchive* default_instance_;
 };
@@ -5040,29 +4930,29 @@ class FilterRuleArchive : public ::google::protobuf::Message {
  public:
   FilterRuleArchive();
   virtual ~FilterRuleArchive();
-
+  
   FilterRuleArchive(const FilterRuleArchive& from);
-
+  
   inline FilterRuleArchive& operator=(const FilterRuleArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const FilterRuleArchive& default_instance();
-
+  
   void Swap(FilterRuleArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   FilterRuleArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -5070,7 +4960,7 @@ class FilterRuleArchive : public ::google::protobuf::Message {
   void MergeFrom(const FilterRuleArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -5083,13 +4973,13 @@ class FilterRuleArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TST.FormulaPredicateArchive predicate = 1;
   inline bool has_predicate() const;
   inline void clear_predicate();
@@ -5097,34 +4987,33 @@ class FilterRuleArchive : public ::google::protobuf::Message {
   inline const ::TST::FormulaPredicateArchive& predicate() const;
   inline ::TST::FormulaPredicateArchive* mutable_predicate();
   inline ::TST::FormulaPredicateArchive* release_predicate();
-  inline void set_allocated_predicate(::TST::FormulaPredicateArchive* predicate);
-
+  
   // optional bool disabled = 2;
   inline bool has_disabled() const;
   inline void clear_disabled();
   static const int kDisabledFieldNumber = 2;
   inline bool disabled() const;
   inline void set_disabled(bool value);
-
+  
   // @@protoc_insertion_point(class_scope:TST.FilterRuleArchive)
  private:
   inline void set_has_predicate();
   inline void clear_has_predicate();
   inline void set_has_disabled();
   inline void clear_has_disabled();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TST::FormulaPredicateArchive* predicate_;
   bool disabled_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static FilterRuleArchive* default_instance_;
 };
@@ -5134,29 +5023,29 @@ class TableStyleArchive : public ::google::protobuf::Message {
  public:
   TableStyleArchive();
   virtual ~TableStyleArchive();
-
+  
   TableStyleArchive(const TableStyleArchive& from);
-
+  
   inline TableStyleArchive& operator=(const TableStyleArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const TableStyleArchive& default_instance();
-
+  
   void Swap(TableStyleArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   TableStyleArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -5164,7 +5053,7 @@ class TableStyleArchive : public ::google::protobuf::Message {
   void MergeFrom(const TableStyleArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -5177,13 +5066,13 @@ class TableStyleArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TSS.StyleArchive super = 1;
   inline bool has_super() const;
   inline void clear_super();
@@ -5191,15 +5080,14 @@ class TableStyleArchive : public ::google::protobuf::Message {
   inline const ::TSS::StyleArchive& super() const;
   inline ::TSS::StyleArchive* mutable_super();
   inline ::TSS::StyleArchive* release_super();
-  inline void set_allocated_super(::TSS::StyleArchive* super);
-
+  
   // optional uint32 override_count = 10 [default = 0];
   inline bool has_override_count() const;
   inline void clear_override_count();
   static const int kOverrideCountFieldNumber = 10;
   inline ::google::protobuf::uint32 override_count() const;
   inline void set_override_count(::google::protobuf::uint32 value);
-
+  
   // optional .TST.TableStylePropertiesArchive table_properties = 11;
   inline bool has_table_properties() const;
   inline void clear_table_properties();
@@ -5207,8 +5095,7 @@ class TableStyleArchive : public ::google::protobuf::Message {
   inline const ::TST::TableStylePropertiesArchive& table_properties() const;
   inline ::TST::TableStylePropertiesArchive* mutable_table_properties();
   inline ::TST::TableStylePropertiesArchive* release_table_properties();
-  inline void set_allocated_table_properties(::TST::TableStylePropertiesArchive* table_properties);
-
+  
   // @@protoc_insertion_point(class_scope:TST.TableStyleArchive)
  private:
   inline void set_has_super();
@@ -5217,20 +5104,20 @@ class TableStyleArchive : public ::google::protobuf::Message {
   inline void clear_has_override_count();
   inline void set_has_table_properties();
   inline void clear_has_table_properties();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TSS::StyleArchive* super_;
   ::TST::TableStylePropertiesArchive* table_properties_;
   ::google::protobuf::uint32 override_count_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(3 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static TableStyleArchive* default_instance_;
 };
@@ -5240,29 +5127,29 @@ class CellStyleArchive : public ::google::protobuf::Message {
  public:
   CellStyleArchive();
   virtual ~CellStyleArchive();
-
+  
   CellStyleArchive(const CellStyleArchive& from);
-
+  
   inline CellStyleArchive& operator=(const CellStyleArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const CellStyleArchive& default_instance();
-
+  
   void Swap(CellStyleArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   CellStyleArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -5270,7 +5157,7 @@ class CellStyleArchive : public ::google::protobuf::Message {
   void MergeFrom(const CellStyleArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -5283,13 +5170,13 @@ class CellStyleArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TSS.StyleArchive super = 1;
   inline bool has_super() const;
   inline void clear_super();
@@ -5297,15 +5184,14 @@ class CellStyleArchive : public ::google::protobuf::Message {
   inline const ::TSS::StyleArchive& super() const;
   inline ::TSS::StyleArchive* mutable_super();
   inline ::TSS::StyleArchive* release_super();
-  inline void set_allocated_super(::TSS::StyleArchive* super);
-
+  
   // optional uint32 override_count = 10 [default = 0];
   inline bool has_override_count() const;
   inline void clear_override_count();
   static const int kOverrideCountFieldNumber = 10;
   inline ::google::protobuf::uint32 override_count() const;
   inline void set_override_count(::google::protobuf::uint32 value);
-
+  
   // optional .TST.CellStylePropertiesArchive cell_properties = 11;
   inline bool has_cell_properties() const;
   inline void clear_cell_properties();
@@ -5313,8 +5199,7 @@ class CellStyleArchive : public ::google::protobuf::Message {
   inline const ::TST::CellStylePropertiesArchive& cell_properties() const;
   inline ::TST::CellStylePropertiesArchive* mutable_cell_properties();
   inline ::TST::CellStylePropertiesArchive* release_cell_properties();
-  inline void set_allocated_cell_properties(::TST::CellStylePropertiesArchive* cell_properties);
-
+  
   // @@protoc_insertion_point(class_scope:TST.CellStyleArchive)
  private:
   inline void set_has_super();
@@ -5323,20 +5208,20 @@ class CellStyleArchive : public ::google::protobuf::Message {
   inline void clear_has_override_count();
   inline void set_has_cell_properties();
   inline void clear_has_cell_properties();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TSS::StyleArchive* super_;
   ::TST::CellStylePropertiesArchive* cell_properties_;
   ::google::protobuf::uint32 override_count_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(3 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static CellStyleArchive* default_instance_;
 };
@@ -5346,29 +5231,29 @@ class FormulaPredicateArchive : public ::google::protobuf::Message {
  public:
   FormulaPredicateArchive();
   virtual ~FormulaPredicateArchive();
-
+  
   FormulaPredicateArchive(const FormulaPredicateArchive& from);
-
+  
   inline FormulaPredicateArchive& operator=(const FormulaPredicateArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const FormulaPredicateArchive& default_instance();
-
+  
   void Swap(FormulaPredicateArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   FormulaPredicateArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -5376,7 +5261,7 @@ class FormulaPredicateArchive : public ::google::protobuf::Message {
   void MergeFrom(const FormulaPredicateArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -5389,11 +5274,11 @@ class FormulaPredicateArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   typedef FormulaPredicateArchive_FormulaPredicateType FormulaPredicateType;
   static const FormulaPredicateType PredNone = FormulaPredicateArchive_FormulaPredicateType_PredNone;
   static const FormulaPredicateType TextStartsWith = FormulaPredicateArchive_FormulaPredicateType_TextStartsWith;
@@ -5465,7 +5350,7 @@ class FormulaPredicateArchive : public ::google::protobuf::Message {
       FormulaPredicateType* value) {
     return FormulaPredicateArchive_FormulaPredicateType_Parse(name, value);
   }
-
+  
   typedef FormulaPredicateArchive_QualifierType QualifierType;
   static const QualifierType QualNone = FormulaPredicateArchive_QualifierType_QualNone;
   static const QualifierType Days = FormulaPredicateArchive_QualifierType_Days;
@@ -5497,9 +5382,9 @@ class FormulaPredicateArchive : public ::google::protobuf::Message {
       QualifierType* value) {
     return FormulaPredicateArchive_QualifierType_Parse(name, value);
   }
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TSCE.FormulaArchive formula = 1;
   inline bool has_formula() const;
   inline void clear_formula();
@@ -5507,50 +5392,49 @@ class FormulaPredicateArchive : public ::google::protobuf::Message {
   inline const ::TSCE::FormulaArchive& formula() const;
   inline ::TSCE::FormulaArchive* mutable_formula();
   inline ::TSCE::FormulaArchive* release_formula();
-  inline void set_allocated_formula(::TSCE::FormulaArchive* formula);
-
+  
   // required .TST.FormulaPredicateArchive.FormulaPredicateType predicate_type = 2;
   inline bool has_predicate_type() const;
   inline void clear_predicate_type();
   static const int kPredicateTypeFieldNumber = 2;
   inline ::TST::FormulaPredicateArchive_FormulaPredicateType predicate_type() const;
   inline void set_predicate_type(::TST::FormulaPredicateArchive_FormulaPredicateType value);
-
+  
   // required .TST.FormulaPredicateArchive.QualifierType qualifier1 = 3;
   inline bool has_qualifier1() const;
   inline void clear_qualifier1();
   static const int kQualifier1FieldNumber = 3;
   inline ::TST::FormulaPredicateArchive_QualifierType qualifier1() const;
   inline void set_qualifier1(::TST::FormulaPredicateArchive_QualifierType value);
-
+  
   // required .TST.FormulaPredicateArchive.QualifierType qualifier2 = 4;
   inline bool has_qualifier2() const;
   inline void clear_qualifier2();
   static const int kQualifier2FieldNumber = 4;
   inline ::TST::FormulaPredicateArchive_QualifierType qualifier2() const;
   inline void set_qualifier2(::TST::FormulaPredicateArchive_QualifierType value);
-
+  
   // required int32 param_index1 = 5;
   inline bool has_param_index1() const;
   inline void clear_param_index1();
   static const int kParamIndex1FieldNumber = 5;
   inline ::google::protobuf::int32 param_index1() const;
   inline void set_param_index1(::google::protobuf::int32 value);
-
+  
   // required int32 param_index2 = 6;
   inline bool has_param_index2() const;
   inline void clear_param_index2();
   static const int kParamIndex2FieldNumber = 6;
   inline ::google::protobuf::int32 param_index2() const;
   inline void set_param_index2(::google::protobuf::int32 value);
-
+  
   // required int32 param_index0 = 7;
   inline bool has_param_index0() const;
   inline void clear_param_index0();
   static const int kParamIndex0FieldNumber = 7;
   inline ::google::protobuf::int32 param_index0() const;
   inline void set_param_index0(::google::protobuf::int32 value);
-
+  
   // @@protoc_insertion_point(class_scope:TST.FormulaPredicateArchive)
  private:
   inline void set_has_formula();
@@ -5567,9 +5451,9 @@ class FormulaPredicateArchive : public ::google::protobuf::Message {
   inline void clear_has_param_index2();
   inline void set_has_param_index0();
   inline void clear_has_param_index0();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TSCE::FormulaArchive* formula_;
   int predicate_type_;
   int qualifier1_;
@@ -5577,14 +5461,14 @@ class FormulaPredicateArchive : public ::google::protobuf::Message {
   ::google::protobuf::int32 param_index1_;
   ::google::protobuf::int32 param_index2_;
   ::google::protobuf::int32 param_index0_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(7 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static FormulaPredicateArchive* default_instance_;
 };
@@ -5594,29 +5478,29 @@ class ConditionalStyleSetArchive_ConditionalStyleRule : public ::google::protobu
  public:
   ConditionalStyleSetArchive_ConditionalStyleRule();
   virtual ~ConditionalStyleSetArchive_ConditionalStyleRule();
-
+  
   ConditionalStyleSetArchive_ConditionalStyleRule(const ConditionalStyleSetArchive_ConditionalStyleRule& from);
-
+  
   inline ConditionalStyleSetArchive_ConditionalStyleRule& operator=(const ConditionalStyleSetArchive_ConditionalStyleRule& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const ConditionalStyleSetArchive_ConditionalStyleRule& default_instance();
-
+  
   void Swap(ConditionalStyleSetArchive_ConditionalStyleRule* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   ConditionalStyleSetArchive_ConditionalStyleRule* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -5624,7 +5508,7 @@ class ConditionalStyleSetArchive_ConditionalStyleRule : public ::google::protobu
   void MergeFrom(const ConditionalStyleSetArchive_ConditionalStyleRule& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -5637,13 +5521,13 @@ class ConditionalStyleSetArchive_ConditionalStyleRule : public ::google::protobu
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TST.FormulaPredicateArchive predicate = 1;
   inline bool has_predicate() const;
   inline void clear_predicate();
@@ -5651,8 +5535,7 @@ class ConditionalStyleSetArchive_ConditionalStyleRule : public ::google::protobu
   inline const ::TST::FormulaPredicateArchive& predicate() const;
   inline ::TST::FormulaPredicateArchive* mutable_predicate();
   inline ::TST::FormulaPredicateArchive* release_predicate();
-  inline void set_allocated_predicate(::TST::FormulaPredicateArchive* predicate);
-
+  
   // required .TSP.Reference cell_style = 2;
   inline bool has_cell_style() const;
   inline void clear_cell_style();
@@ -5660,8 +5543,7 @@ class ConditionalStyleSetArchive_ConditionalStyleRule : public ::google::protobu
   inline const ::TSP::Reference& cell_style() const;
   inline ::TSP::Reference* mutable_cell_style();
   inline ::TSP::Reference* release_cell_style();
-  inline void set_allocated_cell_style(::TSP::Reference* cell_style);
-
+  
   // required .TSP.Reference text_style = 3;
   inline bool has_text_style() const;
   inline void clear_text_style();
@@ -5669,8 +5551,7 @@ class ConditionalStyleSetArchive_ConditionalStyleRule : public ::google::protobu
   inline const ::TSP::Reference& text_style() const;
   inline ::TSP::Reference* mutable_text_style();
   inline ::TSP::Reference* release_text_style();
-  inline void set_allocated_text_style(::TSP::Reference* text_style);
-
+  
   // @@protoc_insertion_point(class_scope:TST.ConditionalStyleSetArchive.ConditionalStyleRule)
  private:
   inline void set_has_predicate();
@@ -5679,20 +5560,20 @@ class ConditionalStyleSetArchive_ConditionalStyleRule : public ::google::protobu
   inline void clear_has_cell_style();
   inline void set_has_text_style();
   inline void clear_has_text_style();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TST::FormulaPredicateArchive* predicate_;
   ::TSP::Reference* cell_style_;
   ::TSP::Reference* text_style_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(3 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static ConditionalStyleSetArchive_ConditionalStyleRule* default_instance_;
 };
@@ -5702,29 +5583,29 @@ class ConditionalStyleSetArchive : public ::google::protobuf::Message {
  public:
   ConditionalStyleSetArchive();
   virtual ~ConditionalStyleSetArchive();
-
+  
   ConditionalStyleSetArchive(const ConditionalStyleSetArchive& from);
-
+  
   inline ConditionalStyleSetArchive& operator=(const ConditionalStyleSetArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const ConditionalStyleSetArchive& default_instance();
-
+  
   void Swap(ConditionalStyleSetArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   ConditionalStyleSetArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -5732,7 +5613,7 @@ class ConditionalStyleSetArchive : public ::google::protobuf::Message {
   void MergeFrom(const ConditionalStyleSetArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -5745,22 +5626,22 @@ class ConditionalStyleSetArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   typedef ConditionalStyleSetArchive_ConditionalStyleRule ConditionalStyleRule;
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required uint32 ruleCount = 1;
   inline bool has_rulecount() const;
   inline void clear_rulecount();
   static const int kRuleCountFieldNumber = 1;
   inline ::google::protobuf::uint32 rulecount() const;
   inline void set_rulecount(::google::protobuf::uint32 value);
-
+  
   // repeated .TST.ConditionalStyleSetArchive.ConditionalStyleRule rules = 2;
   inline int rules_size() const;
   inline void clear_rules();
@@ -5772,7 +5653,7 @@ class ConditionalStyleSetArchive : public ::google::protobuf::Message {
       rules() const;
   inline ::google::protobuf::RepeatedPtrField< ::TST::ConditionalStyleSetArchive_ConditionalStyleRule >*
       mutable_rules();
-
+  
   // optional .TST.CellID cellID = 3;
   inline bool has_cellid() const;
   inline void clear_cellid();
@@ -5780,28 +5661,27 @@ class ConditionalStyleSetArchive : public ::google::protobuf::Message {
   inline const ::TST::CellID& cellid() const;
   inline ::TST::CellID* mutable_cellid();
   inline ::TST::CellID* release_cellid();
-  inline void set_allocated_cellid(::TST::CellID* cellid);
-
+  
   // @@protoc_insertion_point(class_scope:TST.ConditionalStyleSetArchive)
  private:
   inline void set_has_rulecount();
   inline void clear_has_rulecount();
   inline void set_has_cellid();
   inline void clear_has_cellid();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::google::protobuf::RepeatedPtrField< ::TST::ConditionalStyleSetArchive_ConditionalStyleRule > rules_;
   ::TST::CellID* cellid_;
   ::google::protobuf::uint32 rulecount_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(3 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static ConditionalStyleSetArchive* default_instance_;
 };
@@ -5811,29 +5691,29 @@ class FilterSetArchive : public ::google::protobuf::Message {
  public:
   FilterSetArchive();
   virtual ~FilterSetArchive();
-
+  
   FilterSetArchive(const FilterSetArchive& from);
-
+  
   inline FilterSetArchive& operator=(const FilterSetArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const FilterSetArchive& default_instance();
-
+  
   void Swap(FilterSetArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   FilterSetArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -5841,7 +5721,7 @@ class FilterSetArchive : public ::google::protobuf::Message {
   void MergeFrom(const FilterSetArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -5854,11 +5734,11 @@ class FilterSetArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   typedef FilterSetArchive_FilterSetType FilterSetType;
   static const FilterSetType FilterSetArchiveTypeAll = FilterSetArchive_FilterSetType_FilterSetArchiveTypeAll;
   static const FilterSetType FilterSetArchiveTypeAny = FilterSetArchive_FilterSetType_FilterSetArchiveTypeAny;
@@ -5882,23 +5762,23 @@ class FilterSetArchive : public ::google::protobuf::Message {
       FilterSetType* value) {
     return FilterSetArchive_FilterSetType_Parse(name, value);
   }
-
+  
   // accessors -------------------------------------------------------
-
+  
   // optional .TST.FilterSetArchive.FilterSetType type = 1 [default = FilterSetArchiveTypeAll];
   inline bool has_type() const;
   inline void clear_type();
   static const int kTypeFieldNumber = 1;
   inline ::TST::FilterSetArchive_FilterSetType type() const;
   inline void set_type(::TST::FilterSetArchive_FilterSetType value);
-
+  
   // optional bool is_enabled = 2 [default = true];
   inline bool has_is_enabled() const;
   inline void clear_is_enabled();
   static const int kIsEnabledFieldNumber = 2;
   inline bool is_enabled() const;
   inline void set_is_enabled(bool value);
-
+  
   // repeated .TST.FilterRuleArchive filter_rules = 3;
   inline int filter_rules_size() const;
   inline void clear_filter_rules();
@@ -5910,14 +5790,14 @@ class FilterSetArchive : public ::google::protobuf::Message {
       filter_rules() const;
   inline ::google::protobuf::RepeatedPtrField< ::TST::FilterRuleArchive >*
       mutable_filter_rules();
-
+  
   // optional bool needs_formula_rewrite_for_import = 4 [default = false];
   inline bool has_needs_formula_rewrite_for_import() const;
   inline void clear_needs_formula_rewrite_for_import();
   static const int kNeedsFormulaRewriteForImportFieldNumber = 4;
   inline bool needs_formula_rewrite_for_import() const;
   inline void set_needs_formula_rewrite_for_import(bool value);
-
+  
   // repeated uint32 filter_offsets = 5;
   inline int filter_offsets_size() const;
   inline void clear_filter_offsets();
@@ -5929,7 +5809,7 @@ class FilterSetArchive : public ::google::protobuf::Message {
       filter_offsets() const;
   inline ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
       mutable_filter_offsets();
-
+  
   // repeated bool filter_enabled = 6;
   inline int filter_enabled_size() const;
   inline void clear_filter_enabled();
@@ -5941,7 +5821,7 @@ class FilterSetArchive : public ::google::protobuf::Message {
       filter_enabled() const;
   inline ::google::protobuf::RepeatedField< bool >*
       mutable_filter_enabled();
-
+  
   // @@protoc_insertion_point(class_scope:TST.FilterSetArchive)
  private:
   inline void set_has_type();
@@ -5950,23 +5830,23 @@ class FilterSetArchive : public ::google::protobuf::Message {
   inline void clear_has_is_enabled();
   inline void set_has_needs_formula_rewrite_for_import();
   inline void clear_has_needs_formula_rewrite_for_import();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   int type_;
   bool is_enabled_;
   bool needs_formula_rewrite_for_import_;
   ::google::protobuf::RepeatedPtrField< ::TST::FilterRuleArchive > filter_rules_;
   ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > filter_offsets_;
   ::google::protobuf::RepeatedField< bool > filter_enabled_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(6 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static FilterSetArchive* default_instance_;
 };
@@ -5976,29 +5856,29 @@ class TokenAttachmentArchive : public ::google::protobuf::Message {
  public:
   TokenAttachmentArchive();
   virtual ~TokenAttachmentArchive();
-
+  
   TokenAttachmentArchive(const TokenAttachmentArchive& from);
-
+  
   inline TokenAttachmentArchive& operator=(const TokenAttachmentArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const TokenAttachmentArchive& default_instance();
-
+  
   void Swap(TokenAttachmentArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   TokenAttachmentArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -6006,7 +5886,7 @@ class TokenAttachmentArchive : public ::google::protobuf::Message {
   void MergeFrom(const TokenAttachmentArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -6019,13 +5899,13 @@ class TokenAttachmentArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TSWP.UIGraphicalAttachment super = 1;
   inline bool has_super() const;
   inline void clear_super();
@@ -6033,8 +5913,7 @@ class TokenAttachmentArchive : public ::google::protobuf::Message {
   inline const ::TSWP::UIGraphicalAttachment& super() const;
   inline ::TSWP::UIGraphicalAttachment* mutable_super();
   inline ::TSWP::UIGraphicalAttachment* release_super();
-  inline void set_allocated_super(::TSWP::UIGraphicalAttachment* super);
-
+  
   // optional .TSP.Reference expressionNode = 2;
   inline bool has_expressionnode() const;
   inline void clear_expressionnode();
@@ -6042,27 +5921,26 @@ class TokenAttachmentArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& expressionnode() const;
   inline ::TSP::Reference* mutable_expressionnode();
   inline ::TSP::Reference* release_expressionnode();
-  inline void set_allocated_expressionnode(::TSP::Reference* expressionnode);
-
+  
   // @@protoc_insertion_point(class_scope:TST.TokenAttachmentArchive)
  private:
   inline void set_has_super();
   inline void clear_has_super();
   inline void set_has_expressionnode();
   inline void clear_has_expressionnode();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TSWP::UIGraphicalAttachment* super_;
   ::TSP::Reference* expressionnode_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static TokenAttachmentArchive* default_instance_;
 };
@@ -6072,29 +5950,29 @@ class FormulaArchive : public ::google::protobuf::Message {
  public:
   FormulaArchive();
   virtual ~FormulaArchive();
-
+  
   FormulaArchive(const FormulaArchive& from);
-
+  
   inline FormulaArchive& operator=(const FormulaArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const FormulaArchive& default_instance();
-
+  
   void Swap(FormulaArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   FormulaArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -6102,7 +5980,7 @@ class FormulaArchive : public ::google::protobuf::Message {
   void MergeFrom(const FormulaArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -6115,13 +5993,13 @@ class FormulaArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // optional .TSP.Reference expressionTree = 1;
   inline bool has_expressiontree() const;
   inline void clear_expressiontree();
@@ -6129,24 +6007,23 @@ class FormulaArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& expressiontree() const;
   inline ::TSP::Reference* mutable_expressiontree();
   inline ::TSP::Reference* release_expressiontree();
-  inline void set_allocated_expressiontree(::TSP::Reference* expressiontree);
-
+  
   // @@protoc_insertion_point(class_scope:TST.FormulaArchive)
  private:
   inline void set_has_expressiontree();
   inline void clear_has_expressiontree();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TSP::Reference* expressiontree_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(1 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static FormulaArchive* default_instance_;
 };
@@ -6156,29 +6033,29 @@ class ExpressionNodeArchive : public ::google::protobuf::Message {
  public:
   ExpressionNodeArchive();
   virtual ~ExpressionNodeArchive();
-
+  
   ExpressionNodeArchive(const ExpressionNodeArchive& from);
-
+  
   inline ExpressionNodeArchive& operator=(const ExpressionNodeArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const ExpressionNodeArchive& default_instance();
-
+  
   void Swap(ExpressionNodeArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   ExpressionNodeArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -6186,7 +6063,7 @@ class ExpressionNodeArchive : public ::google::protobuf::Message {
   void MergeFrom(const ExpressionNodeArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -6199,13 +6076,13 @@ class ExpressionNodeArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // repeated .TSP.Reference children = 1;
   inline int children_size() const;
   inline void clear_children();
@@ -6217,41 +6094,41 @@ class ExpressionNodeArchive : public ::google::protobuf::Message {
       children() const;
   inline ::google::protobuf::RepeatedPtrField< ::TSP::Reference >*
       mutable_children();
-
+  
   // optional uint64 first_index = 2 [default = 0];
   inline bool has_first_index() const;
   inline void clear_first_index();
   static const int kFirstIndexFieldNumber = 2;
   inline ::google::protobuf::uint64 first_index() const;
   inline void set_first_index(::google::protobuf::uint64 value);
-
+  
   // optional uint64 last_index = 3 [default = 0];
   inline bool has_last_index() const;
   inline void clear_last_index();
   static const int kLastIndexFieldNumber = 3;
   inline ::google::protobuf::uint64 last_index() const;
   inline void set_last_index(::google::protobuf::uint64 value);
-
+  
   // @@protoc_insertion_point(class_scope:TST.ExpressionNodeArchive)
  private:
   inline void set_has_first_index();
   inline void clear_has_first_index();
   inline void set_has_last_index();
   inline void clear_has_last_index();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::google::protobuf::RepeatedPtrField< ::TSP::Reference > children_;
   ::google::protobuf::uint64 first_index_;
   ::google::protobuf::uint64 last_index_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(3 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static ExpressionNodeArchive* default_instance_;
 };
@@ -6261,29 +6138,29 @@ class BooleanNodeArchive : public ::google::protobuf::Message {
  public:
   BooleanNodeArchive();
   virtual ~BooleanNodeArchive();
-
+  
   BooleanNodeArchive(const BooleanNodeArchive& from);
-
+  
   inline BooleanNodeArchive& operator=(const BooleanNodeArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const BooleanNodeArchive& default_instance();
-
+  
   void Swap(BooleanNodeArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   BooleanNodeArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -6291,7 +6168,7 @@ class BooleanNodeArchive : public ::google::protobuf::Message {
   void MergeFrom(const BooleanNodeArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -6304,13 +6181,13 @@ class BooleanNodeArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TST.ExpressionNodeArchive super = 1;
   inline bool has_super() const;
   inline void clear_super();
@@ -6318,34 +6195,33 @@ class BooleanNodeArchive : public ::google::protobuf::Message {
   inline const ::TST::ExpressionNodeArchive& super() const;
   inline ::TST::ExpressionNodeArchive* mutable_super();
   inline ::TST::ExpressionNodeArchive* release_super();
-  inline void set_allocated_super(::TST::ExpressionNodeArchive* super);
-
+  
   // required bool value = 2;
   inline bool has_value() const;
   inline void clear_value();
   static const int kValueFieldNumber = 2;
   inline bool value() const;
   inline void set_value(bool value);
-
+  
   // @@protoc_insertion_point(class_scope:TST.BooleanNodeArchive)
  private:
   inline void set_has_super();
   inline void clear_has_super();
   inline void set_has_value();
   inline void clear_has_value();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TST::ExpressionNodeArchive* super_;
   bool value_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static BooleanNodeArchive* default_instance_;
 };
@@ -6355,29 +6231,29 @@ class NumberNodeArchive : public ::google::protobuf::Message {
  public:
   NumberNodeArchive();
   virtual ~NumberNodeArchive();
-
+  
   NumberNodeArchive(const NumberNodeArchive& from);
-
+  
   inline NumberNodeArchive& operator=(const NumberNodeArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const NumberNodeArchive& default_instance();
-
+  
   void Swap(NumberNodeArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   NumberNodeArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -6385,7 +6261,7 @@ class NumberNodeArchive : public ::google::protobuf::Message {
   void MergeFrom(const NumberNodeArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -6398,13 +6274,13 @@ class NumberNodeArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TST.ExpressionNodeArchive super = 1;
   inline bool has_super() const;
   inline void clear_super();
@@ -6412,34 +6288,33 @@ class NumberNodeArchive : public ::google::protobuf::Message {
   inline const ::TST::ExpressionNodeArchive& super() const;
   inline ::TST::ExpressionNodeArchive* mutable_super();
   inline ::TST::ExpressionNodeArchive* release_super();
-  inline void set_allocated_super(::TST::ExpressionNodeArchive* super);
-
+  
   // required double number = 2;
   inline bool has_number() const;
   inline void clear_number();
   static const int kNumberFieldNumber = 2;
   inline double number() const;
   inline void set_number(double value);
-
+  
   // @@protoc_insertion_point(class_scope:TST.NumberNodeArchive)
  private:
   inline void set_has_super();
   inline void clear_has_super();
   inline void set_has_number();
   inline void clear_has_number();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TST::ExpressionNodeArchive* super_;
   double number_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static NumberNodeArchive* default_instance_;
 };
@@ -6449,29 +6324,29 @@ class StringNodeArchive : public ::google::protobuf::Message {
  public:
   StringNodeArchive();
   virtual ~StringNodeArchive();
-
+  
   StringNodeArchive(const StringNodeArchive& from);
-
+  
   inline StringNodeArchive& operator=(const StringNodeArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const StringNodeArchive& default_instance();
-
+  
   void Swap(StringNodeArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   StringNodeArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -6479,7 +6354,7 @@ class StringNodeArchive : public ::google::protobuf::Message {
   void MergeFrom(const StringNodeArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -6492,13 +6367,13 @@ class StringNodeArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TST.ExpressionNodeArchive super = 1;
   inline bool has_super() const;
   inline void clear_super();
@@ -6506,8 +6381,7 @@ class StringNodeArchive : public ::google::protobuf::Message {
   inline const ::TST::ExpressionNodeArchive& super() const;
   inline ::TST::ExpressionNodeArchive* mutable_super();
   inline ::TST::ExpressionNodeArchive* release_super();
-  inline void set_allocated_super(::TST::ExpressionNodeArchive* super);
-
+  
   // required string value = 2;
   inline bool has_value() const;
   inline void clear_value();
@@ -6518,27 +6392,26 @@ class StringNodeArchive : public ::google::protobuf::Message {
   inline void set_value(const char* value, size_t size);
   inline ::std::string* mutable_value();
   inline ::std::string* release_value();
-  inline void set_allocated_value(::std::string* value);
-
+  
   // @@protoc_insertion_point(class_scope:TST.StringNodeArchive)
  private:
   inline void set_has_super();
   inline void clear_has_super();
   inline void set_has_value();
   inline void clear_has_value();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TST::ExpressionNodeArchive* super_;
   ::std::string* value_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static StringNodeArchive* default_instance_;
 };
@@ -6548,29 +6421,29 @@ class IdentifierNodeArchive : public ::google::protobuf::Message {
  public:
   IdentifierNodeArchive();
   virtual ~IdentifierNodeArchive();
-
+  
   IdentifierNodeArchive(const IdentifierNodeArchive& from);
-
+  
   inline IdentifierNodeArchive& operator=(const IdentifierNodeArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const IdentifierNodeArchive& default_instance();
-
+  
   void Swap(IdentifierNodeArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   IdentifierNodeArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -6578,7 +6451,7 @@ class IdentifierNodeArchive : public ::google::protobuf::Message {
   void MergeFrom(const IdentifierNodeArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -6591,13 +6464,13 @@ class IdentifierNodeArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TST.ExpressionNodeArchive super = 1;
   inline bool has_super() const;
   inline void clear_super();
@@ -6605,8 +6478,7 @@ class IdentifierNodeArchive : public ::google::protobuf::Message {
   inline const ::TST::ExpressionNodeArchive& super() const;
   inline ::TST::ExpressionNodeArchive* mutable_super();
   inline ::TST::ExpressionNodeArchive* release_super();
-  inline void set_allocated_super(::TST::ExpressionNodeArchive* super);
-
+  
   // optional string identifier = 2;
   inline bool has_identifier() const;
   inline void clear_identifier();
@@ -6617,27 +6489,26 @@ class IdentifierNodeArchive : public ::google::protobuf::Message {
   inline void set_identifier(const char* value, size_t size);
   inline ::std::string* mutable_identifier();
   inline ::std::string* release_identifier();
-  inline void set_allocated_identifier(::std::string* identifier);
-
+  
   // @@protoc_insertion_point(class_scope:TST.IdentifierNodeArchive)
  private:
   inline void set_has_super();
   inline void clear_has_super();
   inline void set_has_identifier();
   inline void clear_has_identifier();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TST::ExpressionNodeArchive* super_;
   ::std::string* identifier_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static IdentifierNodeArchive* default_instance_;
 };
@@ -6647,29 +6518,29 @@ class ArrayNodeArchive : public ::google::protobuf::Message {
  public:
   ArrayNodeArchive();
   virtual ~ArrayNodeArchive();
-
+  
   ArrayNodeArchive(const ArrayNodeArchive& from);
-
+  
   inline ArrayNodeArchive& operator=(const ArrayNodeArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const ArrayNodeArchive& default_instance();
-
+  
   void Swap(ArrayNodeArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   ArrayNodeArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -6677,7 +6548,7 @@ class ArrayNodeArchive : public ::google::protobuf::Message {
   void MergeFrom(const ArrayNodeArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -6690,13 +6561,13 @@ class ArrayNodeArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TST.ExpressionNodeArchive super = 1;
   inline bool has_super() const;
   inline void clear_super();
@@ -6704,22 +6575,21 @@ class ArrayNodeArchive : public ::google::protobuf::Message {
   inline const ::TST::ExpressionNodeArchive& super() const;
   inline ::TST::ExpressionNodeArchive* mutable_super();
   inline ::TST::ExpressionNodeArchive* release_super();
-  inline void set_allocated_super(::TST::ExpressionNodeArchive* super);
-
+  
   // optional uint32 columns = 2;
   inline bool has_columns() const;
   inline void clear_columns();
   static const int kColumnsFieldNumber = 2;
   inline ::google::protobuf::uint32 columns() const;
   inline void set_columns(::google::protobuf::uint32 value);
-
+  
   // optional uint32 rows = 3;
   inline bool has_rows() const;
   inline void clear_rows();
   static const int kRowsFieldNumber = 3;
   inline ::google::protobuf::uint32 rows() const;
   inline void set_rows(::google::protobuf::uint32 value);
-
+  
   // @@protoc_insertion_point(class_scope:TST.ArrayNodeArchive)
  private:
   inline void set_has_super();
@@ -6728,20 +6598,20 @@ class ArrayNodeArchive : public ::google::protobuf::Message {
   inline void clear_has_columns();
   inline void set_has_rows();
   inline void clear_has_rows();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TST::ExpressionNodeArchive* super_;
   ::google::protobuf::uint32 columns_;
   ::google::protobuf::uint32 rows_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(3 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static ArrayNodeArchive* default_instance_;
 };
@@ -6751,29 +6621,29 @@ class ListNodeArchive : public ::google::protobuf::Message {
  public:
   ListNodeArchive();
   virtual ~ListNodeArchive();
-
+  
   ListNodeArchive(const ListNodeArchive& from);
-
+  
   inline ListNodeArchive& operator=(const ListNodeArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const ListNodeArchive& default_instance();
-
+  
   void Swap(ListNodeArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   ListNodeArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -6781,7 +6651,7 @@ class ListNodeArchive : public ::google::protobuf::Message {
   void MergeFrom(const ListNodeArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -6794,13 +6664,13 @@ class ListNodeArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TST.ExpressionNodeArchive super = 1;
   inline bool has_super() const;
   inline void clear_super();
@@ -6808,24 +6678,23 @@ class ListNodeArchive : public ::google::protobuf::Message {
   inline const ::TST::ExpressionNodeArchive& super() const;
   inline ::TST::ExpressionNodeArchive* mutable_super();
   inline ::TST::ExpressionNodeArchive* release_super();
-  inline void set_allocated_super(::TST::ExpressionNodeArchive* super);
-
+  
   // @@protoc_insertion_point(class_scope:TST.ListNodeArchive)
  private:
   inline void set_has_super();
   inline void clear_has_super();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TST::ExpressionNodeArchive* super_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(1 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static ListNodeArchive* default_instance_;
 };
@@ -6835,29 +6704,29 @@ class OperatorNodeArchive : public ::google::protobuf::Message {
  public:
   OperatorNodeArchive();
   virtual ~OperatorNodeArchive();
-
+  
   OperatorNodeArchive(const OperatorNodeArchive& from);
-
+  
   inline OperatorNodeArchive& operator=(const OperatorNodeArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const OperatorNodeArchive& default_instance();
-
+  
   void Swap(OperatorNodeArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   OperatorNodeArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -6865,7 +6734,7 @@ class OperatorNodeArchive : public ::google::protobuf::Message {
   void MergeFrom(const OperatorNodeArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -6878,13 +6747,13 @@ class OperatorNodeArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TST.ExpressionNodeArchive super = 1;
   inline bool has_super() const;
   inline void clear_super();
@@ -6892,34 +6761,33 @@ class OperatorNodeArchive : public ::google::protobuf::Message {
   inline const ::TST::ExpressionNodeArchive& super() const;
   inline ::TST::ExpressionNodeArchive* mutable_super();
   inline ::TST::ExpressionNodeArchive* release_super();
-  inline void set_allocated_super(::TST::ExpressionNodeArchive* super);
-
+  
   // required uint32 operatorChar = 2;
   inline bool has_operatorchar() const;
   inline void clear_operatorchar();
   static const int kOperatorCharFieldNumber = 2;
   inline ::google::protobuf::uint32 operatorchar() const;
   inline void set_operatorchar(::google::protobuf::uint32 value);
-
+  
   // @@protoc_insertion_point(class_scope:TST.OperatorNodeArchive)
  private:
   inline void set_has_super();
   inline void clear_has_super();
   inline void set_has_operatorchar();
   inline void clear_has_operatorchar();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TST::ExpressionNodeArchive* super_;
   ::google::protobuf::uint32 operatorchar_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static OperatorNodeArchive* default_instance_;
 };
@@ -6929,29 +6797,29 @@ class PostfixOperatorNodeArchive : public ::google::protobuf::Message {
  public:
   PostfixOperatorNodeArchive();
   virtual ~PostfixOperatorNodeArchive();
-
+  
   PostfixOperatorNodeArchive(const PostfixOperatorNodeArchive& from);
-
+  
   inline PostfixOperatorNodeArchive& operator=(const PostfixOperatorNodeArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const PostfixOperatorNodeArchive& default_instance();
-
+  
   void Swap(PostfixOperatorNodeArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   PostfixOperatorNodeArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -6959,7 +6827,7 @@ class PostfixOperatorNodeArchive : public ::google::protobuf::Message {
   void MergeFrom(const PostfixOperatorNodeArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -6972,13 +6840,13 @@ class PostfixOperatorNodeArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TST.OperatorNodeArchive super = 1;
   inline bool has_super() const;
   inline void clear_super();
@@ -6986,24 +6854,23 @@ class PostfixOperatorNodeArchive : public ::google::protobuf::Message {
   inline const ::TST::OperatorNodeArchive& super() const;
   inline ::TST::OperatorNodeArchive* mutable_super();
   inline ::TST::OperatorNodeArchive* release_super();
-  inline void set_allocated_super(::TST::OperatorNodeArchive* super);
-
+  
   // @@protoc_insertion_point(class_scope:TST.PostfixOperatorNodeArchive)
  private:
   inline void set_has_super();
   inline void clear_has_super();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TST::OperatorNodeArchive* super_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(1 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static PostfixOperatorNodeArchive* default_instance_;
 };
@@ -7013,29 +6880,29 @@ class PrefixOperatorNodeArchive : public ::google::protobuf::Message {
  public:
   PrefixOperatorNodeArchive();
   virtual ~PrefixOperatorNodeArchive();
-
+  
   PrefixOperatorNodeArchive(const PrefixOperatorNodeArchive& from);
-
+  
   inline PrefixOperatorNodeArchive& operator=(const PrefixOperatorNodeArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const PrefixOperatorNodeArchive& default_instance();
-
+  
   void Swap(PrefixOperatorNodeArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   PrefixOperatorNodeArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -7043,7 +6910,7 @@ class PrefixOperatorNodeArchive : public ::google::protobuf::Message {
   void MergeFrom(const PrefixOperatorNodeArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -7056,13 +6923,13 @@ class PrefixOperatorNodeArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TST.OperatorNodeArchive super = 1;
   inline bool has_super() const;
   inline void clear_super();
@@ -7070,24 +6937,23 @@ class PrefixOperatorNodeArchive : public ::google::protobuf::Message {
   inline const ::TST::OperatorNodeArchive& super() const;
   inline ::TST::OperatorNodeArchive* mutable_super();
   inline ::TST::OperatorNodeArchive* release_super();
-  inline void set_allocated_super(::TST::OperatorNodeArchive* super);
-
+  
   // @@protoc_insertion_point(class_scope:TST.PrefixOperatorNodeArchive)
  private:
   inline void set_has_super();
   inline void clear_has_super();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TST::OperatorNodeArchive* super_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(1 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static PrefixOperatorNodeArchive* default_instance_;
 };
@@ -7097,29 +6963,29 @@ class FunctionNodeArchive : public ::google::protobuf::Message {
  public:
   FunctionNodeArchive();
   virtual ~FunctionNodeArchive();
-
+  
   FunctionNodeArchive(const FunctionNodeArchive& from);
-
+  
   inline FunctionNodeArchive& operator=(const FunctionNodeArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const FunctionNodeArchive& default_instance();
-
+  
   void Swap(FunctionNodeArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   FunctionNodeArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -7127,7 +6993,7 @@ class FunctionNodeArchive : public ::google::protobuf::Message {
   void MergeFrom(const FunctionNodeArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -7140,13 +7006,13 @@ class FunctionNodeArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TST.ExpressionNodeArchive super = 1;
   inline bool has_super() const;
   inline void clear_super();
@@ -7154,15 +7020,14 @@ class FunctionNodeArchive : public ::google::protobuf::Message {
   inline const ::TST::ExpressionNodeArchive& super() const;
   inline ::TST::ExpressionNodeArchive* mutable_super();
   inline ::TST::ExpressionNodeArchive* release_super();
-  inline void set_allocated_super(::TST::ExpressionNodeArchive* super);
-
+  
   // required uint32 functionIndex = 2;
   inline bool has_functionindex() const;
   inline void clear_functionindex();
   static const int kFunctionIndexFieldNumber = 2;
   inline ::google::protobuf::uint32 functionindex() const;
   inline void set_functionindex(::google::protobuf::uint32 value);
-
+  
   // optional string invalidFunctionName = 3;
   inline bool has_invalidfunctionname() const;
   inline void clear_invalidfunctionname();
@@ -7173,8 +7038,7 @@ class FunctionNodeArchive : public ::google::protobuf::Message {
   inline void set_invalidfunctionname(const char* value, size_t size);
   inline ::std::string* mutable_invalidfunctionname();
   inline ::std::string* release_invalidfunctionname();
-  inline void set_allocated_invalidfunctionname(::std::string* invalidfunctionname);
-
+  
   // @@protoc_insertion_point(class_scope:TST.FunctionNodeArchive)
  private:
   inline void set_has_super();
@@ -7183,20 +7047,20 @@ class FunctionNodeArchive : public ::google::protobuf::Message {
   inline void clear_has_functionindex();
   inline void set_has_invalidfunctionname();
   inline void clear_has_invalidfunctionname();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TST::ExpressionNodeArchive* super_;
   ::std::string* invalidfunctionname_;
   ::google::protobuf::uint32 functionindex_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(3 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static FunctionNodeArchive* default_instance_;
 };
@@ -7206,29 +7070,29 @@ class FunctionEndNodeArchive : public ::google::protobuf::Message {
  public:
   FunctionEndNodeArchive();
   virtual ~FunctionEndNodeArchive();
-
+  
   FunctionEndNodeArchive(const FunctionEndNodeArchive& from);
-
+  
   inline FunctionEndNodeArchive& operator=(const FunctionEndNodeArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const FunctionEndNodeArchive& default_instance();
-
+  
   void Swap(FunctionEndNodeArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   FunctionEndNodeArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -7236,7 +7100,7 @@ class FunctionEndNodeArchive : public ::google::protobuf::Message {
   void MergeFrom(const FunctionEndNodeArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -7249,13 +7113,13 @@ class FunctionEndNodeArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TST.ExpressionNodeArchive super = 1;
   inline bool has_super() const;
   inline void clear_super();
@@ -7263,24 +7127,23 @@ class FunctionEndNodeArchive : public ::google::protobuf::Message {
   inline const ::TST::ExpressionNodeArchive& super() const;
   inline ::TST::ExpressionNodeArchive* mutable_super();
   inline ::TST::ExpressionNodeArchive* release_super();
-  inline void set_allocated_super(::TST::ExpressionNodeArchive* super);
-
+  
   // @@protoc_insertion_point(class_scope:TST.FunctionEndNodeArchive)
  private:
   inline void set_has_super();
   inline void clear_has_super();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TST::ExpressionNodeArchive* super_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(1 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static FunctionEndNodeArchive* default_instance_;
 };
@@ -7290,29 +7153,29 @@ class DateNodeArchive : public ::google::protobuf::Message {
  public:
   DateNodeArchive();
   virtual ~DateNodeArchive();
-
+  
   DateNodeArchive(const DateNodeArchive& from);
-
+  
   inline DateNodeArchive& operator=(const DateNodeArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const DateNodeArchive& default_instance();
-
+  
   void Swap(DateNodeArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   DateNodeArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -7320,7 +7183,7 @@ class DateNodeArchive : public ::google::protobuf::Message {
   void MergeFrom(const DateNodeArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -7333,13 +7196,13 @@ class DateNodeArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TST.ExpressionNodeArchive super = 1;
   inline bool has_super() const;
   inline void clear_super();
@@ -7347,8 +7210,7 @@ class DateNodeArchive : public ::google::protobuf::Message {
   inline const ::TST::ExpressionNodeArchive& super() const;
   inline ::TST::ExpressionNodeArchive* mutable_super();
   inline ::TST::ExpressionNodeArchive* release_super();
-  inline void set_allocated_super(::TST::ExpressionNodeArchive* super);
-
+  
   // required string value = 2;
   inline bool has_value() const;
   inline void clear_value();
@@ -7359,8 +7221,7 @@ class DateNodeArchive : public ::google::protobuf::Message {
   inline void set_value(const char* value, size_t size);
   inline ::std::string* mutable_value();
   inline ::std::string* release_value();
-  inline void set_allocated_value(::std::string* value);
-
+  
   // optional string format = 3;
   inline bool has_format() const;
   inline void clear_format();
@@ -7371,8 +7232,7 @@ class DateNodeArchive : public ::google::protobuf::Message {
   inline void set_format(const char* value, size_t size);
   inline ::std::string* mutable_format();
   inline ::std::string* release_format();
-  inline void set_allocated_format(::std::string* format);
-
+  
   // @@protoc_insertion_point(class_scope:TST.DateNodeArchive)
  private:
   inline void set_has_super();
@@ -7381,20 +7241,20 @@ class DateNodeArchive : public ::google::protobuf::Message {
   inline void clear_has_value();
   inline void set_has_format();
   inline void clear_has_format();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TST::ExpressionNodeArchive* super_;
   ::std::string* value_;
   ::std::string* format_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(3 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static DateNodeArchive* default_instance_;
 };
@@ -7404,29 +7264,29 @@ class ReferenceNodeArchive : public ::google::protobuf::Message {
  public:
   ReferenceNodeArchive();
   virtual ~ReferenceNodeArchive();
-
+  
   ReferenceNodeArchive(const ReferenceNodeArchive& from);
-
+  
   inline ReferenceNodeArchive& operator=(const ReferenceNodeArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const ReferenceNodeArchive& default_instance();
-
+  
   void Swap(ReferenceNodeArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   ReferenceNodeArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -7434,7 +7294,7 @@ class ReferenceNodeArchive : public ::google::protobuf::Message {
   void MergeFrom(const ReferenceNodeArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -7447,13 +7307,13 @@ class ReferenceNodeArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TST.ExpressionNodeArchive super = 1;
   inline bool has_super() const;
   inline void clear_super();
@@ -7461,8 +7321,7 @@ class ReferenceNodeArchive : public ::google::protobuf::Message {
   inline const ::TST::ExpressionNodeArchive& super() const;
   inline ::TST::ExpressionNodeArchive* mutable_super();
   inline ::TST::ExpressionNodeArchive* release_super();
-  inline void set_allocated_super(::TST::ExpressionNodeArchive* super);
-
+  
   // required .TSCE.RangeReferenceArchive rangeReference = 2;
   inline bool has_rangereference() const;
   inline void clear_rangereference();
@@ -7470,15 +7329,14 @@ class ReferenceNodeArchive : public ::google::protobuf::Message {
   inline const ::TSCE::RangeReferenceArchive& rangereference() const;
   inline ::TSCE::RangeReferenceArchive* mutable_rangereference();
   inline ::TSCE::RangeReferenceArchive* release_rangereference();
-  inline void set_allocated_rangereference(::TSCE::RangeReferenceArchive* rangereference);
-
+  
   // required uint32 stickyBits = 3;
   inline bool has_stickybits() const;
   inline void clear_stickybits();
   static const int kStickyBitsFieldNumber = 3;
   inline ::google::protobuf::uint32 stickybits() const;
   inline void set_stickybits(::google::protobuf::uint32 value);
-
+  
   // optional string hostTableID = 4;
   inline bool has_hosttableid() const;
   inline void clear_hosttableid();
@@ -7489,8 +7347,7 @@ class ReferenceNodeArchive : public ::google::protobuf::Message {
   inline void set_hosttableid(const char* value, size_t size);
   inline ::std::string* mutable_hosttableid();
   inline ::std::string* release_hosttableid();
-  inline void set_allocated_hosttableid(::std::string* hosttableid);
-
+  
   // @@protoc_insertion_point(class_scope:TST.ReferenceNodeArchive)
  private:
   inline void set_has_super();
@@ -7501,21 +7358,21 @@ class ReferenceNodeArchive : public ::google::protobuf::Message {
   inline void clear_has_stickybits();
   inline void set_has_hosttableid();
   inline void clear_has_hosttableid();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TST::ExpressionNodeArchive* super_;
   ::TSCE::RangeReferenceArchive* rangereference_;
   ::std::string* hosttableid_;
   ::google::protobuf::uint32 stickybits_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(4 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static ReferenceNodeArchive* default_instance_;
 };
@@ -7525,29 +7382,29 @@ class DurationNodeArchive : public ::google::protobuf::Message {
  public:
   DurationNodeArchive();
   virtual ~DurationNodeArchive();
-
+  
   DurationNodeArchive(const DurationNodeArchive& from);
-
+  
   inline DurationNodeArchive& operator=(const DurationNodeArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const DurationNodeArchive& default_instance();
-
+  
   void Swap(DurationNodeArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   DurationNodeArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -7555,7 +7412,7 @@ class DurationNodeArchive : public ::google::protobuf::Message {
   void MergeFrom(const DurationNodeArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -7568,13 +7425,13 @@ class DurationNodeArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TST.ExpressionNodeArchive super = 1;
   inline bool has_super() const;
   inline void clear_super();
@@ -7582,36 +7439,35 @@ class DurationNodeArchive : public ::google::protobuf::Message {
   inline const ::TST::ExpressionNodeArchive& super() const;
   inline ::TST::ExpressionNodeArchive* mutable_super();
   inline ::TST::ExpressionNodeArchive* release_super();
-  inline void set_allocated_super(::TST::ExpressionNodeArchive* super);
-
+  
   // required double timeinterval = 2;
   inline bool has_timeinterval() const;
   inline void clear_timeinterval();
   static const int kTimeintervalFieldNumber = 2;
   inline double timeinterval() const;
   inline void set_timeinterval(double value);
-
+  
   // required uint32 smallest = 3;
   inline bool has_smallest() const;
   inline void clear_smallest();
   static const int kSmallestFieldNumber = 3;
   inline ::google::protobuf::uint32 smallest() const;
   inline void set_smallest(::google::protobuf::uint32 value);
-
+  
   // required uint32 largest = 4;
   inline bool has_largest() const;
   inline void clear_largest();
   static const int kLargestFieldNumber = 4;
   inline ::google::protobuf::uint32 largest() const;
   inline void set_largest(::google::protobuf::uint32 value);
-
+  
   // required uint32 style = 5;
   inline bool has_style() const;
   inline void clear_style();
   static const int kStyleFieldNumber = 5;
   inline ::google::protobuf::uint32 style() const;
   inline void set_style(::google::protobuf::uint32 value);
-
+  
   // @@protoc_insertion_point(class_scope:TST.DurationNodeArchive)
  private:
   inline void set_has_super();
@@ -7624,22 +7480,22 @@ class DurationNodeArchive : public ::google::protobuf::Message {
   inline void clear_has_largest();
   inline void set_has_style();
   inline void clear_has_style();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TST::ExpressionNodeArchive* super_;
   double timeinterval_;
   ::google::protobuf::uint32 smallest_;
   ::google::protobuf::uint32 largest_;
   ::google::protobuf::uint32 style_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(5 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static DurationNodeArchive* default_instance_;
 };
@@ -7649,29 +7505,29 @@ class ArgumentPlaceholderNodeArchive : public ::google::protobuf::Message {
  public:
   ArgumentPlaceholderNodeArchive();
   virtual ~ArgumentPlaceholderNodeArchive();
-
+  
   ArgumentPlaceholderNodeArchive(const ArgumentPlaceholderNodeArchive& from);
-
+  
   inline ArgumentPlaceholderNodeArchive& operator=(const ArgumentPlaceholderNodeArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const ArgumentPlaceholderNodeArchive& default_instance();
-
+  
   void Swap(ArgumentPlaceholderNodeArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   ArgumentPlaceholderNodeArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -7679,7 +7535,7 @@ class ArgumentPlaceholderNodeArchive : public ::google::protobuf::Message {
   void MergeFrom(const ArgumentPlaceholderNodeArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -7692,13 +7548,13 @@ class ArgumentPlaceholderNodeArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TST.ExpressionNodeArchive super = 1;
   inline bool has_super() const;
   inline void clear_super();
@@ -7706,29 +7562,28 @@ class ArgumentPlaceholderNodeArchive : public ::google::protobuf::Message {
   inline const ::TST::ExpressionNodeArchive& super() const;
   inline ::TST::ExpressionNodeArchive* mutable_super();
   inline ::TST::ExpressionNodeArchive* release_super();
-  inline void set_allocated_super(::TST::ExpressionNodeArchive* super);
-
+  
   // required uint32 functionIndex = 2;
   inline bool has_functionindex() const;
   inline void clear_functionindex();
   static const int kFunctionIndexFieldNumber = 2;
   inline ::google::protobuf::uint32 functionindex() const;
   inline void set_functionindex(::google::protobuf::uint32 value);
-
+  
   // required uint32 argumentIndex = 3;
   inline bool has_argumentindex() const;
   inline void clear_argumentindex();
   static const int kArgumentIndexFieldNumber = 3;
   inline ::google::protobuf::uint32 argumentindex() const;
   inline void set_argumentindex(::google::protobuf::uint32 value);
-
+  
   // optional uint32 mode = 4;
   inline bool has_mode() const;
   inline void clear_mode();
   static const int kModeFieldNumber = 4;
   inline ::google::protobuf::uint32 mode() const;
   inline void set_mode(::google::protobuf::uint32 value);
-
+  
   // @@protoc_insertion_point(class_scope:TST.ArgumentPlaceholderNodeArchive)
  private:
   inline void set_has_super();
@@ -7739,21 +7594,21 @@ class ArgumentPlaceholderNodeArchive : public ::google::protobuf::Message {
   inline void clear_has_argumentindex();
   inline void set_has_mode();
   inline void clear_has_mode();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TST::ExpressionNodeArchive* super_;
   ::google::protobuf::uint32 functionindex_;
   ::google::protobuf::uint32 argumentindex_;
   ::google::protobuf::uint32 mode_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(4 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static ArgumentPlaceholderNodeArchive* default_instance_;
 };
@@ -7763,29 +7618,29 @@ class EmptyExpressionNodeArchive : public ::google::protobuf::Message {
  public:
   EmptyExpressionNodeArchive();
   virtual ~EmptyExpressionNodeArchive();
-
+  
   EmptyExpressionNodeArchive(const EmptyExpressionNodeArchive& from);
-
+  
   inline EmptyExpressionNodeArchive& operator=(const EmptyExpressionNodeArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const EmptyExpressionNodeArchive& default_instance();
-
+  
   void Swap(EmptyExpressionNodeArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   EmptyExpressionNodeArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -7793,7 +7648,7 @@ class EmptyExpressionNodeArchive : public ::google::protobuf::Message {
   void MergeFrom(const EmptyExpressionNodeArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -7806,13 +7661,13 @@ class EmptyExpressionNodeArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TST.ExpressionNodeArchive super = 1;
   inline bool has_super() const;
   inline void clear_super();
@@ -7820,24 +7675,23 @@ class EmptyExpressionNodeArchive : public ::google::protobuf::Message {
   inline const ::TST::ExpressionNodeArchive& super() const;
   inline ::TST::ExpressionNodeArchive* mutable_super();
   inline ::TST::ExpressionNodeArchive* release_super();
-  inline void set_allocated_super(::TST::ExpressionNodeArchive* super);
-
+  
   // @@protoc_insertion_point(class_scope:TST.EmptyExpressionNodeArchive)
  private:
   inline void set_has_super();
   inline void clear_has_super();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TST::ExpressionNodeArchive* super_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(1 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static EmptyExpressionNodeArchive* default_instance_;
 };
@@ -7847,29 +7701,29 @@ class LayoutHintArchive : public ::google::protobuf::Message {
  public:
   LayoutHintArchive();
   virtual ~LayoutHintArchive();
-
+  
   LayoutHintArchive(const LayoutHintArchive& from);
-
+  
   inline LayoutHintArchive& operator=(const LayoutHintArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const LayoutHintArchive& default_instance();
-
+  
   void Swap(LayoutHintArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   LayoutHintArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -7877,7 +7731,7 @@ class LayoutHintArchive : public ::google::protobuf::Message {
   void MergeFrom(const LayoutHintArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -7890,20 +7744,20 @@ class LayoutHintArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required bool isValid = 1;
   inline bool has_isvalid() const;
   inline void clear_isvalid();
   static const int kIsValidFieldNumber = 1;
   inline bool isvalid() const;
   inline void set_isvalid(bool value);
-
+  
   // required .TST.CellRange cellRange = 2;
   inline bool has_cellrange() const;
   inline void clear_cellrange();
@@ -7911,8 +7765,7 @@ class LayoutHintArchive : public ::google::protobuf::Message {
   inline const ::TST::CellRange& cellrange() const;
   inline ::TST::CellRange* mutable_cellrange();
   inline ::TST::CellRange* release_cellrange();
-  inline void set_allocated_cellrange(::TST::CellRange* cellrange);
-
+  
   // required .TST.CellID hintID = 3;
   inline bool has_hintid() const;
   inline void clear_hintid();
@@ -7920,8 +7773,7 @@ class LayoutHintArchive : public ::google::protobuf::Message {
   inline const ::TST::CellID& hintid() const;
   inline ::TST::CellID* mutable_hintid();
   inline ::TST::CellID* release_hintid();
-  inline void set_allocated_hintid(::TST::CellID* hintid);
-
+  
   // required .TSP.Size maximumSize = 4;
   inline bool has_maximumsize() const;
   inline void clear_maximumsize();
@@ -7929,22 +7781,21 @@ class LayoutHintArchive : public ::google::protobuf::Message {
   inline const ::TSP::Size& maximumsize() const;
   inline ::TSP::Size* mutable_maximumsize();
   inline ::TSP::Size* release_maximumsize();
-  inline void set_allocated_maximumsize(::TSP::Size* maximumsize);
-
+  
   // required uint32 partitionPosition = 5;
   inline bool has_partitionposition() const;
   inline void clear_partitionposition();
   static const int kPartitionPositionFieldNumber = 5;
   inline ::google::protobuf::uint32 partitionposition() const;
   inline void set_partitionposition(::google::protobuf::uint32 value);
-
+  
   // required bool horizontal = 6;
   inline bool has_horizontal() const;
   inline void clear_horizontal();
   static const int kHorizontalFieldNumber = 6;
   inline bool horizontal() const;
   inline void set_horizontal(bool value);
-
+  
   // optional .TSP.Size effectiveSize = 7;
   inline bool has_effectivesize() const;
   inline void clear_effectivesize();
@@ -7952,15 +7803,14 @@ class LayoutHintArchive : public ::google::protobuf::Message {
   inline const ::TSP::Size& effectivesize() const;
   inline ::TSP::Size* mutable_effectivesize();
   inline ::TSP::Size* release_effectivesize();
-  inline void set_allocated_effectivesize(::TSP::Size* effectivesize);
-
+  
   // optional uint32 partitioningPass = 8;
   inline bool has_partitioningpass() const;
   inline void clear_partitioningpass();
   static const int kPartitioningPassFieldNumber = 8;
   inline ::google::protobuf::uint32 partitioningpass() const;
   inline void set_partitioningpass(::google::protobuf::uint32 value);
-
+  
   // @@protoc_insertion_point(class_scope:TST.LayoutHintArchive)
  private:
   inline void set_has_isvalid();
@@ -7979,9 +7829,9 @@ class LayoutHintArchive : public ::google::protobuf::Message {
   inline void clear_has_effectivesize();
   inline void set_has_partitioningpass();
   inline void clear_has_partitioningpass();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TST::CellRange* cellrange_;
   ::TST::CellID* hintid_;
   ::TSP::Size* maximumsize_;
@@ -7990,14 +7840,14 @@ class LayoutHintArchive : public ::google::protobuf::Message {
   ::google::protobuf::uint32 partitionposition_;
   ::TSP::Size* effectivesize_;
   ::google::protobuf::uint32 partitioningpass_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(8 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static LayoutHintArchive* default_instance_;
 };
@@ -8007,29 +7857,29 @@ class CompletionTokenAttachmentArchive : public ::google::protobuf::Message {
  public:
   CompletionTokenAttachmentArchive();
   virtual ~CompletionTokenAttachmentArchive();
-
+  
   CompletionTokenAttachmentArchive(const CompletionTokenAttachmentArchive& from);
-
+  
   inline CompletionTokenAttachmentArchive& operator=(const CompletionTokenAttachmentArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const CompletionTokenAttachmentArchive& default_instance();
-
+  
   void Swap(CompletionTokenAttachmentArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   CompletionTokenAttachmentArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -8037,7 +7887,7 @@ class CompletionTokenAttachmentArchive : public ::google::protobuf::Message {
   void MergeFrom(const CompletionTokenAttachmentArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -8050,13 +7900,13 @@ class CompletionTokenAttachmentArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TST.TokenAttachmentArchive super = 1;
   inline bool has_super() const;
   inline void clear_super();
@@ -8064,8 +7914,7 @@ class CompletionTokenAttachmentArchive : public ::google::protobuf::Message {
   inline const ::TST::TokenAttachmentArchive& super() const;
   inline ::TST::TokenAttachmentArchive* mutable_super();
   inline ::TST::TokenAttachmentArchive* release_super();
-  inline void set_allocated_super(::TST::TokenAttachmentArchive* super);
-
+  
   // optional string completionText = 2;
   inline bool has_completiontext() const;
   inline void clear_completiontext();
@@ -8076,22 +7925,21 @@ class CompletionTokenAttachmentArchive : public ::google::protobuf::Message {
   inline void set_completiontext(const char* value, size_t size);
   inline ::std::string* mutable_completiontext();
   inline ::std::string* release_completiontext();
-  inline void set_allocated_completiontext(::std::string* completiontext);
-
+  
   // optional uint32 caretPosition = 3;
   inline bool has_caretposition() const;
   inline void clear_caretposition();
   static const int kCaretPositionFieldNumber = 3;
   inline ::google::protobuf::uint32 caretposition() const;
   inline void set_caretposition(::google::protobuf::uint32 value);
-
+  
   // optional uint32 prefixStart = 4;
   inline bool has_prefixstart() const;
   inline void clear_prefixstart();
   static const int kPrefixStartFieldNumber = 4;
   inline ::google::protobuf::uint32 prefixstart() const;
   inline void set_prefixstart(::google::protobuf::uint32 value);
-
+  
   // @@protoc_insertion_point(class_scope:TST.CompletionTokenAttachmentArchive)
  private:
   inline void set_has_super();
@@ -8102,21 +7950,21 @@ class CompletionTokenAttachmentArchive : public ::google::protobuf::Message {
   inline void clear_has_caretposition();
   inline void set_has_prefixstart();
   inline void clear_has_prefixstart();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TST::TokenAttachmentArchive* super_;
   ::std::string* completiontext_;
   ::google::protobuf::uint32 caretposition_;
   ::google::protobuf::uint32 prefixstart_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(4 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static CompletionTokenAttachmentArchive* default_instance_;
 };
@@ -8126,29 +7974,29 @@ class HiddenStateFormulaOwnerArchive : public ::google::protobuf::Message {
  public:
   HiddenStateFormulaOwnerArchive();
   virtual ~HiddenStateFormulaOwnerArchive();
-
+  
   HiddenStateFormulaOwnerArchive(const HiddenStateFormulaOwnerArchive& from);
-
+  
   inline HiddenStateFormulaOwnerArchive& operator=(const HiddenStateFormulaOwnerArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const HiddenStateFormulaOwnerArchive& default_instance();
-
+  
   void Swap(HiddenStateFormulaOwnerArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   HiddenStateFormulaOwnerArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -8156,7 +8004,7 @@ class HiddenStateFormulaOwnerArchive : public ::google::protobuf::Message {
   void MergeFrom(const HiddenStateFormulaOwnerArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -8169,13 +8017,13 @@ class HiddenStateFormulaOwnerArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // optional .TSCE.CFUUIDArchive owner_id = 1;
   inline bool has_owner_id() const;
   inline void clear_owner_id();
@@ -8183,8 +8031,7 @@ class HiddenStateFormulaOwnerArchive : public ::google::protobuf::Message {
   inline const ::TSCE::CFUUIDArchive& owner_id() const;
   inline ::TSCE::CFUUIDArchive* mutable_owner_id();
   inline ::TSCE::CFUUIDArchive* release_owner_id();
-  inline void set_allocated_owner_id(::TSCE::CFUUIDArchive* owner_id);
-
+  
   // repeated .TSCE.CellValueArchive threshold_value = 2;
   inline int threshold_value_size() const;
   inline void clear_threshold_value();
@@ -8196,34 +8043,34 @@ class HiddenStateFormulaOwnerArchive : public ::google::protobuf::Message {
       threshold_value() const;
   inline ::google::protobuf::RepeatedPtrField< ::TSCE::CellValueArchive >*
       mutable_threshold_value();
-
+  
   // optional bool needs_to_update_filter_set_for_import = 3 [default = false];
   inline bool has_needs_to_update_filter_set_for_import() const;
   inline void clear_needs_to_update_filter_set_for_import();
   static const int kNeedsToUpdateFilterSetForImportFieldNumber = 3;
   inline bool needs_to_update_filter_set_for_import() const;
   inline void set_needs_to_update_filter_set_for_import(bool value);
-
+  
   // @@protoc_insertion_point(class_scope:TST.HiddenStateFormulaOwnerArchive)
  private:
   inline void set_has_owner_id();
   inline void clear_has_owner_id();
   inline void set_has_needs_to_update_filter_set_for_import();
   inline void clear_has_needs_to_update_filter_set_for_import();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TSCE::CFUUIDArchive* owner_id_;
   ::google::protobuf::RepeatedPtrField< ::TSCE::CellValueArchive > threshold_value_;
   bool needs_to_update_filter_set_for_import_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(3 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static HiddenStateFormulaOwnerArchive* default_instance_;
 };
@@ -8233,29 +8080,29 @@ class RichTextPayloadArchive : public ::google::protobuf::Message {
  public:
   RichTextPayloadArchive();
   virtual ~RichTextPayloadArchive();
-
+  
   RichTextPayloadArchive(const RichTextPayloadArchive& from);
-
+  
   inline RichTextPayloadArchive& operator=(const RichTextPayloadArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const RichTextPayloadArchive& default_instance();
-
+  
   void Swap(RichTextPayloadArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   RichTextPayloadArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -8263,7 +8110,7 @@ class RichTextPayloadArchive : public ::google::protobuf::Message {
   void MergeFrom(const RichTextPayloadArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -8276,13 +8123,13 @@ class RichTextPayloadArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TSP.Reference storage = 1;
   inline bool has_storage() const;
   inline void clear_storage();
@@ -8290,8 +8137,7 @@ class RichTextPayloadArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& storage() const;
   inline ::TSP::Reference* mutable_storage();
   inline ::TSP::Reference* release_storage();
-  inline void set_allocated_storage(::TSP::Reference* storage);
-
+  
   // optional .TSP.Range range = 2;
   inline bool has_range() const;
   inline void clear_range();
@@ -8299,8 +8145,7 @@ class RichTextPayloadArchive : public ::google::protobuf::Message {
   inline const ::TSP::Range& range() const;
   inline ::TSP::Range* mutable_range();
   inline ::TSP::Range* release_range();
-  inline void set_allocated_range(::TSP::Range* range);
-
+  
   // required .TST.CellID cellid = 3;
   inline bool has_cellid() const;
   inline void clear_cellid();
@@ -8308,8 +8153,7 @@ class RichTextPayloadArchive : public ::google::protobuf::Message {
   inline const ::TST::CellID& cellid() const;
   inline ::TST::CellID* mutable_cellid();
   inline ::TST::CellID* release_cellid();
-  inline void set_allocated_cellid(::TST::CellID* cellid);
-
+  
   // @@protoc_insertion_point(class_scope:TST.RichTextPayloadArchive)
  private:
   inline void set_has_storage();
@@ -8318,20 +8162,20 @@ class RichTextPayloadArchive : public ::google::protobuf::Message {
   inline void clear_has_range();
   inline void set_has_cellid();
   inline void clear_has_cellid();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TSP::Reference* storage_;
   ::TSP::Range* range_;
   ::TST::CellID* cellid_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(3 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static RichTextPayloadArchive* default_instance_;
 };
@@ -8341,29 +8185,29 @@ class FormulaEqualsTokenAttachmentArchive : public ::google::protobuf::Message {
  public:
   FormulaEqualsTokenAttachmentArchive();
   virtual ~FormulaEqualsTokenAttachmentArchive();
-
+  
   FormulaEqualsTokenAttachmentArchive(const FormulaEqualsTokenAttachmentArchive& from);
-
+  
   inline FormulaEqualsTokenAttachmentArchive& operator=(const FormulaEqualsTokenAttachmentArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const FormulaEqualsTokenAttachmentArchive& default_instance();
-
+  
   void Swap(FormulaEqualsTokenAttachmentArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   FormulaEqualsTokenAttachmentArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -8371,7 +8215,7 @@ class FormulaEqualsTokenAttachmentArchive : public ::google::protobuf::Message {
   void MergeFrom(const FormulaEqualsTokenAttachmentArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -8384,13 +8228,13 @@ class FormulaEqualsTokenAttachmentArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TSWP.UIGraphicalAttachment super = 1;
   inline bool has_super() const;
   inline void clear_super();
@@ -8398,24 +8242,23 @@ class FormulaEqualsTokenAttachmentArchive : public ::google::protobuf::Message {
   inline const ::TSWP::UIGraphicalAttachment& super() const;
   inline ::TSWP::UIGraphicalAttachment* mutable_super();
   inline ::TSWP::UIGraphicalAttachment* release_super();
-  inline void set_allocated_super(::TSWP::UIGraphicalAttachment* super);
-
+  
   // @@protoc_insertion_point(class_scope:TST.FormulaEqualsTokenAttachmentArchive)
  private:
   inline void set_has_super();
   inline void clear_has_super();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TSWP::UIGraphicalAttachment* super_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(1 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static FormulaEqualsTokenAttachmentArchive* default_instance_;
 };
@@ -8425,29 +8268,29 @@ class CellRegion : public ::google::protobuf::Message {
  public:
   CellRegion();
   virtual ~CellRegion();
-
+  
   CellRegion(const CellRegion& from);
-
+  
   inline CellRegion& operator=(const CellRegion& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const CellRegion& default_instance();
-
+  
   void Swap(CellRegion* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   CellRegion* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -8455,7 +8298,7 @@ class CellRegion : public ::google::protobuf::Message {
   void MergeFrom(const CellRegion& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -8468,13 +8311,13 @@ class CellRegion : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // repeated .TST.CellRange cell_ranges = 1;
   inline int cell_ranges_size() const;
   inline void clear_cell_ranges();
@@ -8486,21 +8329,21 @@ class CellRegion : public ::google::protobuf::Message {
       cell_ranges() const;
   inline ::google::protobuf::RepeatedPtrField< ::TST::CellRange >*
       mutable_cell_ranges();
-
+  
   // @@protoc_insertion_point(class_scope:TST.CellRegion)
  private:
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::google::protobuf::RepeatedPtrField< ::TST::CellRange > cell_ranges_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(1 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTArchives_2eproto();
   friend void protobuf_AssignDesc_TSTArchives_2eproto();
   friend void protobuf_ShutdownFile_TSTArchives_2eproto();
-
+  
   void InitAsDefaultInstance();
   static CellRegion* default_instance_;
 };
@@ -8591,15 +8434,6 @@ inline ::TST::CellID* CellRange::release_origin() {
   origin_ = NULL;
   return temp;
 }
-inline void CellRange::set_allocated_origin(::TST::CellID* origin) {
-  delete origin_;
-  origin_ = origin;
-  if (origin) {
-    set_has_origin();
-  } else {
-    clear_has_origin();
-  }
-}
 
 // required .TST.TableSize size = 2;
 inline bool CellRange::has_size() const {
@@ -8628,15 +8462,6 @@ inline ::TST::TableSize* CellRange::release_size() {
   ::TST::TableSize* temp = size_;
   size_ = NULL;
   return temp;
-}
-inline void CellRange::set_allocated_size(::TST::TableSize* size) {
-  delete size_;
-  size_ = size;
-  if (size) {
-    set_has_size();
-  } else {
-    clear_has_size();
-  }
 }
 
 // -------------------------------------------------------------------
@@ -8671,15 +8496,6 @@ inline ::TST::CellRange* TableSelection::release_cellrange() {
   cellrange_ = NULL;
   return temp;
 }
-inline void TableSelection::set_allocated_cellrange(::TST::CellRange* cellrange) {
-  delete cellrange_;
-  cellrange_ = cellrange;
-  if (cellrange) {
-    set_has_cellrange();
-  } else {
-    clear_has_cellrange();
-  }
-}
 
 // required .TST.CellRange extendedCellRange = 2;
 inline bool TableSelection::has_extendedcellrange() const {
@@ -8708,15 +8524,6 @@ inline ::TST::CellRange* TableSelection::release_extendedcellrange() {
   ::TST::CellRange* temp = extendedcellrange_;
   extendedcellrange_ = NULL;
   return temp;
-}
-inline void TableSelection::set_allocated_extendedcellrange(::TST::CellRange* extendedcellrange) {
-  delete extendedcellrange_;
-  extendedcellrange_ = extendedcellrange;
-  if (extendedcellrange) {
-    set_has_extendedcellrange();
-  } else {
-    clear_has_extendedcellrange();
-  }
 }
 
 // required bool extendedCellRangeValid = 3;
@@ -8755,11 +8562,11 @@ inline void TableSelection::clear_selection_type() {
   selection_type_ = 0;
   clear_has_selection_type();
 }
-inline ::TST::SelectionTypeArchive TableSelection::selection_type() const {
-  return static_cast< ::TST::SelectionTypeArchive >(selection_type_);
+inline TST::SelectionTypeArchive TableSelection::selection_type() const {
+  return static_cast< TST::SelectionTypeArchive >(selection_type_);
 }
-inline void TableSelection::set_selection_type(::TST::SelectionTypeArchive value) {
-  assert(::TST::SelectionTypeArchive_IsValid(value));
+inline void TableSelection::set_selection_type(TST::SelectionTypeArchive value) {
+  GOOGLE_DCHECK(TST::SelectionTypeArchive_IsValid(value));
   set_has_selection_type();
   selection_type_ = value;
 }
@@ -8891,18 +8698,6 @@ inline ::std::string* TileRowInfo::release_cellstoragebuffer() {
     return temp;
   }
 }
-inline void TileRowInfo::set_allocated_cellstoragebuffer(::std::string* cellstoragebuffer) {
-  if (cellstoragebuffer_ != &::google::protobuf::internal::kEmptyString) {
-    delete cellstoragebuffer_;
-  }
-  if (cellstoragebuffer) {
-    set_has_cellstoragebuffer();
-    cellstoragebuffer_ = cellstoragebuffer;
-  } else {
-    clear_has_cellstoragebuffer();
-    cellstoragebuffer_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
-  }
-}
 
 // required bytes cellOffsets = 4;
 inline bool TileRowInfo::has_celloffsets() const {
@@ -8959,18 +8754,6 @@ inline ::std::string* TileRowInfo::release_celloffsets() {
     ::std::string* temp = celloffsets_;
     celloffsets_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
     return temp;
-  }
-}
-inline void TileRowInfo::set_allocated_celloffsets(::std::string* celloffsets) {
-  if (celloffsets_ != &::google::protobuf::internal::kEmptyString) {
-    delete celloffsets_;
-  }
-  if (celloffsets) {
-    set_has_celloffsets();
-    celloffsets_ = celloffsets;
-  } else {
-    clear_has_celloffsets();
-    celloffsets_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   }
 }
 
@@ -9167,15 +8950,6 @@ inline ::TSP::Reference* TileStorage_Tile::release_tile() {
   tile_ = NULL;
   return temp;
 }
-inline void TileStorage_Tile::set_allocated_tile(::TSP::Reference* tile) {
-  delete tile_;
-  tile_ = tile;
-  if (tile) {
-    set_has_tile();
-  } else {
-    clear_has_tile();
-  }
-}
 
 // -------------------------------------------------------------------
 
@@ -9228,7 +9002,7 @@ inline ::TST::PopUpMenuModel_CellValueType PopUpMenuModel_CellValue::cell_value_
   return static_cast< ::TST::PopUpMenuModel_CellValueType >(cell_value_type_);
 }
 inline void PopUpMenuModel_CellValue::set_cell_value_type(::TST::PopUpMenuModel_CellValueType value) {
-  assert(::TST::PopUpMenuModel_CellValueType_IsValid(value));
+  GOOGLE_DCHECK(::TST::PopUpMenuModel_CellValueType_IsValid(value));
   set_has_cell_value_type();
   cell_value_type_ = value;
 }
@@ -9261,15 +9035,6 @@ inline ::TSCE::BooleanCellValueArchive* PopUpMenuModel_CellValue::release_boolea
   boolean_value_ = NULL;
   return temp;
 }
-inline void PopUpMenuModel_CellValue::set_allocated_boolean_value(::TSCE::BooleanCellValueArchive* boolean_value) {
-  delete boolean_value_;
-  boolean_value_ = boolean_value;
-  if (boolean_value) {
-    set_has_boolean_value();
-  } else {
-    clear_has_boolean_value();
-  }
-}
 
 // optional .TSCE.DateCellValueArchive date_value = 3;
 inline bool PopUpMenuModel_CellValue::has_date_value() const {
@@ -9298,15 +9063,6 @@ inline ::TSCE::DateCellValueArchive* PopUpMenuModel_CellValue::release_date_valu
   ::TSCE::DateCellValueArchive* temp = date_value_;
   date_value_ = NULL;
   return temp;
-}
-inline void PopUpMenuModel_CellValue::set_allocated_date_value(::TSCE::DateCellValueArchive* date_value) {
-  delete date_value_;
-  date_value_ = date_value;
-  if (date_value) {
-    set_has_date_value();
-  } else {
-    clear_has_date_value();
-  }
 }
 
 // optional .TSCE.NumberCellValueArchive number_value = 4;
@@ -9337,15 +9093,6 @@ inline ::TSCE::NumberCellValueArchive* PopUpMenuModel_CellValue::release_number_
   number_value_ = NULL;
   return temp;
 }
-inline void PopUpMenuModel_CellValue::set_allocated_number_value(::TSCE::NumberCellValueArchive* number_value) {
-  delete number_value_;
-  number_value_ = number_value;
-  if (number_value) {
-    set_has_number_value();
-  } else {
-    clear_has_number_value();
-  }
-}
 
 // optional .TSCE.StringCellValueArchive string_value = 5;
 inline bool PopUpMenuModel_CellValue::has_string_value() const {
@@ -9374,15 +9121,6 @@ inline ::TSCE::StringCellValueArchive* PopUpMenuModel_CellValue::release_string_
   ::TSCE::StringCellValueArchive* temp = string_value_;
   string_value_ = NULL;
   return temp;
-}
-inline void PopUpMenuModel_CellValue::set_allocated_string_value(::TSCE::StringCellValueArchive* string_value) {
-  delete string_value_;
-  string_value_ = string_value;
-  if (string_value) {
-    set_has_string_value();
-  } else {
-    clear_has_string_value();
-  }
 }
 
 // -------------------------------------------------------------------
@@ -9544,18 +9282,6 @@ inline ::std::string* TableDataList_ListEntry::release_string() {
     return temp;
   }
 }
-inline void TableDataList_ListEntry::set_allocated_string(::std::string* string) {
-  if (string_ != &::google::protobuf::internal::kEmptyString) {
-    delete string_;
-  }
-  if (string) {
-    set_has_string();
-    string_ = string;
-  } else {
-    clear_has_string();
-    string_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
-  }
-}
 
 // optional .TSP.Reference reference = 4;
 inline bool TableDataList_ListEntry::has_reference() const {
@@ -9584,15 +9310,6 @@ inline ::TSP::Reference* TableDataList_ListEntry::release_reference() {
   ::TSP::Reference* temp = reference_;
   reference_ = NULL;
   return temp;
-}
-inline void TableDataList_ListEntry::set_allocated_reference(::TSP::Reference* reference) {
-  delete reference_;
-  reference_ = reference;
-  if (reference) {
-    set_has_reference();
-  } else {
-    clear_has_reference();
-  }
 }
 
 // optional .TSCE.FormulaArchive formula = 5;
@@ -9623,15 +9340,6 @@ inline ::TSCE::FormulaArchive* TableDataList_ListEntry::release_formula() {
   formula_ = NULL;
   return temp;
 }
-inline void TableDataList_ListEntry::set_allocated_formula(::TSCE::FormulaArchive* formula) {
-  delete formula_;
-  formula_ = formula;
-  if (formula) {
-    set_has_formula();
-  } else {
-    clear_has_formula();
-  }
-}
 
 // optional .TSK.FormatStructArchive format = 6;
 inline bool TableDataList_ListEntry::has_format() const {
@@ -9660,15 +9368,6 @@ inline ::TSK::FormatStructArchive* TableDataList_ListEntry::release_format() {
   ::TSK::FormatStructArchive* temp = format_;
   format_ = NULL;
   return temp;
-}
-inline void TableDataList_ListEntry::set_allocated_format(::TSK::FormatStructArchive* format) {
-  delete format_;
-  format_ = format;
-  if (format) {
-    set_has_format();
-  } else {
-    clear_has_format();
-  }
 }
 
 // optional .TST.CellRange region = 7;
@@ -9699,15 +9398,6 @@ inline ::TST::CellRange* TableDataList_ListEntry::release_region() {
   region_ = NULL;
   return temp;
 }
-inline void TableDataList_ListEntry::set_allocated_region(::TST::CellRange* region) {
-  delete region_;
-  region_ = region;
-  if (region) {
-    set_has_region();
-  } else {
-    clear_has_region();
-  }
-}
 
 // optional .TSK.CustomFormatArchive custom_format = 8;
 inline bool TableDataList_ListEntry::has_custom_format() const {
@@ -9736,15 +9426,6 @@ inline ::TSK::CustomFormatArchive* TableDataList_ListEntry::release_custom_forma
   ::TSK::CustomFormatArchive* temp = custom_format_;
   custom_format_ = NULL;
   return temp;
-}
-inline void TableDataList_ListEntry::set_allocated_custom_format(::TSK::CustomFormatArchive* custom_format) {
-  delete custom_format_;
-  custom_format_ = custom_format;
-  if (custom_format) {
-    set_has_custom_format();
-  } else {
-    clear_has_custom_format();
-  }
 }
 
 // optional .TSP.Reference richTextPayload = 9;
@@ -9775,15 +9456,6 @@ inline ::TSP::Reference* TableDataList_ListEntry::release_richtextpayload() {
   richtextpayload_ = NULL;
   return temp;
 }
-inline void TableDataList_ListEntry::set_allocated_richtextpayload(::TSP::Reference* richtextpayload) {
-  delete richtextpayload_;
-  richtextpayload_ = richtextpayload;
-  if (richtextpayload) {
-    set_has_richtextpayload();
-  } else {
-    clear_has_richtextpayload();
-  }
-}
 
 // optional .TSP.Reference comment_storage = 10;
 inline bool TableDataList_ListEntry::has_comment_storage() const {
@@ -9813,21 +9485,12 @@ inline ::TSP::Reference* TableDataList_ListEntry::release_comment_storage() {
   comment_storage_ = NULL;
   return temp;
 }
-inline void TableDataList_ListEntry::set_allocated_comment_storage(::TSP::Reference* comment_storage) {
-  delete comment_storage_;
-  comment_storage_ = comment_storage;
-  if (comment_storage) {
-    set_has_comment_storage();
-  } else {
-    clear_has_comment_storage();
-  }
-}
 
 // -------------------------------------------------------------------
 
 // TableDataList
 
-// required .TST.TableDataList.ListType listType = 1;
+// optional .TST.TableDataList.ListType listType = 1;
 inline bool TableDataList::has_listtype() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -9845,7 +9508,7 @@ inline ::TST::TableDataList_ListType TableDataList::listtype() const {
   return static_cast< ::TST::TableDataList_ListType >(listtype_);
 }
 inline void TableDataList::set_listtype(::TST::TableDataList_ListType value) {
-  assert(::TST::TableDataList_ListType_IsValid(value));
+  GOOGLE_DCHECK(::TST::TableDataList_ListType_IsValid(value));
   set_has_listtype();
   listtype_ = value;
 }
@@ -10094,15 +9757,6 @@ inline ::TSP::Reference* HeaderStorageBucket_Header::release_cell_style() {
   cell_style_ = NULL;
   return temp;
 }
-inline void HeaderStorageBucket_Header::set_allocated_cell_style(::TSP::Reference* cell_style) {
-  delete cell_style_;
-  cell_style_ = cell_style;
-  if (cell_style) {
-    set_has_cell_style();
-  } else {
-    clear_has_cell_style();
-  }
-}
 
 // optional .TSP.Reference text_style = 6;
 inline bool HeaderStorageBucket_Header::has_text_style() const {
@@ -10131,15 +9785,6 @@ inline ::TSP::Reference* HeaderStorageBucket_Header::release_text_style() {
   ::TSP::Reference* temp = text_style_;
   text_style_ = NULL;
   return temp;
-}
-inline void HeaderStorageBucket_Header::set_allocated_text_style(::TSP::Reference* text_style) {
-  delete text_style_;
-  text_style_ = text_style;
-  if (text_style) {
-    set_has_text_style();
-  } else {
-    clear_has_text_style();
-  }
 }
 
 // -------------------------------------------------------------------
@@ -10276,15 +9921,6 @@ inline ::TST::HeaderStorage* DataStore::release_rowheaders() {
   rowheaders_ = NULL;
   return temp;
 }
-inline void DataStore::set_allocated_rowheaders(::TST::HeaderStorage* rowheaders) {
-  delete rowheaders_;
-  rowheaders_ = rowheaders;
-  if (rowheaders) {
-    set_has_rowheaders();
-  } else {
-    clear_has_rowheaders();
-  }
-}
 
 // required .TSP.Reference columnHeaders = 2;
 inline bool DataStore::has_columnheaders() const {
@@ -10313,15 +9949,6 @@ inline ::TSP::Reference* DataStore::release_columnheaders() {
   ::TSP::Reference* temp = columnheaders_;
   columnheaders_ = NULL;
   return temp;
-}
-inline void DataStore::set_allocated_columnheaders(::TSP::Reference* columnheaders) {
-  delete columnheaders_;
-  columnheaders_ = columnheaders;
-  if (columnheaders) {
-    set_has_columnheaders();
-  } else {
-    clear_has_columnheaders();
-  }
 }
 
 // required .TST.TileStorage tiles = 3;
@@ -10352,15 +9979,6 @@ inline ::TST::TileStorage* DataStore::release_tiles() {
   tiles_ = NULL;
   return temp;
 }
-inline void DataStore::set_allocated_tiles(::TST::TileStorage* tiles) {
-  delete tiles_;
-  tiles_ = tiles;
-  if (tiles) {
-    set_has_tiles();
-  } else {
-    clear_has_tiles();
-  }
-}
 
 // required .TSP.Reference stringTable = 4;
 inline bool DataStore::has_stringtable() const {
@@ -10389,15 +10007,6 @@ inline ::TSP::Reference* DataStore::release_stringtable() {
   ::TSP::Reference* temp = stringtable_;
   stringtable_ = NULL;
   return temp;
-}
-inline void DataStore::set_allocated_stringtable(::TSP::Reference* stringtable) {
-  delete stringtable_;
-  stringtable_ = stringtable;
-  if (stringtable) {
-    set_has_stringtable();
-  } else {
-    clear_has_stringtable();
-  }
 }
 
 // required .TSP.Reference styleTable = 5;
@@ -10428,15 +10037,6 @@ inline ::TSP::Reference* DataStore::release_styletable() {
   styletable_ = NULL;
   return temp;
 }
-inline void DataStore::set_allocated_styletable(::TSP::Reference* styletable) {
-  delete styletable_;
-  styletable_ = styletable;
-  if (styletable) {
-    set_has_styletable();
-  } else {
-    clear_has_styletable();
-  }
-}
 
 // required .TSP.Reference formulaTable = 6;
 inline bool DataStore::has_formulatable() const {
@@ -10465,15 +10065,6 @@ inline ::TSP::Reference* DataStore::release_formulatable() {
   ::TSP::Reference* temp = formulatable_;
   formulatable_ = NULL;
   return temp;
-}
-inline void DataStore::set_allocated_formulatable(::TSP::Reference* formulatable) {
-  delete formulatable_;
-  formulatable_ = formulatable;
-  if (formulatable) {
-    set_has_formulatable();
-  } else {
-    clear_has_formulatable();
-  }
 }
 
 // optional .TSP.Reference formulaErrorTable = 12;
@@ -10504,15 +10095,6 @@ inline ::TSP::Reference* DataStore::release_formulaerrortable() {
   formulaerrortable_ = NULL;
   return temp;
 }
-inline void DataStore::set_allocated_formulaerrortable(::TSP::Reference* formulaerrortable) {
-  delete formulaerrortable_;
-  formulaerrortable_ = formulaerrortable;
-  if (formulaerrortable) {
-    set_has_formulaerrortable();
-  } else {
-    clear_has_formulaerrortable();
-  }
-}
 
 // required .TSP.Reference formatTable = 11;
 inline bool DataStore::has_formattable() const {
@@ -10541,15 +10123,6 @@ inline ::TSP::Reference* DataStore::release_formattable() {
   ::TSP::Reference* temp = formattable_;
   formattable_ = NULL;
   return temp;
-}
-inline void DataStore::set_allocated_formattable(::TSP::Reference* formattable) {
-  delete formattable_;
-  formattable_ = formattable;
-  if (formattable) {
-    set_has_formattable();
-  } else {
-    clear_has_formattable();
-  }
 }
 
 // optional .TSP.Reference multipleChoiceListFormatTable = 16;
@@ -10580,15 +10153,6 @@ inline ::TSP::Reference* DataStore::release_multiplechoicelistformattable() {
   multiplechoicelistformattable_ = NULL;
   return temp;
 }
-inline void DataStore::set_allocated_multiplechoicelistformattable(::TSP::Reference* multiplechoicelistformattable) {
-  delete multiplechoicelistformattable_;
-  multiplechoicelistformattable_ = multiplechoicelistformattable;
-  if (multiplechoicelistformattable) {
-    set_has_multiplechoicelistformattable();
-  } else {
-    clear_has_multiplechoicelistformattable();
-  }
-}
 
 // optional .TSP.Reference merge_region_map = 13;
 inline bool DataStore::has_merge_region_map() const {
@@ -10618,15 +10182,6 @@ inline ::TSP::Reference* DataStore::release_merge_region_map() {
   merge_region_map_ = NULL;
   return temp;
 }
-inline void DataStore::set_allocated_merge_region_map(::TSP::Reference* merge_region_map) {
-  delete merge_region_map_;
-  merge_region_map_ = merge_region_map;
-  if (merge_region_map) {
-    set_has_merge_region_map();
-  } else {
-    clear_has_merge_region_map();
-  }
-}
 
 // optional .TSP.Reference customFormatTable = 15;
 inline bool DataStore::has_customformattable() const {
@@ -10655,15 +10210,6 @@ inline ::TSP::Reference* DataStore::release_customformattable() {
   ::TSP::Reference* temp = customformattable_;
   customformattable_ = NULL;
   return temp;
-}
-inline void DataStore::set_allocated_customformattable(::TSP::Reference* customformattable) {
-  delete customformattable_;
-  customformattable_ = customformattable;
-  if (customformattable) {
-    set_has_customformattable();
-  } else {
-    clear_has_customformattable();
-  }
 }
 
 // required uint32 nextRowStripID = 7;
@@ -10738,15 +10284,6 @@ inline ::TST::TableRBTree* DataStore::release_rowtiletree() {
   rowtiletree_ = NULL;
   return temp;
 }
-inline void DataStore::set_allocated_rowtiletree(::TST::TableRBTree* rowtiletree) {
-  delete rowtiletree_;
-  rowtiletree_ = rowtiletree;
-  if (rowtiletree) {
-    set_has_rowtiletree();
-  } else {
-    clear_has_rowtiletree();
-  }
-}
 
 // required .TST.TableRBTree columnTileTree = 10;
 inline bool DataStore::has_columntiletree() const {
@@ -10775,15 +10312,6 @@ inline ::TST::TableRBTree* DataStore::release_columntiletree() {
   ::TST::TableRBTree* temp = columntiletree_;
   columntiletree_ = NULL;
   return temp;
-}
-inline void DataStore::set_allocated_columntiletree(::TST::TableRBTree* columntiletree) {
-  delete columntiletree_;
-  columntiletree_ = columntiletree;
-  if (columntiletree) {
-    set_has_columntiletree();
-  } else {
-    clear_has_columntiletree();
-  }
 }
 
 // optional uint32 storage_version = 14;
@@ -10836,15 +10364,6 @@ inline ::TSP::Reference* DataStore::release_richtextpayloadtable() {
   richtextpayloadtable_ = NULL;
   return temp;
 }
-inline void DataStore::set_allocated_richtextpayloadtable(::TSP::Reference* richtextpayloadtable) {
-  delete richtextpayloadtable_;
-  richtextpayloadtable_ = richtextpayloadtable;
-  if (richtextpayloadtable) {
-    set_has_richtextpayloadtable();
-  } else {
-    clear_has_richtextpayloadtable();
-  }
-}
 
 // optional .TSP.Reference conditionalstyletable = 18;
 inline bool DataStore::has_conditionalstyletable() const {
@@ -10874,15 +10393,6 @@ inline ::TSP::Reference* DataStore::release_conditionalstyletable() {
   conditionalstyletable_ = NULL;
   return temp;
 }
-inline void DataStore::set_allocated_conditionalstyletable(::TSP::Reference* conditionalstyletable) {
-  delete conditionalstyletable_;
-  conditionalstyletable_ = conditionalstyletable;
-  if (conditionalstyletable) {
-    set_has_conditionalstyletable();
-  } else {
-    clear_has_conditionalstyletable();
-  }
-}
 
 // optional .TSP.Reference commentStorageTable = 19;
 inline bool DataStore::has_commentstoragetable() const {
@@ -10911,15 +10421,6 @@ inline ::TSP::Reference* DataStore::release_commentstoragetable() {
   ::TSP::Reference* temp = commentstoragetable_;
   commentstoragetable_ = NULL;
   return temp;
-}
-inline void DataStore::set_allocated_commentstoragetable(::TSP::Reference* commentstoragetable) {
-  delete commentstoragetable_;
-  commentstoragetable_ = commentstoragetable;
-  if (commentstoragetable) {
-    set_has_commentstoragetable();
-  } else {
-    clear_has_commentstoragetable();
-  }
 }
 
 // -------------------------------------------------------------------
@@ -10954,15 +10455,6 @@ inline ::TSD::DrawableArchive* TableInfoArchive::release_super() {
   super_ = NULL;
   return temp;
 }
-inline void TableInfoArchive::set_allocated_super(::TSD::DrawableArchive* super) {
-  delete super_;
-  super_ = super;
-  if (super) {
-    set_has_super();
-  } else {
-    clear_has_super();
-  }
-}
 
 // required .TSP.Reference tableModel = 2;
 inline bool TableInfoArchive::has_tablemodel() const {
@@ -10992,15 +10484,6 @@ inline ::TSP::Reference* TableInfoArchive::release_tablemodel() {
   tablemodel_ = NULL;
   return temp;
 }
-inline void TableInfoArchive::set_allocated_tablemodel(::TSP::Reference* tablemodel) {
-  delete tablemodel_;
-  tablemodel_ = tablemodel;
-  if (tablemodel) {
-    set_has_tablemodel();
-  } else {
-    clear_has_tablemodel();
-  }
-}
 
 // optional .TSP.Reference editingState = 3;
 inline bool TableInfoArchive::has_editingstate() const {
@@ -11029,15 +10512,6 @@ inline ::TSP::Reference* TableInfoArchive::release_editingstate() {
   ::TSP::Reference* temp = editingstate_;
   editingstate_ = NULL;
   return temp;
-}
-inline void TableInfoArchive::set_allocated_editingstate(::TSP::Reference* editingstate) {
-  delete editingstate_;
-  editingstate_ = editingstate;
-  if (editingstate) {
-    set_has_editingstate();
-  } else {
-    clear_has_editingstate();
-  }
 }
 
 // -------------------------------------------------------------------
@@ -11072,15 +10546,6 @@ inline ::TSP::Reference* EditingStateArchive::release_editingstorage() {
   editingstorage_ = NULL;
   return temp;
 }
-inline void EditingStateArchive::set_allocated_editingstorage(::TSP::Reference* editingstorage) {
-  delete editingstorage_;
-  editingstorage_ = editingstorage;
-  if (editingstorage) {
-    set_has_editingstorage();
-  } else {
-    clear_has_editingstorage();
-  }
-}
 
 // required .TST.Cell editingCell = 2;
 inline bool EditingStateArchive::has_editingcell() const {
@@ -11109,15 +10574,6 @@ inline ::TST::Cell* EditingStateArchive::release_editingcell() {
   ::TST::Cell* temp = editingcell_;
   editingcell_ = NULL;
   return temp;
-}
-inline void EditingStateArchive::set_allocated_editingcell(::TST::Cell* editingcell) {
-  delete editingcell_;
-  editingcell_ = editingcell;
-  if (editingcell) {
-    set_has_editingcell();
-  } else {
-    clear_has_editingcell();
-  }
 }
 
 // optional .TST.SelectionArchive selection = 3;
@@ -11148,15 +10604,6 @@ inline ::TST::SelectionArchive* EditingStateArchive::release_selection() {
   selection_ = NULL;
   return temp;
 }
-inline void EditingStateArchive::set_allocated_selection(::TST::SelectionArchive* selection) {
-  delete selection_;
-  selection_ = selection;
-  if (selection) {
-    set_has_selection();
-  } else {
-    clear_has_selection();
-  }
-}
 
 // optional .TST.CellID lasteditingcellid = 4;
 inline bool EditingStateArchive::has_lasteditingcellid() const {
@@ -11185,15 +10632,6 @@ inline ::TST::CellID* EditingStateArchive::release_lasteditingcellid() {
   ::TST::CellID* temp = lasteditingcellid_;
   lasteditingcellid_ = NULL;
   return temp;
-}
-inline void EditingStateArchive::set_allocated_lasteditingcellid(::TST::CellID* lasteditingcellid) {
-  delete lasteditingcellid_;
-  lasteditingcellid_ = lasteditingcellid;
-  if (lasteditingcellid) {
-    set_has_lasteditingcellid();
-  } else {
-    clear_has_lasteditingcellid();
-  }
 }
 
 // optional .TST.CellID editingcellid = 5;
@@ -11224,15 +10662,6 @@ inline ::TST::CellID* EditingStateArchive::release_editingcellid() {
   editingcellid_ = NULL;
   return temp;
 }
-inline void EditingStateArchive::set_allocated_editingcellid(::TST::CellID* editingcellid) {
-  delete editingcellid_;
-  editingcellid_ = editingcellid;
-  if (editingcellid) {
-    set_has_editingcellid();
-  } else {
-    clear_has_editingcellid();
-  }
-}
 
 // optional .TSWP.UndoTransaction deprecated_setup_textUndoRedoTransaction = 6;
 inline bool EditingStateArchive::has_deprecated_setup_textundoredotransaction() const {
@@ -11261,15 +10690,6 @@ inline ::TSWP::UndoTransaction* EditingStateArchive::release_deprecated_setup_te
   ::TSWP::UndoTransaction* temp = deprecated_setup_textundoredotransaction_;
   deprecated_setup_textundoredotransaction_ = NULL;
   return temp;
-}
-inline void EditingStateArchive::set_allocated_deprecated_setup_textundoredotransaction(::TSWP::UndoTransaction* deprecated_setup_textundoredotransaction) {
-  delete deprecated_setup_textundoredotransaction_;
-  deprecated_setup_textundoredotransaction_ = deprecated_setup_textundoredotransaction;
-  if (deprecated_setup_textundoredotransaction) {
-    set_has_deprecated_setup_textundoredotransaction();
-  } else {
-    clear_has_deprecated_setup_textundoredotransaction();
-  }
 }
 
 // optional bool cell_was_edited_in_current_session = 7;
@@ -11326,15 +10746,6 @@ inline ::TST::TableInfoArchive* WPTableInfoArchive::release_super() {
   super_ = NULL;
   return temp;
 }
-inline void WPTableInfoArchive::set_allocated_super(::TST::TableInfoArchive* super) {
-  delete super_;
-  super_ = super;
-  if (super) {
-    set_has_super();
-  } else {
-    clear_has_super();
-  }
-}
 
 // optional .TSP.Reference storage = 2;
 inline bool WPTableInfoArchive::has_storage() const {
@@ -11363,15 +10774,6 @@ inline ::TSP::Reference* WPTableInfoArchive::release_storage() {
   ::TSP::Reference* temp = storage_;
   storage_ = NULL;
   return temp;
-}
-inline void WPTableInfoArchive::set_allocated_storage(::TSP::Reference* storage) {
-  delete storage_;
-  storage_ = storage;
-  if (storage) {
-    set_has_storage();
-  } else {
-    clear_has_storage();
-  }
 }
 
 // -------------------------------------------------------------------
@@ -11406,15 +10808,6 @@ inline ::TSP::Reference* TableStyleNetworkArchive::release_table_style() {
   table_style_ = NULL;
   return temp;
 }
-inline void TableStyleNetworkArchive::set_allocated_table_style(::TSP::Reference* table_style) {
-  delete table_style_;
-  table_style_ = table_style;
-  if (table_style) {
-    set_has_table_style();
-  } else {
-    clear_has_table_style();
-  }
-}
 
 // required .TSP.Reference body_text_style = 1;
 inline bool TableStyleNetworkArchive::has_body_text_style() const {
@@ -11443,15 +10836,6 @@ inline ::TSP::Reference* TableStyleNetworkArchive::release_body_text_style() {
   ::TSP::Reference* temp = body_text_style_;
   body_text_style_ = NULL;
   return temp;
-}
-inline void TableStyleNetworkArchive::set_allocated_body_text_style(::TSP::Reference* body_text_style) {
-  delete body_text_style_;
-  body_text_style_ = body_text_style;
-  if (body_text_style) {
-    set_has_body_text_style();
-  } else {
-    clear_has_body_text_style();
-  }
 }
 
 // required .TSP.Reference header_row_text_style = 2;
@@ -11482,15 +10866,6 @@ inline ::TSP::Reference* TableStyleNetworkArchive::release_header_row_text_style
   header_row_text_style_ = NULL;
   return temp;
 }
-inline void TableStyleNetworkArchive::set_allocated_header_row_text_style(::TSP::Reference* header_row_text_style) {
-  delete header_row_text_style_;
-  header_row_text_style_ = header_row_text_style;
-  if (header_row_text_style) {
-    set_has_header_row_text_style();
-  } else {
-    clear_has_header_row_text_style();
-  }
-}
 
 // required .TSP.Reference header_column_text_style = 3;
 inline bool TableStyleNetworkArchive::has_header_column_text_style() const {
@@ -11519,15 +10894,6 @@ inline ::TSP::Reference* TableStyleNetworkArchive::release_header_column_text_st
   ::TSP::Reference* temp = header_column_text_style_;
   header_column_text_style_ = NULL;
   return temp;
-}
-inline void TableStyleNetworkArchive::set_allocated_header_column_text_style(::TSP::Reference* header_column_text_style) {
-  delete header_column_text_style_;
-  header_column_text_style_ = header_column_text_style;
-  if (header_column_text_style) {
-    set_has_header_column_text_style();
-  } else {
-    clear_has_header_column_text_style();
-  }
 }
 
 // required .TSP.Reference footer_row_text_style = 4;
@@ -11558,15 +10924,6 @@ inline ::TSP::Reference* TableStyleNetworkArchive::release_footer_row_text_style
   footer_row_text_style_ = NULL;
   return temp;
 }
-inline void TableStyleNetworkArchive::set_allocated_footer_row_text_style(::TSP::Reference* footer_row_text_style) {
-  delete footer_row_text_style_;
-  footer_row_text_style_ = footer_row_text_style;
-  if (footer_row_text_style) {
-    set_has_footer_row_text_style();
-  } else {
-    clear_has_footer_row_text_style();
-  }
-}
 
 // required .TSP.Reference body_cell_style = 5;
 inline bool TableStyleNetworkArchive::has_body_cell_style() const {
@@ -11595,15 +10952,6 @@ inline ::TSP::Reference* TableStyleNetworkArchive::release_body_cell_style() {
   ::TSP::Reference* temp = body_cell_style_;
   body_cell_style_ = NULL;
   return temp;
-}
-inline void TableStyleNetworkArchive::set_allocated_body_cell_style(::TSP::Reference* body_cell_style) {
-  delete body_cell_style_;
-  body_cell_style_ = body_cell_style;
-  if (body_cell_style) {
-    set_has_body_cell_style();
-  } else {
-    clear_has_body_cell_style();
-  }
 }
 
 // required .TSP.Reference header_row_style = 6;
@@ -11634,15 +10982,6 @@ inline ::TSP::Reference* TableStyleNetworkArchive::release_header_row_style() {
   header_row_style_ = NULL;
   return temp;
 }
-inline void TableStyleNetworkArchive::set_allocated_header_row_style(::TSP::Reference* header_row_style) {
-  delete header_row_style_;
-  header_row_style_ = header_row_style;
-  if (header_row_style) {
-    set_has_header_row_style();
-  } else {
-    clear_has_header_row_style();
-  }
-}
 
 // required .TSP.Reference header_column_style = 7;
 inline bool TableStyleNetworkArchive::has_header_column_style() const {
@@ -11671,15 +11010,6 @@ inline ::TSP::Reference* TableStyleNetworkArchive::release_header_column_style()
   ::TSP::Reference* temp = header_column_style_;
   header_column_style_ = NULL;
   return temp;
-}
-inline void TableStyleNetworkArchive::set_allocated_header_column_style(::TSP::Reference* header_column_style) {
-  delete header_column_style_;
-  header_column_style_ = header_column_style;
-  if (header_column_style) {
-    set_has_header_column_style();
-  } else {
-    clear_has_header_column_style();
-  }
 }
 
 // required .TSP.Reference footer_row_style = 8;
@@ -11710,15 +11040,6 @@ inline ::TSP::Reference* TableStyleNetworkArchive::release_footer_row_style() {
   footer_row_style_ = NULL;
   return temp;
 }
-inline void TableStyleNetworkArchive::set_allocated_footer_row_style(::TSP::Reference* footer_row_style) {
-  delete footer_row_style_;
-  footer_row_style_ = footer_row_style;
-  if (footer_row_style) {
-    set_has_footer_row_style();
-  } else {
-    clear_has_footer_row_style();
-  }
-}
 
 // optional .TSP.Reference table_name_style = 10;
 inline bool TableStyleNetworkArchive::has_table_name_style() const {
@@ -11748,15 +11069,6 @@ inline ::TSP::Reference* TableStyleNetworkArchive::release_table_name_style() {
   table_name_style_ = NULL;
   return temp;
 }
-inline void TableStyleNetworkArchive::set_allocated_table_name_style(::TSP::Reference* table_name_style) {
-  delete table_name_style_;
-  table_name_style_ = table_name_style;
-  if (table_name_style) {
-    set_has_table_name_style();
-  } else {
-    clear_has_table_name_style();
-  }
-}
 
 // optional .TSP.Reference table_name_shape_style = 11;
 inline bool TableStyleNetworkArchive::has_table_name_shape_style() const {
@@ -11785,15 +11097,6 @@ inline ::TSP::Reference* TableStyleNetworkArchive::release_table_name_shape_styl
   ::TSP::Reference* temp = table_name_shape_style_;
   table_name_shape_style_ = NULL;
   return temp;
-}
-inline void TableStyleNetworkArchive::set_allocated_table_name_shape_style(::TSP::Reference* table_name_shape_style) {
-  delete table_name_shape_style_;
-  table_name_shape_style_ = table_name_shape_style;
-  if (table_name_shape_style) {
-    set_has_table_name_shape_style();
-  } else {
-    clear_has_table_name_shape_style();
-  }
 }
 
 // optional uint32 preset_index = 12;
@@ -11879,18 +11182,6 @@ inline ::std::string* TableModelArchive::release_table_id() {
     return temp;
   }
 }
-inline void TableModelArchive::set_allocated_table_id(::std::string* table_id) {
-  if (table_id_ != &::google::protobuf::internal::kEmptyString) {
-    delete table_id_;
-  }
-  if (table_id) {
-    set_has_table_id();
-    table_id_ = table_id;
-  } else {
-    clear_has_table_id();
-    table_id_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
-  }
-}
 
 // optional string from_table_id = 43;
 inline bool TableModelArchive::has_from_table_id() const {
@@ -11949,18 +11240,6 @@ inline ::std::string* TableModelArchive::release_from_table_id() {
     return temp;
   }
 }
-inline void TableModelArchive::set_allocated_from_table_id(::std::string* from_table_id) {
-  if (from_table_id_ != &::google::protobuf::internal::kEmptyString) {
-    delete from_table_id_;
-  }
-  if (from_table_id) {
-    set_has_from_table_id();
-    from_table_id_ = from_table_id;
-  } else {
-    clear_has_from_table_id();
-    from_table_id_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
-  }
-}
 
 // required .TSP.Reference table_style = 3;
 inline bool TableModelArchive::has_table_style() const {
@@ -11989,15 +11268,6 @@ inline ::TSP::Reference* TableModelArchive::release_table_style() {
   ::TSP::Reference* temp = table_style_;
   table_style_ = NULL;
   return temp;
-}
-inline void TableModelArchive::set_allocated_table_style(::TSP::Reference* table_style) {
-  delete table_style_;
-  table_style_ = table_style;
-  if (table_style) {
-    set_has_table_style();
-  } else {
-    clear_has_table_style();
-  }
 }
 
 // required .TSP.Reference body_text_style = 24;
@@ -12028,15 +11298,6 @@ inline ::TSP::Reference* TableModelArchive::release_body_text_style() {
   body_text_style_ = NULL;
   return temp;
 }
-inline void TableModelArchive::set_allocated_body_text_style(::TSP::Reference* body_text_style) {
-  delete body_text_style_;
-  body_text_style_ = body_text_style;
-  if (body_text_style) {
-    set_has_body_text_style();
-  } else {
-    clear_has_body_text_style();
-  }
-}
 
 // required .TSP.Reference header_row_text_style = 25;
 inline bool TableModelArchive::has_header_row_text_style() const {
@@ -12065,15 +11326,6 @@ inline ::TSP::Reference* TableModelArchive::release_header_row_text_style() {
   ::TSP::Reference* temp = header_row_text_style_;
   header_row_text_style_ = NULL;
   return temp;
-}
-inline void TableModelArchive::set_allocated_header_row_text_style(::TSP::Reference* header_row_text_style) {
-  delete header_row_text_style_;
-  header_row_text_style_ = header_row_text_style;
-  if (header_row_text_style) {
-    set_has_header_row_text_style();
-  } else {
-    clear_has_header_row_text_style();
-  }
 }
 
 // required .TSP.Reference header_column_text_style = 26;
@@ -12104,15 +11356,6 @@ inline ::TSP::Reference* TableModelArchive::release_header_column_text_style() {
   header_column_text_style_ = NULL;
   return temp;
 }
-inline void TableModelArchive::set_allocated_header_column_text_style(::TSP::Reference* header_column_text_style) {
-  delete header_column_text_style_;
-  header_column_text_style_ = header_column_text_style;
-  if (header_column_text_style) {
-    set_has_header_column_text_style();
-  } else {
-    clear_has_header_column_text_style();
-  }
-}
 
 // required .TSP.Reference footer_row_text_style = 27;
 inline bool TableModelArchive::has_footer_row_text_style() const {
@@ -12141,15 +11384,6 @@ inline ::TSP::Reference* TableModelArchive::release_footer_row_text_style() {
   ::TSP::Reference* temp = footer_row_text_style_;
   footer_row_text_style_ = NULL;
   return temp;
-}
-inline void TableModelArchive::set_allocated_footer_row_text_style(::TSP::Reference* footer_row_text_style) {
-  delete footer_row_text_style_;
-  footer_row_text_style_ = footer_row_text_style;
-  if (footer_row_text_style) {
-    set_has_footer_row_text_style();
-  } else {
-    clear_has_footer_row_text_style();
-  }
 }
 
 // required .TSP.Reference body_cell_style = 18;
@@ -12180,15 +11414,6 @@ inline ::TSP::Reference* TableModelArchive::release_body_cell_style() {
   body_cell_style_ = NULL;
   return temp;
 }
-inline void TableModelArchive::set_allocated_body_cell_style(::TSP::Reference* body_cell_style) {
-  delete body_cell_style_;
-  body_cell_style_ = body_cell_style;
-  if (body_cell_style) {
-    set_has_body_cell_style();
-  } else {
-    clear_has_body_cell_style();
-  }
-}
 
 // required .TSP.Reference header_row_style = 19;
 inline bool TableModelArchive::has_header_row_style() const {
@@ -12217,15 +11442,6 @@ inline ::TSP::Reference* TableModelArchive::release_header_row_style() {
   ::TSP::Reference* temp = header_row_style_;
   header_row_style_ = NULL;
   return temp;
-}
-inline void TableModelArchive::set_allocated_header_row_style(::TSP::Reference* header_row_style) {
-  delete header_row_style_;
-  header_row_style_ = header_row_style;
-  if (header_row_style) {
-    set_has_header_row_style();
-  } else {
-    clear_has_header_row_style();
-  }
 }
 
 // required .TSP.Reference header_column_style = 20;
@@ -12256,15 +11472,6 @@ inline ::TSP::Reference* TableModelArchive::release_header_column_style() {
   header_column_style_ = NULL;
   return temp;
 }
-inline void TableModelArchive::set_allocated_header_column_style(::TSP::Reference* header_column_style) {
-  delete header_column_style_;
-  header_column_style_ = header_column_style;
-  if (header_column_style) {
-    set_has_header_column_style();
-  } else {
-    clear_has_header_column_style();
-  }
-}
 
 // required .TSP.Reference footer_row_style = 21;
 inline bool TableModelArchive::has_footer_row_style() const {
@@ -12293,15 +11500,6 @@ inline ::TSP::Reference* TableModelArchive::release_footer_row_style() {
   ::TSP::Reference* temp = footer_row_style_;
   footer_row_style_ = NULL;
   return temp;
-}
-inline void TableModelArchive::set_allocated_footer_row_style(::TSP::Reference* footer_row_style) {
-  delete footer_row_style_;
-  footer_row_style_ = footer_row_style;
-  if (footer_row_style) {
-    set_has_footer_row_style();
-  } else {
-    clear_has_footer_row_style();
-  }
 }
 
 // optional .TSP.Reference table_name_style = 30;
@@ -12332,15 +11530,6 @@ inline ::TSP::Reference* TableModelArchive::release_table_name_style() {
   table_name_style_ = NULL;
   return temp;
 }
-inline void TableModelArchive::set_allocated_table_name_style(::TSP::Reference* table_name_style) {
-  delete table_name_style_;
-  table_name_style_ = table_name_style;
-  if (table_name_style) {
-    set_has_table_name_style();
-  } else {
-    clear_has_table_name_style();
-  }
-}
 
 // optional .TSP.Reference table_name_shape_style = 36;
 inline bool TableModelArchive::has_table_name_shape_style() const {
@@ -12369,15 +11558,6 @@ inline ::TSP::Reference* TableModelArchive::release_table_name_shape_style() {
   ::TSP::Reference* temp = table_name_shape_style_;
   table_name_shape_style_ = NULL;
   return temp;
-}
-inline void TableModelArchive::set_allocated_table_name_shape_style(::TSP::Reference* table_name_shape_style) {
-  delete table_name_shape_style_;
-  table_name_shape_style_ = table_name_shape_style;
-  if (table_name_shape_style) {
-    set_has_table_name_shape_style();
-  } else {
-    clear_has_table_name_shape_style();
-  }
 }
 
 // required .TST.DataStore data_store = 4;
@@ -12408,15 +11588,6 @@ inline ::TST::DataStore* TableModelArchive::release_data_store() {
   data_store_ = NULL;
   return temp;
 }
-inline void TableModelArchive::set_allocated_data_store(::TST::DataStore* data_store) {
-  delete data_store_;
-  data_store_ = data_store;
-  if (data_store) {
-    set_has_data_store();
-  } else {
-    clear_has_data_store();
-  }
-}
 
 // optional .TSP.Reference provider = 5;
 inline bool TableModelArchive::has_provider() const {
@@ -12445,15 +11616,6 @@ inline ::TSP::Reference* TableModelArchive::release_provider() {
   ::TSP::Reference* temp = provider_;
   provider_ = NULL;
   return temp;
-}
-inline void TableModelArchive::set_allocated_provider(::TSP::Reference* provider) {
-  delete provider_;
-  provider_ = provider;
-  if (provider) {
-    set_has_provider();
-  } else {
-    clear_has_provider();
-  }
 }
 
 // required uint32 number_of_rows = 6;
@@ -12555,18 +11717,6 @@ inline ::std::string* TableModelArchive::release_table_name() {
     ::std::string* temp = table_name_;
     table_name_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
     return temp;
-  }
-}
-inline void TableModelArchive::set_allocated_table_name(::std::string* table_name) {
-  if (table_name_ != &::google::protobuf::internal::kEmptyString) {
-    delete table_name_;
-  }
-  if (table_name) {
-    set_has_table_name();
-    table_name_ = table_name;
-  } else {
-    clear_has_table_name();
-    table_name_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   }
 }
 
@@ -12928,15 +12078,6 @@ inline ::TST::CellID* TableModelArchive::release_origin_offset() {
   origin_offset_ = NULL;
   return temp;
 }
-inline void TableModelArchive::set_allocated_origin_offset(::TST::CellID* origin_offset) {
-  delete origin_offset_;
-  origin_offset_ = origin_offset;
-  if (origin_offset) {
-    set_has_origin_offset();
-  } else {
-    clear_has_origin_offset();
-  }
-}
 
 // required uint32 preset_index = 28;
 inline bool TableModelArchive::has_preset_index() const {
@@ -13054,15 +12195,6 @@ inline ::TSP::Reference* TableModelArchive::release_hidden_state_formula_owner_f
   hidden_state_formula_owner_for_columns_ = NULL;
   return temp;
 }
-inline void TableModelArchive::set_allocated_hidden_state_formula_owner_for_columns(::TSP::Reference* hidden_state_formula_owner_for_columns) {
-  delete hidden_state_formula_owner_for_columns_;
-  hidden_state_formula_owner_for_columns_ = hidden_state_formula_owner_for_columns;
-  if (hidden_state_formula_owner_for_columns) {
-    set_has_hidden_state_formula_owner_for_columns();
-  } else {
-    clear_has_hidden_state_formula_owner_for_columns();
-  }
-}
 
 // optional .TSP.Reference hidden_state_formula_owner_for_rows = 35;
 inline bool TableModelArchive::has_hidden_state_formula_owner_for_rows() const {
@@ -13091,15 +12223,6 @@ inline ::TSP::Reference* TableModelArchive::release_hidden_state_formula_owner_f
   ::TSP::Reference* temp = hidden_state_formula_owner_for_rows_;
   hidden_state_formula_owner_for_rows_ = NULL;
   return temp;
-}
-inline void TableModelArchive::set_allocated_hidden_state_formula_owner_for_rows(::TSP::Reference* hidden_state_formula_owner_for_rows) {
-  delete hidden_state_formula_owner_for_rows_;
-  hidden_state_formula_owner_for_rows_ = hidden_state_formula_owner_for_rows;
-  if (hidden_state_formula_owner_for_rows) {
-    set_has_hidden_state_formula_owner_for_rows();
-  } else {
-    clear_has_hidden_state_formula_owner_for_rows();
-  }
 }
 
 // optional .TSP.Reference filter_set = 38;
@@ -13130,15 +12253,6 @@ inline ::TSP::Reference* TableModelArchive::release_filter_set() {
   filter_set_ = NULL;
   return temp;
 }
-inline void TableModelArchive::set_allocated_filter_set(::TSP::Reference* filter_set) {
-  delete filter_set_;
-  filter_set_ = filter_set;
-  if (filter_set) {
-    set_has_filter_set();
-  } else {
-    clear_has_filter_set();
-  }
-}
 
 // optional .TSCE.CFUUIDArchive conditional_style_formula_owner_id = 39;
 inline bool TableModelArchive::has_conditional_style_formula_owner_id() const {
@@ -13168,15 +12282,6 @@ inline ::TSCE::CFUUIDArchive* TableModelArchive::release_conditional_style_formu
   conditional_style_formula_owner_id_ = NULL;
   return temp;
 }
-inline void TableModelArchive::set_allocated_conditional_style_formula_owner_id(::TSCE::CFUUIDArchive* conditional_style_formula_owner_id) {
-  delete conditional_style_formula_owner_id_;
-  conditional_style_formula_owner_id_ = conditional_style_formula_owner_id;
-  if (conditional_style_formula_owner_id) {
-    set_has_conditional_style_formula_owner_id();
-  } else {
-    clear_has_conditional_style_formula_owner_id();
-  }
-}
 
 // -------------------------------------------------------------------
 
@@ -13200,11 +12305,11 @@ inline void Cell::clear_valuetype() {
   valuetype_ = 0;
   clear_has_valuetype();
 }
-inline ::TST::CellValueType Cell::valuetype() const {
-  return static_cast< ::TST::CellValueType >(valuetype_);
+inline TST::CellValueType Cell::valuetype() const {
+  return static_cast< TST::CellValueType >(valuetype_);
 }
-inline void Cell::set_valuetype(::TST::CellValueType value) {
-  assert(::TST::CellValueType_IsValid(value));
+inline void Cell::set_valuetype(TST::CellValueType value) {
+  GOOGLE_DCHECK(TST::CellValueType_IsValid(value));
   set_has_valuetype();
   valuetype_ = value;
 }
@@ -13288,18 +12393,6 @@ inline ::std::string* Cell::release_stringvalue() {
     return temp;
   }
 }
-inline void Cell::set_allocated_stringvalue(::std::string* stringvalue) {
-  if (stringvalue_ != &::google::protobuf::internal::kEmptyString) {
-    delete stringvalue_;
-  }
-  if (stringvalue) {
-    set_has_stringvalue();
-    stringvalue_ = stringvalue;
-  } else {
-    clear_has_stringvalue();
-    stringvalue_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
-  }
-}
 
 // optional bool boolValue = 7;
 inline bool Cell::has_boolvalue() const {
@@ -13351,15 +12444,6 @@ inline ::TSP::Reference* Cell::release_cell_style() {
   cell_style_ = NULL;
   return temp;
 }
-inline void Cell::set_allocated_cell_style(::TSP::Reference* cell_style) {
-  delete cell_style_;
-  cell_style_ = cell_style;
-  if (cell_style) {
-    set_has_cell_style();
-  } else {
-    clear_has_cell_style();
-  }
-}
 
 // optional .TSP.Reference text_style = 4;
 inline bool Cell::has_text_style() const {
@@ -13388,15 +12472,6 @@ inline ::TSP::Reference* Cell::release_text_style() {
   ::TSP::Reference* temp = text_style_;
   text_style_ = NULL;
   return temp;
-}
-inline void Cell::set_allocated_text_style(::TSP::Reference* text_style) {
-  delete text_style_;
-  text_style_ = text_style;
-  if (text_style) {
-    set_has_text_style();
-  } else {
-    clear_has_text_style();
-  }
 }
 
 // optional .TSCE.FormulaArchive formula = 8;
@@ -13427,15 +12502,6 @@ inline ::TSCE::FormulaArchive* Cell::release_formula() {
   formula_ = NULL;
   return temp;
 }
-inline void Cell::set_allocated_formula(::TSCE::FormulaArchive* formula) {
-  delete formula_;
-  formula_ = formula;
-  if (formula) {
-    set_has_formula();
-  } else {
-    clear_has_formula();
-  }
-}
 
 // optional .TSP.Reference formulaError = 10;
 inline bool Cell::has_formulaerror() const {
@@ -13464,15 +12530,6 @@ inline ::TSP::Reference* Cell::release_formulaerror() {
   ::TSP::Reference* temp = formulaerror_;
   formulaerror_ = NULL;
   return temp;
-}
-inline void Cell::set_allocated_formulaerror(::TSP::Reference* formulaerror) {
-  delete formulaerror_;
-  formulaerror_ = formulaerror;
-  if (formulaerror) {
-    set_has_formulaerror();
-  } else {
-    clear_has_formulaerror();
-  }
 }
 
 // optional .TSK.FormatStructArchive current_format = 9;
@@ -13503,15 +12560,6 @@ inline ::TSK::FormatStructArchive* Cell::release_current_format() {
   current_format_ = NULL;
   return temp;
 }
-inline void Cell::set_allocated_current_format(::TSK::FormatStructArchive* current_format) {
-  delete current_format_;
-  current_format_ = current_format;
-  if (current_format) {
-    set_has_current_format();
-  } else {
-    clear_has_current_format();
-  }
-}
 
 // optional .TSK.FormatStructArchive number_format = 11;
 inline bool Cell::has_number_format() const {
@@ -13540,15 +12588,6 @@ inline ::TSK::FormatStructArchive* Cell::release_number_format() {
   ::TSK::FormatStructArchive* temp = number_format_;
   number_format_ = NULL;
   return temp;
-}
-inline void Cell::set_allocated_number_format(::TSK::FormatStructArchive* number_format) {
-  delete number_format_;
-  number_format_ = number_format;
-  if (number_format) {
-    set_has_number_format();
-  } else {
-    clear_has_number_format();
-  }
 }
 
 // optional .TSK.FormatStructArchive currency_format = 12;
@@ -13579,15 +12618,6 @@ inline ::TSK::FormatStructArchive* Cell::release_currency_format() {
   currency_format_ = NULL;
   return temp;
 }
-inline void Cell::set_allocated_currency_format(::TSK::FormatStructArchive* currency_format) {
-  delete currency_format_;
-  currency_format_ = currency_format;
-  if (currency_format) {
-    set_has_currency_format();
-  } else {
-    clear_has_currency_format();
-  }
-}
 
 // optional .TSK.FormatStructArchive duration_format = 13;
 inline bool Cell::has_duration_format() const {
@@ -13616,15 +12646,6 @@ inline ::TSK::FormatStructArchive* Cell::release_duration_format() {
   ::TSK::FormatStructArchive* temp = duration_format_;
   duration_format_ = NULL;
   return temp;
-}
-inline void Cell::set_allocated_duration_format(::TSK::FormatStructArchive* duration_format) {
-  delete duration_format_;
-  duration_format_ = duration_format;
-  if (duration_format) {
-    set_has_duration_format();
-  } else {
-    clear_has_duration_format();
-  }
 }
 
 // optional .TSK.FormatStructArchive date_format = 14;
@@ -13655,15 +12676,6 @@ inline ::TSK::FormatStructArchive* Cell::release_date_format() {
   date_format_ = NULL;
   return temp;
 }
-inline void Cell::set_allocated_date_format(::TSK::FormatStructArchive* date_format) {
-  delete date_format_;
-  date_format_ = date_format;
-  if (date_format) {
-    set_has_date_format();
-  } else {
-    clear_has_date_format();
-  }
-}
 
 // optional .TSK.FormatStructArchive control_format = 15;
 inline bool Cell::has_control_format() const {
@@ -13692,15 +12704,6 @@ inline ::TSK::FormatStructArchive* Cell::release_control_format() {
   ::TSK::FormatStructArchive* temp = control_format_;
   control_format_ = NULL;
   return temp;
-}
-inline void Cell::set_allocated_control_format(::TSK::FormatStructArchive* control_format) {
-  delete control_format_;
-  control_format_ = control_format;
-  if (control_format) {
-    set_has_control_format();
-  } else {
-    clear_has_control_format();
-  }
 }
 
 // optional .TSK.FormatStructArchive custom_format = 16;
@@ -13731,15 +12734,6 @@ inline ::TSK::FormatStructArchive* Cell::release_custom_format() {
   custom_format_ = NULL;
   return temp;
 }
-inline void Cell::set_allocated_custom_format(::TSK::FormatStructArchive* custom_format) {
-  delete custom_format_;
-  custom_format_ = custom_format;
-  if (custom_format) {
-    set_has_custom_format();
-  } else {
-    clear_has_custom_format();
-  }
-}
 
 // optional .TSK.FormatStructArchive base_format = 17;
 inline bool Cell::has_base_format() const {
@@ -13769,15 +12763,6 @@ inline ::TSK::FormatStructArchive* Cell::release_base_format() {
   base_format_ = NULL;
   return temp;
 }
-inline void Cell::set_allocated_base_format(::TSK::FormatStructArchive* base_format) {
-  delete base_format_;
-  base_format_ = base_format;
-  if (base_format) {
-    set_has_base_format();
-  } else {
-    clear_has_base_format();
-  }
-}
 
 // optional .TSK.FormatStructArchive multiple_choice_list_format = 18;
 inline bool Cell::has_multiple_choice_list_format() const {
@@ -13806,15 +12791,6 @@ inline ::TSK::FormatStructArchive* Cell::release_multiple_choice_list_format() {
   ::TSK::FormatStructArchive* temp = multiple_choice_list_format_;
   multiple_choice_list_format_ = NULL;
   return temp;
-}
-inline void Cell::set_allocated_multiple_choice_list_format(::TSK::FormatStructArchive* multiple_choice_list_format) {
-  delete multiple_choice_list_format_;
-  multiple_choice_list_format_ = multiple_choice_list_format;
-  if (multiple_choice_list_format) {
-    set_has_multiple_choice_list_format();
-  } else {
-    clear_has_multiple_choice_list_format();
-  }
 }
 
 // optional uint32 explicit_format_flags = 19;
@@ -13867,15 +12843,6 @@ inline ::TSP::Reference* Cell::release_richtextpayload() {
   richtextpayload_ = NULL;
   return temp;
 }
-inline void Cell::set_allocated_richtextpayload(::TSP::Reference* richtextpayload) {
-  delete richtextpayload_;
-  richtextpayload_ = richtextpayload;
-  if (richtextpayload) {
-    set_has_richtextpayload();
-  } else {
-    clear_has_richtextpayload();
-  }
-}
 
 // optional .TSP.Reference conditional_style = 21;
 inline bool Cell::has_conditional_style() const {
@@ -13904,15 +12871,6 @@ inline ::TSP::Reference* Cell::release_conditional_style() {
   ::TSP::Reference* temp = conditional_style_;
   conditional_style_ = NULL;
   return temp;
-}
-inline void Cell::set_allocated_conditional_style(::TSP::Reference* conditional_style) {
-  delete conditional_style_;
-  conditional_style_ = conditional_style;
-  if (conditional_style) {
-    set_has_conditional_style();
-  } else {
-    clear_has_conditional_style();
-  }
 }
 
 // optional .TSP.Reference multiple_choice_list = 22;
@@ -13943,15 +12901,6 @@ inline ::TSP::Reference* Cell::release_multiple_choice_list() {
   multiple_choice_list_ = NULL;
   return temp;
 }
-inline void Cell::set_allocated_multiple_choice_list(::TSP::Reference* multiple_choice_list) {
-  delete multiple_choice_list_;
-  multiple_choice_list_ = multiple_choice_list;
-  if (multiple_choice_list) {
-    set_has_multiple_choice_list();
-  } else {
-    clear_has_multiple_choice_list();
-  }
-}
 
 // optional .TSP.Reference comment_storage = 23;
 inline bool Cell::has_comment_storage() const {
@@ -13980,15 +12929,6 @@ inline ::TSP::Reference* Cell::release_comment_storage() {
   ::TSP::Reference* temp = comment_storage_;
   comment_storage_ = NULL;
   return temp;
-}
-inline void Cell::set_allocated_comment_storage(::TSP::Reference* comment_storage) {
-  delete comment_storage_;
-  comment_storage_ = comment_storage;
-  if (comment_storage) {
-    set_has_comment_storage();
-  } else {
-    clear_has_comment_storage();
-  }
 }
 
 // optional uint32 conditional_style_applied_rule = 24;
@@ -14074,15 +13014,6 @@ inline ::TST::CellID* CellMapArchive_CellMapEntry::release_cellid() {
   cellid_ = NULL;
   return temp;
 }
-inline void CellMapArchive_CellMapEntry::set_allocated_cellid(::TST::CellID* cellid) {
-  delete cellid_;
-  cellid_ = cellid;
-  if (cellid) {
-    set_has_cellid();
-  } else {
-    clear_has_cellid();
-  }
-}
 
 // optional .TST.Cell cell = 2;
 inline bool CellMapArchive_CellMapEntry::has_cell() const {
@@ -14111,15 +13042,6 @@ inline ::TST::Cell* CellMapArchive_CellMapEntry::release_cell() {
   ::TST::Cell* temp = cell_;
   cell_ = NULL;
   return temp;
-}
-inline void CellMapArchive_CellMapEntry::set_allocated_cell(::TST::Cell* cell) {
-  delete cell_;
-  cell_ = cell;
-  if (cell) {
-    set_has_cell();
-  } else {
-    clear_has_cell();
-  }
 }
 
 // -------------------------------------------------------------------
@@ -14293,15 +13215,6 @@ inline ::TST::CellID* DoubleStyleMapArchive_DoubleStyleMapEntryArchive::release_
   cell_id_ = NULL;
   return temp;
 }
-inline void DoubleStyleMapArchive_DoubleStyleMapEntryArchive::set_allocated_cell_id(::TST::CellID* cell_id) {
-  delete cell_id_;
-  cell_id_ = cell_id;
-  if (cell_id) {
-    set_has_cell_id();
-  } else {
-    clear_has_cell_id();
-  }
-}
 
 // required .TSP.Reference old_style = 2;
 inline bool DoubleStyleMapArchive_DoubleStyleMapEntryArchive::has_old_style() const {
@@ -14331,15 +13244,6 @@ inline ::TSP::Reference* DoubleStyleMapArchive_DoubleStyleMapEntryArchive::relea
   old_style_ = NULL;
   return temp;
 }
-inline void DoubleStyleMapArchive_DoubleStyleMapEntryArchive::set_allocated_old_style(::TSP::Reference* old_style) {
-  delete old_style_;
-  old_style_ = old_style;
-  if (old_style) {
-    set_has_old_style();
-  } else {
-    clear_has_old_style();
-  }
-}
 
 // required .TSP.Reference new_style = 3;
 inline bool DoubleStyleMapArchive_DoubleStyleMapEntryArchive::has_new_style() const {
@@ -14368,15 +13272,6 @@ inline ::TSP::Reference* DoubleStyleMapArchive_DoubleStyleMapEntryArchive::relea
   ::TSP::Reference* temp = new_style_;
   new_style_ = NULL;
   return temp;
-}
-inline void DoubleStyleMapArchive_DoubleStyleMapEntryArchive::set_allocated_new_style(::TSP::Reference* new_style) {
-  delete new_style_;
-  new_style_ = new_style;
-  if (new_style) {
-    set_has_new_style();
-  } else {
-    clear_has_new_style();
-  }
 }
 
 // -------------------------------------------------------------------
@@ -14506,15 +13401,6 @@ inline ::TSP::Reference* StyleTableMapArchive_StyleTableMapEntryArchive::release
   old_style_ = NULL;
   return temp;
 }
-inline void StyleTableMapArchive_StyleTableMapEntryArchive::set_allocated_old_style(::TSP::Reference* old_style) {
-  delete old_style_;
-  old_style_ = old_style;
-  if (old_style) {
-    set_has_old_style();
-  } else {
-    clear_has_old_style();
-  }
-}
 
 // required .TSP.Reference new_style = 3;
 inline bool StyleTableMapArchive_StyleTableMapEntryArchive::has_new_style() const {
@@ -14543,15 +13429,6 @@ inline ::TSP::Reference* StyleTableMapArchive_StyleTableMapEntryArchive::release
   ::TSP::Reference* temp = new_style_;
   new_style_ = NULL;
   return temp;
-}
-inline void StyleTableMapArchive_StyleTableMapEntryArchive::set_allocated_new_style(::TSP::Reference* new_style) {
-  delete new_style_;
-  new_style_ = new_style;
-  if (new_style) {
-    set_has_new_style();
-  } else {
-    clear_has_new_style();
-  }
 }
 
 // -------------------------------------------------------------------
@@ -14659,15 +13536,6 @@ inline ::TSP::Reference* SelectionArchive::release_tablemodel() {
   tablemodel_ = NULL;
   return temp;
 }
-inline void SelectionArchive::set_allocated_tablemodel(::TSP::Reference* tablemodel) {
-  delete tablemodel_;
-  tablemodel_ = tablemodel;
-  if (tablemodel) {
-    set_has_tablemodel();
-  } else {
-    clear_has_tablemodel();
-  }
-}
 
 // required .TST.SelectionTypeArchive selection_type = 4;
 inline bool SelectionArchive::has_selection_type() const {
@@ -14683,11 +13551,11 @@ inline void SelectionArchive::clear_selection_type() {
   selection_type_ = 0;
   clear_has_selection_type();
 }
-inline ::TST::SelectionTypeArchive SelectionArchive::selection_type() const {
-  return static_cast< ::TST::SelectionTypeArchive >(selection_type_);
+inline TST::SelectionTypeArchive SelectionArchive::selection_type() const {
+  return static_cast< TST::SelectionTypeArchive >(selection_type_);
 }
-inline void SelectionArchive::set_selection_type(::TST::SelectionTypeArchive value) {
-  assert(::TST::SelectionTypeArchive_IsValid(value));
+inline void SelectionArchive::set_selection_type(TST::SelectionTypeArchive value) {
+  GOOGLE_DCHECK(TST::SelectionTypeArchive_IsValid(value));
   set_has_selection_type();
   selection_type_ = value;
 }
@@ -14719,15 +13587,6 @@ inline ::TST::CellID* SelectionArchive::release_anchor_cell() {
   ::TST::CellID* temp = anchor_cell_;
   anchor_cell_ = NULL;
   return temp;
-}
-inline void SelectionArchive::set_allocated_anchor_cell(::TST::CellID* anchor_cell) {
-  delete anchor_cell_;
-  anchor_cell_ = anchor_cell;
-  if (anchor_cell) {
-    set_has_anchor_cell();
-  } else {
-    clear_has_anchor_cell();
-  }
 }
 
 // repeated .TST.CellRange cell_ranges = 6;
@@ -14808,15 +13667,6 @@ inline ::TST::CellID* SelectionArchive::release_cursor_cell() {
   cursor_cell_ = NULL;
   return temp;
 }
-inline void SelectionArchive::set_allocated_cursor_cell(::TST::CellID* cursor_cell) {
-  delete cursor_cell_;
-  cursor_cell_ = cursor_cell;
-  if (cursor_cell) {
-    set_has_cursor_cell();
-  } else {
-    clear_has_cursor_cell();
-  }
-}
 
 // -------------------------------------------------------------------
 
@@ -14849,15 +13699,6 @@ inline ::TST::FormulaPredicateArchive* FilterRuleArchive::release_predicate() {
   ::TST::FormulaPredicateArchive* temp = predicate_;
   predicate_ = NULL;
   return temp;
-}
-inline void FilterRuleArchive::set_allocated_predicate(::TST::FormulaPredicateArchive* predicate) {
-  delete predicate_;
-  predicate_ = predicate;
-  if (predicate) {
-    set_has_predicate();
-  } else {
-    clear_has_predicate();
-  }
 }
 
 // optional bool disabled = 2;
@@ -14914,15 +13755,6 @@ inline ::TSS::StyleArchive* TableStyleArchive::release_super() {
   super_ = NULL;
   return temp;
 }
-inline void TableStyleArchive::set_allocated_super(::TSS::StyleArchive* super) {
-  delete super_;
-  super_ = super;
-  if (super) {
-    set_has_super();
-  } else {
-    clear_has_super();
-  }
-}
 
 // optional uint32 override_count = 10 [default = 0];
 inline bool TableStyleArchive::has_override_count() const {
@@ -14974,15 +13806,6 @@ inline ::TST::TableStylePropertiesArchive* TableStyleArchive::release_table_prop
   table_properties_ = NULL;
   return temp;
 }
-inline void TableStyleArchive::set_allocated_table_properties(::TST::TableStylePropertiesArchive* table_properties) {
-  delete table_properties_;
-  table_properties_ = table_properties;
-  if (table_properties) {
-    set_has_table_properties();
-  } else {
-    clear_has_table_properties();
-  }
-}
 
 // -------------------------------------------------------------------
 
@@ -15015,15 +13838,6 @@ inline ::TSS::StyleArchive* CellStyleArchive::release_super() {
   ::TSS::StyleArchive* temp = super_;
   super_ = NULL;
   return temp;
-}
-inline void CellStyleArchive::set_allocated_super(::TSS::StyleArchive* super) {
-  delete super_;
-  super_ = super;
-  if (super) {
-    set_has_super();
-  } else {
-    clear_has_super();
-  }
 }
 
 // optional uint32 override_count = 10 [default = 0];
@@ -15076,15 +13890,6 @@ inline ::TST::CellStylePropertiesArchive* CellStyleArchive::release_cell_propert
   cell_properties_ = NULL;
   return temp;
 }
-inline void CellStyleArchive::set_allocated_cell_properties(::TST::CellStylePropertiesArchive* cell_properties) {
-  delete cell_properties_;
-  cell_properties_ = cell_properties;
-  if (cell_properties) {
-    set_has_cell_properties();
-  } else {
-    clear_has_cell_properties();
-  }
-}
 
 // -------------------------------------------------------------------
 
@@ -15118,15 +13923,6 @@ inline ::TSCE::FormulaArchive* FormulaPredicateArchive::release_formula() {
   formula_ = NULL;
   return temp;
 }
-inline void FormulaPredicateArchive::set_allocated_formula(::TSCE::FormulaArchive* formula) {
-  delete formula_;
-  formula_ = formula;
-  if (formula) {
-    set_has_formula();
-  } else {
-    clear_has_formula();
-  }
-}
 
 // required .TST.FormulaPredicateArchive.FormulaPredicateType predicate_type = 2;
 inline bool FormulaPredicateArchive::has_predicate_type() const {
@@ -15146,7 +13942,7 @@ inline ::TST::FormulaPredicateArchive_FormulaPredicateType FormulaPredicateArchi
   return static_cast< ::TST::FormulaPredicateArchive_FormulaPredicateType >(predicate_type_);
 }
 inline void FormulaPredicateArchive::set_predicate_type(::TST::FormulaPredicateArchive_FormulaPredicateType value) {
-  assert(::TST::FormulaPredicateArchive_FormulaPredicateType_IsValid(value));
+  GOOGLE_DCHECK(::TST::FormulaPredicateArchive_FormulaPredicateType_IsValid(value));
   set_has_predicate_type();
   predicate_type_ = value;
 }
@@ -15169,7 +13965,7 @@ inline ::TST::FormulaPredicateArchive_QualifierType FormulaPredicateArchive::qua
   return static_cast< ::TST::FormulaPredicateArchive_QualifierType >(qualifier1_);
 }
 inline void FormulaPredicateArchive::set_qualifier1(::TST::FormulaPredicateArchive_QualifierType value) {
-  assert(::TST::FormulaPredicateArchive_QualifierType_IsValid(value));
+  GOOGLE_DCHECK(::TST::FormulaPredicateArchive_QualifierType_IsValid(value));
   set_has_qualifier1();
   qualifier1_ = value;
 }
@@ -15192,7 +13988,7 @@ inline ::TST::FormulaPredicateArchive_QualifierType FormulaPredicateArchive::qua
   return static_cast< ::TST::FormulaPredicateArchive_QualifierType >(qualifier2_);
 }
 inline void FormulaPredicateArchive::set_qualifier2(::TST::FormulaPredicateArchive_QualifierType value) {
-  assert(::TST::FormulaPredicateArchive_QualifierType_IsValid(value));
+  GOOGLE_DCHECK(::TST::FormulaPredicateArchive_QualifierType_IsValid(value));
   set_has_qualifier2();
   qualifier2_ = value;
 }
@@ -15295,15 +14091,6 @@ inline ::TST::FormulaPredicateArchive* ConditionalStyleSetArchive_ConditionalSty
   predicate_ = NULL;
   return temp;
 }
-inline void ConditionalStyleSetArchive_ConditionalStyleRule::set_allocated_predicate(::TST::FormulaPredicateArchive* predicate) {
-  delete predicate_;
-  predicate_ = predicate;
-  if (predicate) {
-    set_has_predicate();
-  } else {
-    clear_has_predicate();
-  }
-}
 
 // required .TSP.Reference cell_style = 2;
 inline bool ConditionalStyleSetArchive_ConditionalStyleRule::has_cell_style() const {
@@ -15333,15 +14120,6 @@ inline ::TSP::Reference* ConditionalStyleSetArchive_ConditionalStyleRule::releas
   cell_style_ = NULL;
   return temp;
 }
-inline void ConditionalStyleSetArchive_ConditionalStyleRule::set_allocated_cell_style(::TSP::Reference* cell_style) {
-  delete cell_style_;
-  cell_style_ = cell_style;
-  if (cell_style) {
-    set_has_cell_style();
-  } else {
-    clear_has_cell_style();
-  }
-}
 
 // required .TSP.Reference text_style = 3;
 inline bool ConditionalStyleSetArchive_ConditionalStyleRule::has_text_style() const {
@@ -15370,15 +14148,6 @@ inline ::TSP::Reference* ConditionalStyleSetArchive_ConditionalStyleRule::releas
   ::TSP::Reference* temp = text_style_;
   text_style_ = NULL;
   return temp;
-}
-inline void ConditionalStyleSetArchive_ConditionalStyleRule::set_allocated_text_style(::TSP::Reference* text_style) {
-  delete text_style_;
-  text_style_ = text_style;
-  if (text_style) {
-    set_has_text_style();
-  } else {
-    clear_has_text_style();
-  }
 }
 
 // -------------------------------------------------------------------
@@ -15460,15 +14229,6 @@ inline ::TST::CellID* ConditionalStyleSetArchive::release_cellid() {
   cellid_ = NULL;
   return temp;
 }
-inline void ConditionalStyleSetArchive::set_allocated_cellid(::TST::CellID* cellid) {
-  delete cellid_;
-  cellid_ = cellid;
-  if (cellid) {
-    set_has_cellid();
-  } else {
-    clear_has_cellid();
-  }
-}
 
 // -------------------------------------------------------------------
 
@@ -15492,7 +14252,7 @@ inline ::TST::FilterSetArchive_FilterSetType FilterSetArchive::type() const {
   return static_cast< ::TST::FilterSetArchive_FilterSetType >(type_);
 }
 inline void FilterSetArchive::set_type(::TST::FilterSetArchive_FilterSetType value) {
-  assert(::TST::FilterSetArchive_FilterSetType_IsValid(value));
+  GOOGLE_DCHECK(::TST::FilterSetArchive_FilterSetType_IsValid(value));
   set_has_type();
   type_ = value;
 }
@@ -15648,15 +14408,6 @@ inline ::TSWP::UIGraphicalAttachment* TokenAttachmentArchive::release_super() {
   super_ = NULL;
   return temp;
 }
-inline void TokenAttachmentArchive::set_allocated_super(::TSWP::UIGraphicalAttachment* super) {
-  delete super_;
-  super_ = super;
-  if (super) {
-    set_has_super();
-  } else {
-    clear_has_super();
-  }
-}
 
 // optional .TSP.Reference expressionNode = 2;
 inline bool TokenAttachmentArchive::has_expressionnode() const {
@@ -15685,15 +14436,6 @@ inline ::TSP::Reference* TokenAttachmentArchive::release_expressionnode() {
   ::TSP::Reference* temp = expressionnode_;
   expressionnode_ = NULL;
   return temp;
-}
-inline void TokenAttachmentArchive::set_allocated_expressionnode(::TSP::Reference* expressionnode) {
-  delete expressionnode_;
-  expressionnode_ = expressionnode;
-  if (expressionnode) {
-    set_has_expressionnode();
-  } else {
-    clear_has_expressionnode();
-  }
 }
 
 // -------------------------------------------------------------------
@@ -15727,15 +14469,6 @@ inline ::TSP::Reference* FormulaArchive::release_expressiontree() {
   ::TSP::Reference* temp = expressiontree_;
   expressiontree_ = NULL;
   return temp;
-}
-inline void FormulaArchive::set_allocated_expressiontree(::TSP::Reference* expressiontree) {
-  delete expressiontree_;
-  expressiontree_ = expressiontree;
-  if (expressiontree) {
-    set_has_expressiontree();
-  } else {
-    clear_has_expressiontree();
-  }
 }
 
 // -------------------------------------------------------------------
@@ -15843,15 +14576,6 @@ inline ::TST::ExpressionNodeArchive* BooleanNodeArchive::release_super() {
   super_ = NULL;
   return temp;
 }
-inline void BooleanNodeArchive::set_allocated_super(::TST::ExpressionNodeArchive* super) {
-  delete super_;
-  super_ = super;
-  if (super) {
-    set_has_super();
-  } else {
-    clear_has_super();
-  }
-}
 
 // required bool value = 2;
 inline bool BooleanNodeArchive::has_value() const {
@@ -15907,15 +14631,6 @@ inline ::TST::ExpressionNodeArchive* NumberNodeArchive::release_super() {
   super_ = NULL;
   return temp;
 }
-inline void NumberNodeArchive::set_allocated_super(::TST::ExpressionNodeArchive* super) {
-  delete super_;
-  super_ = super;
-  if (super) {
-    set_has_super();
-  } else {
-    clear_has_super();
-  }
-}
 
 // required double number = 2;
 inline bool NumberNodeArchive::has_number() const {
@@ -15970,15 +14685,6 @@ inline ::TST::ExpressionNodeArchive* StringNodeArchive::release_super() {
   ::TST::ExpressionNodeArchive* temp = super_;
   super_ = NULL;
   return temp;
-}
-inline void StringNodeArchive::set_allocated_super(::TST::ExpressionNodeArchive* super) {
-  delete super_;
-  super_ = super;
-  if (super) {
-    set_has_super();
-  } else {
-    clear_has_super();
-  }
 }
 
 // required string value = 2;
@@ -16038,18 +14744,6 @@ inline ::std::string* StringNodeArchive::release_value() {
     return temp;
   }
 }
-inline void StringNodeArchive::set_allocated_value(::std::string* value) {
-  if (value_ != &::google::protobuf::internal::kEmptyString) {
-    delete value_;
-  }
-  if (value) {
-    set_has_value();
-    value_ = value;
-  } else {
-    clear_has_value();
-    value_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
-  }
-}
 
 // -------------------------------------------------------------------
 
@@ -16082,15 +14776,6 @@ inline ::TST::ExpressionNodeArchive* IdentifierNodeArchive::release_super() {
   ::TST::ExpressionNodeArchive* temp = super_;
   super_ = NULL;
   return temp;
-}
-inline void IdentifierNodeArchive::set_allocated_super(::TST::ExpressionNodeArchive* super) {
-  delete super_;
-  super_ = super;
-  if (super) {
-    set_has_super();
-  } else {
-    clear_has_super();
-  }
 }
 
 // optional string identifier = 2;
@@ -16150,18 +14835,6 @@ inline ::std::string* IdentifierNodeArchive::release_identifier() {
     return temp;
   }
 }
-inline void IdentifierNodeArchive::set_allocated_identifier(::std::string* identifier) {
-  if (identifier_ != &::google::protobuf::internal::kEmptyString) {
-    delete identifier_;
-  }
-  if (identifier) {
-    set_has_identifier();
-    identifier_ = identifier;
-  } else {
-    clear_has_identifier();
-    identifier_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
-  }
-}
 
 // -------------------------------------------------------------------
 
@@ -16194,15 +14867,6 @@ inline ::TST::ExpressionNodeArchive* ArrayNodeArchive::release_super() {
   ::TST::ExpressionNodeArchive* temp = super_;
   super_ = NULL;
   return temp;
-}
-inline void ArrayNodeArchive::set_allocated_super(::TST::ExpressionNodeArchive* super) {
-  delete super_;
-  super_ = super;
-  if (super) {
-    set_has_super();
-  } else {
-    clear_has_super();
-  }
 }
 
 // optional uint32 columns = 2;
@@ -16281,15 +14945,6 @@ inline ::TST::ExpressionNodeArchive* ListNodeArchive::release_super() {
   super_ = NULL;
   return temp;
 }
-inline void ListNodeArchive::set_allocated_super(::TST::ExpressionNodeArchive* super) {
-  delete super_;
-  super_ = super;
-  if (super) {
-    set_has_super();
-  } else {
-    clear_has_super();
-  }
-}
 
 // -------------------------------------------------------------------
 
@@ -16322,15 +14977,6 @@ inline ::TST::ExpressionNodeArchive* OperatorNodeArchive::release_super() {
   ::TST::ExpressionNodeArchive* temp = super_;
   super_ = NULL;
   return temp;
-}
-inline void OperatorNodeArchive::set_allocated_super(::TST::ExpressionNodeArchive* super) {
-  delete super_;
-  super_ = super;
-  if (super) {
-    set_has_super();
-  } else {
-    clear_has_super();
-  }
 }
 
 // required uint32 operatorChar = 2;
@@ -16387,15 +15033,6 @@ inline ::TST::OperatorNodeArchive* PostfixOperatorNodeArchive::release_super() {
   super_ = NULL;
   return temp;
 }
-inline void PostfixOperatorNodeArchive::set_allocated_super(::TST::OperatorNodeArchive* super) {
-  delete super_;
-  super_ = super;
-  if (super) {
-    set_has_super();
-  } else {
-    clear_has_super();
-  }
-}
 
 // -------------------------------------------------------------------
 
@@ -16429,15 +15066,6 @@ inline ::TST::OperatorNodeArchive* PrefixOperatorNodeArchive::release_super() {
   super_ = NULL;
   return temp;
 }
-inline void PrefixOperatorNodeArchive::set_allocated_super(::TST::OperatorNodeArchive* super) {
-  delete super_;
-  super_ = super;
-  if (super) {
-    set_has_super();
-  } else {
-    clear_has_super();
-  }
-}
 
 // -------------------------------------------------------------------
 
@@ -16470,15 +15098,6 @@ inline ::TST::ExpressionNodeArchive* FunctionNodeArchive::release_super() {
   ::TST::ExpressionNodeArchive* temp = super_;
   super_ = NULL;
   return temp;
-}
-inline void FunctionNodeArchive::set_allocated_super(::TST::ExpressionNodeArchive* super) {
-  delete super_;
-  super_ = super;
-  if (super) {
-    set_has_super();
-  } else {
-    clear_has_super();
-  }
 }
 
 // required uint32 functionIndex = 2;
@@ -16560,18 +15179,6 @@ inline ::std::string* FunctionNodeArchive::release_invalidfunctionname() {
     return temp;
   }
 }
-inline void FunctionNodeArchive::set_allocated_invalidfunctionname(::std::string* invalidfunctionname) {
-  if (invalidfunctionname_ != &::google::protobuf::internal::kEmptyString) {
-    delete invalidfunctionname_;
-  }
-  if (invalidfunctionname) {
-    set_has_invalidfunctionname();
-    invalidfunctionname_ = invalidfunctionname;
-  } else {
-    clear_has_invalidfunctionname();
-    invalidfunctionname_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
-  }
-}
 
 // -------------------------------------------------------------------
 
@@ -16605,15 +15212,6 @@ inline ::TST::ExpressionNodeArchive* FunctionEndNodeArchive::release_super() {
   super_ = NULL;
   return temp;
 }
-inline void FunctionEndNodeArchive::set_allocated_super(::TST::ExpressionNodeArchive* super) {
-  delete super_;
-  super_ = super;
-  if (super) {
-    set_has_super();
-  } else {
-    clear_has_super();
-  }
-}
 
 // -------------------------------------------------------------------
 
@@ -16646,15 +15244,6 @@ inline ::TST::ExpressionNodeArchive* DateNodeArchive::release_super() {
   ::TST::ExpressionNodeArchive* temp = super_;
   super_ = NULL;
   return temp;
-}
-inline void DateNodeArchive::set_allocated_super(::TST::ExpressionNodeArchive* super) {
-  delete super_;
-  super_ = super;
-  if (super) {
-    set_has_super();
-  } else {
-    clear_has_super();
-  }
 }
 
 // required string value = 2;
@@ -16712,18 +15301,6 @@ inline ::std::string* DateNodeArchive::release_value() {
     ::std::string* temp = value_;
     value_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
     return temp;
-  }
-}
-inline void DateNodeArchive::set_allocated_value(::std::string* value) {
-  if (value_ != &::google::protobuf::internal::kEmptyString) {
-    delete value_;
-  }
-  if (value) {
-    set_has_value();
-    value_ = value;
-  } else {
-    clear_has_value();
-    value_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   }
 }
 
@@ -16784,18 +15361,6 @@ inline ::std::string* DateNodeArchive::release_format() {
     return temp;
   }
 }
-inline void DateNodeArchive::set_allocated_format(::std::string* format) {
-  if (format_ != &::google::protobuf::internal::kEmptyString) {
-    delete format_;
-  }
-  if (format) {
-    set_has_format();
-    format_ = format;
-  } else {
-    clear_has_format();
-    format_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
-  }
-}
 
 // -------------------------------------------------------------------
 
@@ -16829,15 +15394,6 @@ inline ::TST::ExpressionNodeArchive* ReferenceNodeArchive::release_super() {
   super_ = NULL;
   return temp;
 }
-inline void ReferenceNodeArchive::set_allocated_super(::TST::ExpressionNodeArchive* super) {
-  delete super_;
-  super_ = super;
-  if (super) {
-    set_has_super();
-  } else {
-    clear_has_super();
-  }
-}
 
 // required .TSCE.RangeReferenceArchive rangeReference = 2;
 inline bool ReferenceNodeArchive::has_rangereference() const {
@@ -16866,15 +15422,6 @@ inline ::TSCE::RangeReferenceArchive* ReferenceNodeArchive::release_rangereferen
   ::TSCE::RangeReferenceArchive* temp = rangereference_;
   rangereference_ = NULL;
   return temp;
-}
-inline void ReferenceNodeArchive::set_allocated_rangereference(::TSCE::RangeReferenceArchive* rangereference) {
-  delete rangereference_;
-  rangereference_ = rangereference;
-  if (rangereference) {
-    set_has_rangereference();
-  } else {
-    clear_has_rangereference();
-  }
 }
 
 // required uint32 stickyBits = 3;
@@ -16956,18 +15503,6 @@ inline ::std::string* ReferenceNodeArchive::release_hosttableid() {
     return temp;
   }
 }
-inline void ReferenceNodeArchive::set_allocated_hosttableid(::std::string* hosttableid) {
-  if (hosttableid_ != &::google::protobuf::internal::kEmptyString) {
-    delete hosttableid_;
-  }
-  if (hosttableid) {
-    set_has_hosttableid();
-    hosttableid_ = hosttableid;
-  } else {
-    clear_has_hosttableid();
-    hosttableid_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
-  }
-}
 
 // -------------------------------------------------------------------
 
@@ -17000,15 +15535,6 @@ inline ::TST::ExpressionNodeArchive* DurationNodeArchive::release_super() {
   ::TST::ExpressionNodeArchive* temp = super_;
   super_ = NULL;
   return temp;
-}
-inline void DurationNodeArchive::set_allocated_super(::TST::ExpressionNodeArchive* super) {
-  delete super_;
-  super_ = super;
-  if (super) {
-    set_has_super();
-  } else {
-    clear_has_super();
-  }
 }
 
 // required double timeinterval = 2;
@@ -17131,15 +15657,6 @@ inline ::TST::ExpressionNodeArchive* ArgumentPlaceholderNodeArchive::release_sup
   super_ = NULL;
   return temp;
 }
-inline void ArgumentPlaceholderNodeArchive::set_allocated_super(::TST::ExpressionNodeArchive* super) {
-  delete super_;
-  super_ = super;
-  if (super) {
-    set_has_super();
-  } else {
-    clear_has_super();
-  }
-}
 
 // required uint32 functionIndex = 2;
 inline bool ArgumentPlaceholderNodeArchive::has_functionindex() const {
@@ -17239,15 +15756,6 @@ inline ::TST::ExpressionNodeArchive* EmptyExpressionNodeArchive::release_super()
   super_ = NULL;
   return temp;
 }
-inline void EmptyExpressionNodeArchive::set_allocated_super(::TST::ExpressionNodeArchive* super) {
-  delete super_;
-  super_ = super;
-  if (super) {
-    set_has_super();
-  } else {
-    clear_has_super();
-  }
-}
 
 // -------------------------------------------------------------------
 
@@ -17303,15 +15811,6 @@ inline ::TST::CellRange* LayoutHintArchive::release_cellrange() {
   cellrange_ = NULL;
   return temp;
 }
-inline void LayoutHintArchive::set_allocated_cellrange(::TST::CellRange* cellrange) {
-  delete cellrange_;
-  cellrange_ = cellrange;
-  if (cellrange) {
-    set_has_cellrange();
-  } else {
-    clear_has_cellrange();
-  }
-}
 
 // required .TST.CellID hintID = 3;
 inline bool LayoutHintArchive::has_hintid() const {
@@ -17341,15 +15840,6 @@ inline ::TST::CellID* LayoutHintArchive::release_hintid() {
   hintid_ = NULL;
   return temp;
 }
-inline void LayoutHintArchive::set_allocated_hintid(::TST::CellID* hintid) {
-  delete hintid_;
-  hintid_ = hintid;
-  if (hintid) {
-    set_has_hintid();
-  } else {
-    clear_has_hintid();
-  }
-}
 
 // required .TSP.Size maximumSize = 4;
 inline bool LayoutHintArchive::has_maximumsize() const {
@@ -17378,15 +15868,6 @@ inline ::TSP::Size* LayoutHintArchive::release_maximumsize() {
   ::TSP::Size* temp = maximumsize_;
   maximumsize_ = NULL;
   return temp;
-}
-inline void LayoutHintArchive::set_allocated_maximumsize(::TSP::Size* maximumsize) {
-  delete maximumsize_;
-  maximumsize_ = maximumsize;
-  if (maximumsize) {
-    set_has_maximumsize();
-  } else {
-    clear_has_maximumsize();
-  }
 }
 
 // required uint32 partitionPosition = 5;
@@ -17461,15 +15942,6 @@ inline ::TSP::Size* LayoutHintArchive::release_effectivesize() {
   effectivesize_ = NULL;
   return temp;
 }
-inline void LayoutHintArchive::set_allocated_effectivesize(::TSP::Size* effectivesize) {
-  delete effectivesize_;
-  effectivesize_ = effectivesize;
-  if (effectivesize) {
-    set_has_effectivesize();
-  } else {
-    clear_has_effectivesize();
-  }
-}
 
 // optional uint32 partitioningPass = 8;
 inline bool LayoutHintArchive::has_partitioningpass() const {
@@ -17524,15 +15996,6 @@ inline ::TST::TokenAttachmentArchive* CompletionTokenAttachmentArchive::release_
   ::TST::TokenAttachmentArchive* temp = super_;
   super_ = NULL;
   return temp;
-}
-inline void CompletionTokenAttachmentArchive::set_allocated_super(::TST::TokenAttachmentArchive* super) {
-  delete super_;
-  super_ = super;
-  if (super) {
-    set_has_super();
-  } else {
-    clear_has_super();
-  }
 }
 
 // optional string completionText = 2;
@@ -17590,18 +16053,6 @@ inline ::std::string* CompletionTokenAttachmentArchive::release_completiontext()
     ::std::string* temp = completiontext_;
     completiontext_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
     return temp;
-  }
-}
-inline void CompletionTokenAttachmentArchive::set_allocated_completiontext(::std::string* completiontext) {
-  if (completiontext_ != &::google::protobuf::internal::kEmptyString) {
-    delete completiontext_;
-  }
-  if (completiontext) {
-    set_has_completiontext();
-    completiontext_ = completiontext;
-  } else {
-    clear_has_completiontext();
-    completiontext_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   }
 }
 
@@ -17680,15 +16131,6 @@ inline ::TSCE::CFUUIDArchive* HiddenStateFormulaOwnerArchive::release_owner_id()
   ::TSCE::CFUUIDArchive* temp = owner_id_;
   owner_id_ = NULL;
   return temp;
-}
-inline void HiddenStateFormulaOwnerArchive::set_allocated_owner_id(::TSCE::CFUUIDArchive* owner_id) {
-  delete owner_id_;
-  owner_id_ = owner_id;
-  if (owner_id) {
-    set_has_owner_id();
-  } else {
-    clear_has_owner_id();
-  }
 }
 
 // repeated .TSCE.CellValueArchive threshold_value = 2;
@@ -17770,15 +16212,6 @@ inline ::TSP::Reference* RichTextPayloadArchive::release_storage() {
   storage_ = NULL;
   return temp;
 }
-inline void RichTextPayloadArchive::set_allocated_storage(::TSP::Reference* storage) {
-  delete storage_;
-  storage_ = storage;
-  if (storage) {
-    set_has_storage();
-  } else {
-    clear_has_storage();
-  }
-}
 
 // optional .TSP.Range range = 2;
 inline bool RichTextPayloadArchive::has_range() const {
@@ -17808,15 +16241,6 @@ inline ::TSP::Range* RichTextPayloadArchive::release_range() {
   range_ = NULL;
   return temp;
 }
-inline void RichTextPayloadArchive::set_allocated_range(::TSP::Range* range) {
-  delete range_;
-  range_ = range;
-  if (range) {
-    set_has_range();
-  } else {
-    clear_has_range();
-  }
-}
 
 // required .TST.CellID cellid = 3;
 inline bool RichTextPayloadArchive::has_cellid() const {
@@ -17845,15 +16269,6 @@ inline ::TST::CellID* RichTextPayloadArchive::release_cellid() {
   ::TST::CellID* temp = cellid_;
   cellid_ = NULL;
   return temp;
-}
-inline void RichTextPayloadArchive::set_allocated_cellid(::TST::CellID* cellid) {
-  delete cellid_;
-  cellid_ = cellid;
-  if (cellid) {
-    set_has_cellid();
-  } else {
-    clear_has_cellid();
-  }
 }
 
 // -------------------------------------------------------------------
@@ -17887,15 +16302,6 @@ inline ::TSWP::UIGraphicalAttachment* FormulaEqualsTokenAttachmentArchive::relea
   ::TSWP::UIGraphicalAttachment* temp = super_;
   super_ = NULL;
   return temp;
-}
-inline void FormulaEqualsTokenAttachmentArchive::set_allocated_super(::TSWP::UIGraphicalAttachment* super) {
-  delete super_;
-  super_ = super;
-  if (super) {
-    set_has_super();
-  } else {
-    clear_has_super();
-  }
 }
 
 // -------------------------------------------------------------------
@@ -17957,28 +16363,28 @@ inline const EnumDescriptor* GetEnumDescriptor< ::TST::FilterSetArchive_FilterSe
   return ::TST::FilterSetArchive_FilterSetType_descriptor();
 }
 template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::TST::CellType>() {
-  return ::TST::CellType_descriptor();
+inline const EnumDescriptor* GetEnumDescriptor< TST::CellType>() {
+  return TST::CellType_descriptor();
 }
 template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::TST::CellValueType>() {
-  return ::TST::CellValueType_descriptor();
+inline const EnumDescriptor* GetEnumDescriptor< TST::CellValueType>() {
+  return TST::CellValueType_descriptor();
 }
 template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::TST::SelectionTypeArchive>() {
-  return ::TST::SelectionTypeArchive_descriptor();
+inline const EnumDescriptor* GetEnumDescriptor< TST::SelectionTypeArchive>() {
+  return TST::SelectionTypeArchive_descriptor();
 }
 template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::TST::FillDirectionArchive>() {
-  return ::TST::FillDirectionArchive_descriptor();
+inline const EnumDescriptor* GetEnumDescriptor< TST::FillDirectionArchive>() {
+  return TST::FillDirectionArchive_descriptor();
 }
 template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::TST::MergeActionArchive>() {
-  return ::TST::MergeActionArchive_descriptor();
+inline const EnumDescriptor* GetEnumDescriptor< TST::MergeActionArchive>() {
+  return TST::MergeActionArchive_descriptor();
 }
 template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::TST::HideShowActionArchive>() {
-  return ::TST::HideShowActionArchive_descriptor();
+inline const EnumDescriptor* GetEnumDescriptor< TST::HideShowActionArchive>() {
+  return TST::HideShowActionArchive_descriptor();
 }
 
 }  // namespace google

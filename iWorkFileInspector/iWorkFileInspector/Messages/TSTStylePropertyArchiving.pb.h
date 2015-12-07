@@ -20,10 +20,9 @@
 #endif
 
 #include <google/protobuf/generated_message_util.h>
-#include <google/protobuf/message.h>
 #include <google/protobuf/repeated_field.h>
 #include <google/protobuf/extension_set.h>
-#include <google/protobuf/unknown_field_set.h>
+#include <google/protobuf/generated_message_reflection.h>
 #include "TSPMessages.pb.h"
 #include "TSDArchives.pb.h"
 #include "TSKArchives.pb.h"
@@ -54,29 +53,29 @@ class Deprecated_TableStrokeArchive : public ::google::protobuf::Message {
  public:
   Deprecated_TableStrokeArchive();
   virtual ~Deprecated_TableStrokeArchive();
-
+  
   Deprecated_TableStrokeArchive(const Deprecated_TableStrokeArchive& from);
-
+  
   inline Deprecated_TableStrokeArchive& operator=(const Deprecated_TableStrokeArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const Deprecated_TableStrokeArchive& default_instance();
-
+  
   void Swap(Deprecated_TableStrokeArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   Deprecated_TableStrokeArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -84,7 +83,7 @@ class Deprecated_TableStrokeArchive : public ::google::protobuf::Message {
   void MergeFrom(const Deprecated_TableStrokeArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -97,13 +96,13 @@ class Deprecated_TableStrokeArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // optional .TSD.StrokeArchive stroke = 1;
   inline bool has_stroke() const;
   inline void clear_stroke();
@@ -111,29 +110,28 @@ class Deprecated_TableStrokeArchive : public ::google::protobuf::Message {
   inline const ::TSD::StrokeArchive& stroke() const;
   inline ::TSD::StrokeArchive* mutable_stroke();
   inline ::TSD::StrokeArchive* release_stroke();
-  inline void set_allocated_stroke(::TSD::StrokeArchive* stroke);
-
+  
   // optional bool background = 2 [deprecated = true];
   inline bool has_background() const PROTOBUF_DEPRECATED;
   inline void clear_background() PROTOBUF_DEPRECATED;
   static const int kBackgroundFieldNumber = 2;
   inline bool background() const PROTOBUF_DEPRECATED;
   inline void set_background(bool value) PROTOBUF_DEPRECATED;
-
+  
   // optional float opacity = 3 [deprecated = true];
   inline bool has_opacity() const PROTOBUF_DEPRECATED;
   inline void clear_opacity() PROTOBUF_DEPRECATED;
   static const int kOpacityFieldNumber = 3;
   inline float opacity() const PROTOBUF_DEPRECATED;
   inline void set_opacity(float value) PROTOBUF_DEPRECATED;
-
+  
   // optional bool empty = 4 [deprecated = true];
   inline bool has_empty() const PROTOBUF_DEPRECATED;
   inline void clear_empty() PROTOBUF_DEPRECATED;
   static const int kEmptyFieldNumber = 4;
   inline bool empty() const PROTOBUF_DEPRECATED;
   inline void set_empty(bool value) PROTOBUF_DEPRECATED;
-
+  
   // @@protoc_insertion_point(class_scope:TST.Deprecated_TableStrokeArchive)
  private:
   inline void set_has_stroke();
@@ -144,21 +142,21 @@ class Deprecated_TableStrokeArchive : public ::google::protobuf::Message {
   inline void clear_has_opacity();
   inline void set_has_empty();
   inline void clear_has_empty();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TSD::StrokeArchive* stroke_;
   float opacity_;
   bool background_;
   bool empty_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(4 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTStylePropertyArchiving_2eproto();
   friend void protobuf_AssignDesc_TSTStylePropertyArchiving_2eproto();
   friend void protobuf_ShutdownFile_TSTStylePropertyArchiving_2eproto();
-
+  
   void InitAsDefaultInstance();
   static Deprecated_TableStrokeArchive* default_instance_;
 };
@@ -168,29 +166,29 @@ class CellStylePropertiesArchive : public ::google::protobuf::Message {
  public:
   CellStylePropertiesArchive();
   virtual ~CellStylePropertiesArchive();
-
+  
   CellStylePropertiesArchive(const CellStylePropertiesArchive& from);
-
+  
   inline CellStylePropertiesArchive& operator=(const CellStylePropertiesArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const CellStylePropertiesArchive& default_instance();
-
+  
   void Swap(CellStylePropertiesArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   CellStylePropertiesArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -198,7 +196,7 @@ class CellStylePropertiesArchive : public ::google::protobuf::Message {
   void MergeFrom(const CellStylePropertiesArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -211,13 +209,13 @@ class CellStylePropertiesArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // optional .TSD.FillArchive cell_fill = 1;
   inline bool has_cell_fill() const;
   inline void clear_cell_fill();
@@ -225,15 +223,14 @@ class CellStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TSD::FillArchive& cell_fill() const;
   inline ::TSD::FillArchive* mutable_cell_fill();
   inline ::TSD::FillArchive* release_cell_fill();
-  inline void set_allocated_cell_fill(::TSD::FillArchive* cell_fill);
-
+  
   // optional bool text_wrap = 3;
   inline bool has_text_wrap() const;
   inline void clear_text_wrap();
   static const int kTextWrapFieldNumber = 3;
   inline bool text_wrap() const;
   inline void set_text_wrap(bool value);
-
+  
   // optional .TST.Deprecated_TableStrokeArchive deprecated_top_stroke = 4;
   inline bool has_deprecated_top_stroke() const;
   inline void clear_deprecated_top_stroke();
@@ -241,8 +238,7 @@ class CellStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TST::Deprecated_TableStrokeArchive& deprecated_top_stroke() const;
   inline ::TST::Deprecated_TableStrokeArchive* mutable_deprecated_top_stroke();
   inline ::TST::Deprecated_TableStrokeArchive* release_deprecated_top_stroke();
-  inline void set_allocated_deprecated_top_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_top_stroke);
-
+  
   // optional .TST.Deprecated_TableStrokeArchive deprecated_right_stroke = 5;
   inline bool has_deprecated_right_stroke() const;
   inline void clear_deprecated_right_stroke();
@@ -250,8 +246,7 @@ class CellStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TST::Deprecated_TableStrokeArchive& deprecated_right_stroke() const;
   inline ::TST::Deprecated_TableStrokeArchive* mutable_deprecated_right_stroke();
   inline ::TST::Deprecated_TableStrokeArchive* release_deprecated_right_stroke();
-  inline void set_allocated_deprecated_right_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_right_stroke);
-
+  
   // optional .TST.Deprecated_TableStrokeArchive deprecated_bottom_stroke = 6;
   inline bool has_deprecated_bottom_stroke() const;
   inline void clear_deprecated_bottom_stroke();
@@ -259,8 +254,7 @@ class CellStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TST::Deprecated_TableStrokeArchive& deprecated_bottom_stroke() const;
   inline ::TST::Deprecated_TableStrokeArchive* mutable_deprecated_bottom_stroke();
   inline ::TST::Deprecated_TableStrokeArchive* release_deprecated_bottom_stroke();
-  inline void set_allocated_deprecated_bottom_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_bottom_stroke);
-
+  
   // optional .TST.Deprecated_TableStrokeArchive deprecated_left_stroke = 7;
   inline bool has_deprecated_left_stroke() const;
   inline void clear_deprecated_left_stroke();
@@ -268,15 +262,14 @@ class CellStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TST::Deprecated_TableStrokeArchive& deprecated_left_stroke() const;
   inline ::TST::Deprecated_TableStrokeArchive* mutable_deprecated_left_stroke();
   inline ::TST::Deprecated_TableStrokeArchive* release_deprecated_left_stroke();
-  inline void set_allocated_deprecated_left_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_left_stroke);
-
+  
   // optional int32 vertical_alignment = 8;
   inline bool has_vertical_alignment() const;
   inline void clear_vertical_alignment();
   static const int kVerticalAlignmentFieldNumber = 8;
   inline ::google::protobuf::int32 vertical_alignment() const;
   inline void set_vertical_alignment(::google::protobuf::int32 value);
-
+  
   // optional .TSWP.PaddingArchive padding = 9;
   inline bool has_padding() const;
   inline void clear_padding();
@@ -284,8 +277,7 @@ class CellStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TSWP::PaddingArchive& padding() const;
   inline ::TSWP::PaddingArchive* mutable_padding();
   inline ::TSWP::PaddingArchive* release_padding();
-  inline void set_allocated_padding(::TSWP::PaddingArchive* padding);
-
+  
   // optional .TSD.StrokeArchive top_stroke = 10;
   inline bool has_top_stroke() const;
   inline void clear_top_stroke();
@@ -293,8 +285,7 @@ class CellStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TSD::StrokeArchive& top_stroke() const;
   inline ::TSD::StrokeArchive* mutable_top_stroke();
   inline ::TSD::StrokeArchive* release_top_stroke();
-  inline void set_allocated_top_stroke(::TSD::StrokeArchive* top_stroke);
-
+  
   // optional .TSD.StrokeArchive right_stroke = 11;
   inline bool has_right_stroke() const;
   inline void clear_right_stroke();
@@ -302,8 +293,7 @@ class CellStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TSD::StrokeArchive& right_stroke() const;
   inline ::TSD::StrokeArchive* mutable_right_stroke();
   inline ::TSD::StrokeArchive* release_right_stroke();
-  inline void set_allocated_right_stroke(::TSD::StrokeArchive* right_stroke);
-
+  
   // optional .TSD.StrokeArchive bottom_stroke = 12;
   inline bool has_bottom_stroke() const;
   inline void clear_bottom_stroke();
@@ -311,8 +301,7 @@ class CellStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TSD::StrokeArchive& bottom_stroke() const;
   inline ::TSD::StrokeArchive* mutable_bottom_stroke();
   inline ::TSD::StrokeArchive* release_bottom_stroke();
-  inline void set_allocated_bottom_stroke(::TSD::StrokeArchive* bottom_stroke);
-
+  
   // optional .TSD.StrokeArchive left_stroke = 13;
   inline bool has_left_stroke() const;
   inline void clear_left_stroke();
@@ -320,8 +309,7 @@ class CellStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TSD::StrokeArchive& left_stroke() const;
   inline ::TSD::StrokeArchive* mutable_left_stroke();
   inline ::TSD::StrokeArchive* release_left_stroke();
-  inline void set_allocated_left_stroke(::TSD::StrokeArchive* left_stroke);
-
+  
   // @@protoc_insertion_point(class_scope:TST.CellStylePropertiesArchive)
  private:
   inline void set_has_cell_fill();
@@ -348,9 +336,9 @@ class CellStylePropertiesArchive : public ::google::protobuf::Message {
   inline void clear_has_bottom_stroke();
   inline void set_has_left_stroke();
   inline void clear_has_left_stroke();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TSD::FillArchive* cell_fill_;
   ::TST::Deprecated_TableStrokeArchive* deprecated_top_stroke_;
   ::TST::Deprecated_TableStrokeArchive* deprecated_right_stroke_;
@@ -363,14 +351,14 @@ class CellStylePropertiesArchive : public ::google::protobuf::Message {
   ::TSD::StrokeArchive* right_stroke_;
   ::TSD::StrokeArchive* bottom_stroke_;
   ::TSD::StrokeArchive* left_stroke_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(12 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTStylePropertyArchiving_2eproto();
   friend void protobuf_AssignDesc_TSTStylePropertyArchiving_2eproto();
   friend void protobuf_ShutdownFile_TSTStylePropertyArchiving_2eproto();
-
+  
   void InitAsDefaultInstance();
   static CellStylePropertiesArchive* default_instance_;
 };
@@ -380,29 +368,29 @@ class Deprecated_StrokePresetDataArchive : public ::google::protobuf::Message {
  public:
   Deprecated_StrokePresetDataArchive();
   virtual ~Deprecated_StrokePresetDataArchive();
-
+  
   Deprecated_StrokePresetDataArchive(const Deprecated_StrokePresetDataArchive& from);
-
+  
   inline Deprecated_StrokePresetDataArchive& operator=(const Deprecated_StrokePresetDataArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const Deprecated_StrokePresetDataArchive& default_instance();
-
+  
   void Swap(Deprecated_StrokePresetDataArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   Deprecated_StrokePresetDataArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -410,7 +398,7 @@ class Deprecated_StrokePresetDataArchive : public ::google::protobuf::Message {
   void MergeFrom(const Deprecated_StrokePresetDataArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -423,13 +411,13 @@ class Deprecated_StrokePresetDataArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required .TST.Deprecated_TableStrokeArchive deprecated_horizontal_stroke = 2;
   inline bool has_deprecated_horizontal_stroke() const;
   inline void clear_deprecated_horizontal_stroke();
@@ -437,8 +425,7 @@ class Deprecated_StrokePresetDataArchive : public ::google::protobuf::Message {
   inline const ::TST::Deprecated_TableStrokeArchive& deprecated_horizontal_stroke() const;
   inline ::TST::Deprecated_TableStrokeArchive* mutable_deprecated_horizontal_stroke();
   inline ::TST::Deprecated_TableStrokeArchive* release_deprecated_horizontal_stroke();
-  inline void set_allocated_deprecated_horizontal_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_horizontal_stroke);
-
+  
   // required .TST.Deprecated_TableStrokeArchive deprecated_vertical_stroke = 1;
   inline bool has_deprecated_vertical_stroke() const;
   inline void clear_deprecated_vertical_stroke();
@@ -446,8 +433,7 @@ class Deprecated_StrokePresetDataArchive : public ::google::protobuf::Message {
   inline const ::TST::Deprecated_TableStrokeArchive& deprecated_vertical_stroke() const;
   inline ::TST::Deprecated_TableStrokeArchive* mutable_deprecated_vertical_stroke();
   inline ::TST::Deprecated_TableStrokeArchive* release_deprecated_vertical_stroke();
-  inline void set_allocated_deprecated_vertical_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_vertical_stroke);
-
+  
   // required .TST.Deprecated_TableStrokeArchive deprecated_exterior_stroke = 3;
   inline bool has_deprecated_exterior_stroke() const;
   inline void clear_deprecated_exterior_stroke();
@@ -455,15 +441,14 @@ class Deprecated_StrokePresetDataArchive : public ::google::protobuf::Message {
   inline const ::TST::Deprecated_TableStrokeArchive& deprecated_exterior_stroke() const;
   inline ::TST::Deprecated_TableStrokeArchive* mutable_deprecated_exterior_stroke();
   inline ::TST::Deprecated_TableStrokeArchive* release_deprecated_exterior_stroke();
-  inline void set_allocated_deprecated_exterior_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_exterior_stroke);
-
+  
   // required int32 deprecated_visible_mask = 5;
   inline bool has_deprecated_visible_mask() const;
   inline void clear_deprecated_visible_mask();
   static const int kDeprecatedVisibleMaskFieldNumber = 5;
   inline ::google::protobuf::int32 deprecated_visible_mask() const;
   inline void set_deprecated_visible_mask(::google::protobuf::int32 value);
-
+  
   // @@protoc_insertion_point(class_scope:TST.Deprecated_StrokePresetDataArchive)
  private:
   inline void set_has_deprecated_horizontal_stroke();
@@ -474,21 +459,21 @@ class Deprecated_StrokePresetDataArchive : public ::google::protobuf::Message {
   inline void clear_has_deprecated_exterior_stroke();
   inline void set_has_deprecated_visible_mask();
   inline void clear_has_deprecated_visible_mask();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TST::Deprecated_TableStrokeArchive* deprecated_horizontal_stroke_;
   ::TST::Deprecated_TableStrokeArchive* deprecated_vertical_stroke_;
   ::TST::Deprecated_TableStrokeArchive* deprecated_exterior_stroke_;
   ::google::protobuf::int32 deprecated_visible_mask_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(4 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTStylePropertyArchiving_2eproto();
   friend void protobuf_AssignDesc_TSTStylePropertyArchiving_2eproto();
   friend void protobuf_ShutdownFile_TSTStylePropertyArchiving_2eproto();
-
+  
   void InitAsDefaultInstance();
   static Deprecated_StrokePresetDataArchive* default_instance_;
 };
@@ -498,29 +483,29 @@ class StrokePresetDataArchive : public ::google::protobuf::Message {
  public:
   StrokePresetDataArchive();
   virtual ~StrokePresetDataArchive();
-
+  
   StrokePresetDataArchive(const StrokePresetDataArchive& from);
-
+  
   inline StrokePresetDataArchive& operator=(const StrokePresetDataArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const StrokePresetDataArchive& default_instance();
-
+  
   void Swap(StrokePresetDataArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   StrokePresetDataArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -528,7 +513,7 @@ class StrokePresetDataArchive : public ::google::protobuf::Message {
   void MergeFrom(const StrokePresetDataArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -541,13 +526,13 @@ class StrokePresetDataArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // optional .TSD.StrokeArchive horizontal_stroke = 1;
   inline bool has_horizontal_stroke() const;
   inline void clear_horizontal_stroke();
@@ -555,8 +540,7 @@ class StrokePresetDataArchive : public ::google::protobuf::Message {
   inline const ::TSD::StrokeArchive& horizontal_stroke() const;
   inline ::TSD::StrokeArchive* mutable_horizontal_stroke();
   inline ::TSD::StrokeArchive* release_horizontal_stroke();
-  inline void set_allocated_horizontal_stroke(::TSD::StrokeArchive* horizontal_stroke);
-
+  
   // optional .TSD.StrokeArchive vertical_stroke = 2;
   inline bool has_vertical_stroke() const;
   inline void clear_vertical_stroke();
@@ -564,8 +548,7 @@ class StrokePresetDataArchive : public ::google::protobuf::Message {
   inline const ::TSD::StrokeArchive& vertical_stroke() const;
   inline ::TSD::StrokeArchive* mutable_vertical_stroke();
   inline ::TSD::StrokeArchive* release_vertical_stroke();
-  inline void set_allocated_vertical_stroke(::TSD::StrokeArchive* vertical_stroke);
-
+  
   // optional .TSD.StrokeArchive exterior_stroke = 3;
   inline bool has_exterior_stroke() const;
   inline void clear_exterior_stroke();
@@ -573,15 +556,14 @@ class StrokePresetDataArchive : public ::google::protobuf::Message {
   inline const ::TSD::StrokeArchive& exterior_stroke() const;
   inline ::TSD::StrokeArchive* mutable_exterior_stroke();
   inline ::TSD::StrokeArchive* release_exterior_stroke();
-  inline void set_allocated_exterior_stroke(::TSD::StrokeArchive* exterior_stroke);
-
+  
   // optional int32 visible_mask = 4;
   inline bool has_visible_mask() const;
   inline void clear_visible_mask();
   static const int kVisibleMaskFieldNumber = 4;
   inline ::google::protobuf::int32 visible_mask() const;
   inline void set_visible_mask(::google::protobuf::int32 value);
-
+  
   // @@protoc_insertion_point(class_scope:TST.StrokePresetDataArchive)
  private:
   inline void set_has_horizontal_stroke();
@@ -592,21 +574,21 @@ class StrokePresetDataArchive : public ::google::protobuf::Message {
   inline void clear_has_exterior_stroke();
   inline void set_has_visible_mask();
   inline void clear_has_visible_mask();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TSD::StrokeArchive* horizontal_stroke_;
   ::TSD::StrokeArchive* vertical_stroke_;
   ::TSD::StrokeArchive* exterior_stroke_;
   ::google::protobuf::int32 visible_mask_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(4 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTStylePropertyArchiving_2eproto();
   friend void protobuf_AssignDesc_TSTStylePropertyArchiving_2eproto();
   friend void protobuf_ShutdownFile_TSTStylePropertyArchiving_2eproto();
-
+  
   void InitAsDefaultInstance();
   static StrokePresetDataArchive* default_instance_;
 };
@@ -616,29 +598,29 @@ class StrokePresetListArchive : public ::google::protobuf::Message {
  public:
   StrokePresetListArchive();
   virtual ~StrokePresetListArchive();
-
+  
   StrokePresetListArchive(const StrokePresetListArchive& from);
-
+  
   inline StrokePresetListArchive& operator=(const StrokePresetListArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const StrokePresetListArchive& default_instance();
-
+  
   void Swap(StrokePresetListArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   StrokePresetListArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -646,7 +628,7 @@ class StrokePresetListArchive : public ::google::protobuf::Message {
   void MergeFrom(const StrokePresetListArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -659,20 +641,20 @@ class StrokePresetListArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required int32 count = 1;
   inline bool has_count() const;
   inline void clear_count();
   static const int kCountFieldNumber = 1;
   inline ::google::protobuf::int32 count() const;
   inline void set_count(::google::protobuf::int32 value);
-
+  
   // repeated .TST.Deprecated_StrokePresetDataArchive deprecated_preset = 2;
   inline int deprecated_preset_size() const;
   inline void clear_deprecated_preset();
@@ -684,7 +666,7 @@ class StrokePresetListArchive : public ::google::protobuf::Message {
       deprecated_preset() const;
   inline ::google::protobuf::RepeatedPtrField< ::TST::Deprecated_StrokePresetDataArchive >*
       mutable_deprecated_preset();
-
+  
   // repeated .TST.StrokePresetDataArchive preset = 3;
   inline int preset_size() const;
   inline void clear_preset();
@@ -696,25 +678,25 @@ class StrokePresetListArchive : public ::google::protobuf::Message {
       preset() const;
   inline ::google::protobuf::RepeatedPtrField< ::TST::StrokePresetDataArchive >*
       mutable_preset();
-
+  
   // @@protoc_insertion_point(class_scope:TST.StrokePresetListArchive)
  private:
   inline void set_has_count();
   inline void clear_has_count();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::google::protobuf::RepeatedPtrField< ::TST::Deprecated_StrokePresetDataArchive > deprecated_preset_;
   ::google::protobuf::RepeatedPtrField< ::TST::StrokePresetDataArchive > preset_;
   ::google::protobuf::int32 count_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(3 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTStylePropertyArchiving_2eproto();
   friend void protobuf_AssignDesc_TSTStylePropertyArchiving_2eproto();
   friend void protobuf_ShutdownFile_TSTStylePropertyArchiving_2eproto();
-
+  
   void InitAsDefaultInstance();
   static StrokePresetListArchive* default_instance_;
 };
@@ -724,29 +706,29 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
  public:
   TableStylePropertiesArchive();
   virtual ~TableStylePropertiesArchive();
-
+  
   TableStylePropertiesArchive(const TableStylePropertiesArchive& from);
-
+  
   inline TableStylePropertiesArchive& operator=(const TableStylePropertiesArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const TableStylePropertiesArchive& default_instance();
-
+  
   void Swap(TableStylePropertiesArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   TableStylePropertiesArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -754,7 +736,7 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   void MergeFrom(const TableStylePropertiesArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -767,20 +749,20 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // optional bool banded_rows = 1;
   inline bool has_banded_rows() const;
   inline void clear_banded_rows();
   static const int kBandedRowsFieldNumber = 1;
   inline bool banded_rows() const;
   inline void set_banded_rows(bool value);
-
+  
   // optional .TSD.FillArchive banded_fill = 2;
   inline bool has_banded_fill() const;
   inline void clear_banded_fill();
@@ -788,22 +770,21 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TSD::FillArchive& banded_fill() const;
   inline ::TSD::FillArchive* mutable_banded_fill();
   inline ::TSD::FillArchive* release_banded_fill();
-  inline void set_allocated_banded_fill(::TSD::FillArchive* banded_fill);
-
+  
   // optional bool behaves_like_spreadsheet = 21;
   inline bool has_behaves_like_spreadsheet() const;
   inline void clear_behaves_like_spreadsheet();
   static const int kBehavesLikeSpreadsheetFieldNumber = 21;
   inline bool behaves_like_spreadsheet() const;
   inline void set_behaves_like_spreadsheet(bool value);
-
+  
   // optional bool auto_resize = 22;
   inline bool has_auto_resize() const;
   inline void clear_auto_resize();
   static const int kAutoResizeFieldNumber = 22;
   inline bool auto_resize() const;
   inline void set_auto_resize(bool value);
-
+  
   // optional .TST.Deprecated_TableStrokeArchive deprecated_header_row_separator_stroke = 4;
   inline bool has_deprecated_header_row_separator_stroke() const;
   inline void clear_deprecated_header_row_separator_stroke();
@@ -811,8 +792,7 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TST::Deprecated_TableStrokeArchive& deprecated_header_row_separator_stroke() const;
   inline ::TST::Deprecated_TableStrokeArchive* mutable_deprecated_header_row_separator_stroke();
   inline ::TST::Deprecated_TableStrokeArchive* release_deprecated_header_row_separator_stroke();
-  inline void set_allocated_deprecated_header_row_separator_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_header_row_separator_stroke);
-
+  
   // optional .TST.Deprecated_TableStrokeArchive deprecated_header_row_border_stroke = 5;
   inline bool has_deprecated_header_row_border_stroke() const;
   inline void clear_deprecated_header_row_border_stroke();
@@ -820,8 +800,7 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TST::Deprecated_TableStrokeArchive& deprecated_header_row_border_stroke() const;
   inline ::TST::Deprecated_TableStrokeArchive* mutable_deprecated_header_row_border_stroke();
   inline ::TST::Deprecated_TableStrokeArchive* release_deprecated_header_row_border_stroke();
-  inline void set_allocated_deprecated_header_row_border_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_header_row_border_stroke);
-
+  
   // optional .TST.Deprecated_TableStrokeArchive deprecated_header_row_horizontal_stroke = 23;
   inline bool has_deprecated_header_row_horizontal_stroke() const;
   inline void clear_deprecated_header_row_horizontal_stroke();
@@ -829,8 +808,7 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TST::Deprecated_TableStrokeArchive& deprecated_header_row_horizontal_stroke() const;
   inline ::TST::Deprecated_TableStrokeArchive* mutable_deprecated_header_row_horizontal_stroke();
   inline ::TST::Deprecated_TableStrokeArchive* release_deprecated_header_row_horizontal_stroke();
-  inline void set_allocated_deprecated_header_row_horizontal_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_header_row_horizontal_stroke);
-
+  
   // optional .TST.Deprecated_TableStrokeArchive deprecated_header_row_vertical_stroke = 24;
   inline bool has_deprecated_header_row_vertical_stroke() const;
   inline void clear_deprecated_header_row_vertical_stroke();
@@ -838,8 +816,7 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TST::Deprecated_TableStrokeArchive& deprecated_header_row_vertical_stroke() const;
   inline ::TST::Deprecated_TableStrokeArchive* mutable_deprecated_header_row_vertical_stroke();
   inline ::TST::Deprecated_TableStrokeArchive* release_deprecated_header_row_vertical_stroke();
-  inline void set_allocated_deprecated_header_row_vertical_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_header_row_vertical_stroke);
-
+  
   // optional .TST.Deprecated_TableStrokeArchive deprecated_header_column_border_stroke = 7;
   inline bool has_deprecated_header_column_border_stroke() const;
   inline void clear_deprecated_header_column_border_stroke();
@@ -847,8 +824,7 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TST::Deprecated_TableStrokeArchive& deprecated_header_column_border_stroke() const;
   inline ::TST::Deprecated_TableStrokeArchive* mutable_deprecated_header_column_border_stroke();
   inline ::TST::Deprecated_TableStrokeArchive* release_deprecated_header_column_border_stroke();
-  inline void set_allocated_deprecated_header_column_border_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_header_column_border_stroke);
-
+  
   // optional .TST.Deprecated_TableStrokeArchive deprecated_header_column_separator_stroke = 8;
   inline bool has_deprecated_header_column_separator_stroke() const;
   inline void clear_deprecated_header_column_separator_stroke();
@@ -856,8 +832,7 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TST::Deprecated_TableStrokeArchive& deprecated_header_column_separator_stroke() const;
   inline ::TST::Deprecated_TableStrokeArchive* mutable_deprecated_header_column_separator_stroke();
   inline ::TST::Deprecated_TableStrokeArchive* release_deprecated_header_column_separator_stroke();
-  inline void set_allocated_deprecated_header_column_separator_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_header_column_separator_stroke);
-
+  
   // optional .TST.Deprecated_TableStrokeArchive deprecated_header_column_horizontal_stroke = 25;
   inline bool has_deprecated_header_column_horizontal_stroke() const;
   inline void clear_deprecated_header_column_horizontal_stroke();
@@ -865,8 +840,7 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TST::Deprecated_TableStrokeArchive& deprecated_header_column_horizontal_stroke() const;
   inline ::TST::Deprecated_TableStrokeArchive* mutable_deprecated_header_column_horizontal_stroke();
   inline ::TST::Deprecated_TableStrokeArchive* release_deprecated_header_column_horizontal_stroke();
-  inline void set_allocated_deprecated_header_column_horizontal_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_header_column_horizontal_stroke);
-
+  
   // optional .TST.Deprecated_TableStrokeArchive deprecated_header_column_vertical_stroke = 26;
   inline bool has_deprecated_header_column_vertical_stroke() const;
   inline void clear_deprecated_header_column_vertical_stroke();
@@ -874,8 +848,7 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TST::Deprecated_TableStrokeArchive& deprecated_header_column_vertical_stroke() const;
   inline ::TST::Deprecated_TableStrokeArchive* mutable_deprecated_header_column_vertical_stroke();
   inline ::TST::Deprecated_TableStrokeArchive* release_deprecated_header_column_vertical_stroke();
-  inline void set_allocated_deprecated_header_column_vertical_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_header_column_vertical_stroke);
-
+  
   // optional .TST.Deprecated_TableStrokeArchive deprecated_footer_row_separator_stroke = 10;
   inline bool has_deprecated_footer_row_separator_stroke() const;
   inline void clear_deprecated_footer_row_separator_stroke();
@@ -883,8 +856,7 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TST::Deprecated_TableStrokeArchive& deprecated_footer_row_separator_stroke() const;
   inline ::TST::Deprecated_TableStrokeArchive* mutable_deprecated_footer_row_separator_stroke();
   inline ::TST::Deprecated_TableStrokeArchive* release_deprecated_footer_row_separator_stroke();
-  inline void set_allocated_deprecated_footer_row_separator_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_footer_row_separator_stroke);
-
+  
   // optional .TST.Deprecated_TableStrokeArchive deprecated_footer_row_border_stroke = 11;
   inline bool has_deprecated_footer_row_border_stroke() const;
   inline void clear_deprecated_footer_row_border_stroke();
@@ -892,8 +864,7 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TST::Deprecated_TableStrokeArchive& deprecated_footer_row_border_stroke() const;
   inline ::TST::Deprecated_TableStrokeArchive* mutable_deprecated_footer_row_border_stroke();
   inline ::TST::Deprecated_TableStrokeArchive* release_deprecated_footer_row_border_stroke();
-  inline void set_allocated_deprecated_footer_row_border_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_footer_row_border_stroke);
-
+  
   // optional .TST.Deprecated_TableStrokeArchive deprecated_footer_row_horizontal_stroke = 27;
   inline bool has_deprecated_footer_row_horizontal_stroke() const;
   inline void clear_deprecated_footer_row_horizontal_stroke();
@@ -901,8 +872,7 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TST::Deprecated_TableStrokeArchive& deprecated_footer_row_horizontal_stroke() const;
   inline ::TST::Deprecated_TableStrokeArchive* mutable_deprecated_footer_row_horizontal_stroke();
   inline ::TST::Deprecated_TableStrokeArchive* release_deprecated_footer_row_horizontal_stroke();
-  inline void set_allocated_deprecated_footer_row_horizontal_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_footer_row_horizontal_stroke);
-
+  
   // optional .TST.Deprecated_TableStrokeArchive deprecated_footer_row_vertical_stroke = 28;
   inline bool has_deprecated_footer_row_vertical_stroke() const;
   inline void clear_deprecated_footer_row_vertical_stroke();
@@ -910,8 +880,7 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TST::Deprecated_TableStrokeArchive& deprecated_footer_row_vertical_stroke() const;
   inline ::TST::Deprecated_TableStrokeArchive* mutable_deprecated_footer_row_vertical_stroke();
   inline ::TST::Deprecated_TableStrokeArchive* release_deprecated_footer_row_vertical_stroke();
-  inline void set_allocated_deprecated_footer_row_vertical_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_footer_row_vertical_stroke);
-
+  
   // optional .TST.Deprecated_TableStrokeArchive deprecated_table_body_horizontal_border_stroke = 12;
   inline bool has_deprecated_table_body_horizontal_border_stroke() const;
   inline void clear_deprecated_table_body_horizontal_border_stroke();
@@ -919,8 +888,7 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TST::Deprecated_TableStrokeArchive& deprecated_table_body_horizontal_border_stroke() const;
   inline ::TST::Deprecated_TableStrokeArchive* mutable_deprecated_table_body_horizontal_border_stroke();
   inline ::TST::Deprecated_TableStrokeArchive* release_deprecated_table_body_horizontal_border_stroke();
-  inline void set_allocated_deprecated_table_body_horizontal_border_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_table_body_horizontal_border_stroke);
-
+  
   // optional .TST.Deprecated_TableStrokeArchive deprecated_table_body_vertical_border_stroke = 29;
   inline bool has_deprecated_table_body_vertical_border_stroke() const;
   inline void clear_deprecated_table_body_vertical_border_stroke();
@@ -928,8 +896,7 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TST::Deprecated_TableStrokeArchive& deprecated_table_body_vertical_border_stroke() const;
   inline ::TST::Deprecated_TableStrokeArchive* mutable_deprecated_table_body_vertical_border_stroke();
   inline ::TST::Deprecated_TableStrokeArchive* release_deprecated_table_body_vertical_border_stroke();
-  inline void set_allocated_deprecated_table_body_vertical_border_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_table_body_vertical_border_stroke);
-
+  
   // optional .TST.Deprecated_TableStrokeArchive deprecated_table_body_horizontal_stroke = 30;
   inline bool has_deprecated_table_body_horizontal_stroke() const;
   inline void clear_deprecated_table_body_horizontal_stroke();
@@ -937,8 +904,7 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TST::Deprecated_TableStrokeArchive& deprecated_table_body_horizontal_stroke() const;
   inline ::TST::Deprecated_TableStrokeArchive* mutable_deprecated_table_body_horizontal_stroke();
   inline ::TST::Deprecated_TableStrokeArchive* release_deprecated_table_body_horizontal_stroke();
-  inline void set_allocated_deprecated_table_body_horizontal_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_table_body_horizontal_stroke);
-
+  
   // optional .TST.Deprecated_TableStrokeArchive deprecated_table_body_vertical_stroke = 31;
   inline bool has_deprecated_table_body_vertical_stroke() const;
   inline void clear_deprecated_table_body_vertical_stroke();
@@ -946,8 +912,7 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TST::Deprecated_TableStrokeArchive& deprecated_table_body_vertical_stroke() const;
   inline ::TST::Deprecated_TableStrokeArchive* mutable_deprecated_table_body_vertical_stroke();
   inline ::TST::Deprecated_TableStrokeArchive* release_deprecated_table_body_vertical_stroke();
-  inline void set_allocated_deprecated_table_body_vertical_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_table_body_vertical_stroke);
-
+  
   // optional .TST.StrokePresetListArchive stroke_preset_list = 32;
   inline bool has_stroke_preset_list() const;
   inline void clear_stroke_preset_list();
@@ -955,85 +920,84 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TST::StrokePresetListArchive& stroke_preset_list() const;
   inline ::TST::StrokePresetListArchive* mutable_stroke_preset_list();
   inline ::TST::StrokePresetListArchive* release_stroke_preset_list();
-  inline void set_allocated_stroke_preset_list(::TST::StrokePresetListArchive* stroke_preset_list);
-
+  
   // optional bool v_strokes_visible = 33;
   inline bool has_v_strokes_visible() const;
   inline void clear_v_strokes_visible();
   static const int kVStrokesVisibleFieldNumber = 33;
   inline bool v_strokes_visible() const;
   inline void set_v_strokes_visible(bool value);
-
+  
   // optional bool h_strokes_visible = 34;
   inline bool has_h_strokes_visible() const;
   inline void clear_h_strokes_visible();
   static const int kHStrokesVisibleFieldNumber = 34;
   inline bool h_strokes_visible() const;
   inline void set_h_strokes_visible(bool value);
-
+  
   // optional bool hr_separator_visible = 35;
   inline bool has_hr_separator_visible() const;
   inline void clear_hr_separator_visible();
   static const int kHrSeparatorVisibleFieldNumber = 35;
   inline bool hr_separator_visible() const;
   inline void set_hr_separator_visible(bool value);
-
+  
   // optional bool hc_separator_visible = 36;
   inline bool has_hc_separator_visible() const;
   inline void clear_hc_separator_visible();
   static const int kHcSeparatorVisibleFieldNumber = 36;
   inline bool hc_separator_visible() const;
   inline void set_hc_separator_visible(bool value);
-
+  
   // optional bool footer_separator_visible = 37;
   inline bool has_footer_separator_visible() const;
   inline void clear_footer_separator_visible();
   static const int kFooterSeparatorVisibleFieldNumber = 37;
   inline bool footer_separator_visible() const;
   inline void set_footer_separator_visible(bool value);
-
+  
   // optional bool table_border_visible = 38;
   inline bool has_table_border_visible() const;
   inline void clear_table_border_visible();
   static const int kTableBorderVisibleFieldNumber = 38;
   inline bool table_border_visible() const;
   inline void set_table_border_visible(bool value);
-
+  
   // optional bool table_header_border_visible = 39;
   inline bool has_table_header_border_visible() const;
   inline void clear_table_header_border_visible();
   static const int kTableHeaderBorderVisibleFieldNumber = 39;
   inline bool table_header_border_visible() const;
   inline void set_table_header_border_visible(bool value);
-
+  
   // optional bool table_hc_divider_visible = 42;
   inline bool has_table_hc_divider_visible() const;
   inline void clear_table_hc_divider_visible();
   static const int kTableHcDividerVisibleFieldNumber = 42;
   inline bool table_hc_divider_visible() const;
   inline void set_table_hc_divider_visible(bool value);
-
+  
   // optional bool table_hr_divider_visible = 43;
   inline bool has_table_hr_divider_visible() const;
   inline void clear_table_hr_divider_visible();
   static const int kTableHrDividerVisibleFieldNumber = 43;
   inline bool table_hr_divider_visible() const;
   inline void set_table_hr_divider_visible(bool value);
-
+  
   // optional bool table_footer_divider_visible = 44;
   inline bool has_table_footer_divider_visible() const;
   inline void clear_table_footer_divider_visible();
   static const int kTableFooterDividerVisibleFieldNumber = 44;
   inline bool table_footer_divider_visible() const;
   inline void set_table_footer_divider_visible(bool value);
-
+  
   // optional int32 OBSOLETE_master_font_size = 40;
   inline bool has_obsolete_master_font_size() const;
   inline void clear_obsolete_master_font_size();
   static const int kOBSOLETEMasterFontSizeFieldNumber = 40;
   inline ::google::protobuf::int32 obsolete_master_font_size() const;
   inline void set_obsolete_master_font_size(::google::protobuf::int32 value);
-
+  
   // optional string master_font_family = 41;
   inline bool has_master_font_family() const;
   inline void clear_master_font_family();
@@ -1044,15 +1008,14 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline void set_master_font_family(const char* value, size_t size);
   inline ::std::string* mutable_master_font_family();
   inline ::std::string* release_master_font_family();
-  inline void set_allocated_master_font_family(::std::string* master_font_family);
-
+  
   // optional .TSWP.WritingDirectionType writing_direction = 45;
   inline bool has_writing_direction() const;
   inline void clear_writing_direction();
   static const int kWritingDirectionFieldNumber = 45;
-  inline ::TSWP::WritingDirectionType writing_direction() const;
-  inline void set_writing_direction(::TSWP::WritingDirectionType value);
-
+  inline TSWP::WritingDirectionType writing_direction() const;
+  inline void set_writing_direction(TSWP::WritingDirectionType value);
+  
   // optional .TSD.StrokeArchive header_row_separator_stroke = 46;
   inline bool has_header_row_separator_stroke() const;
   inline void clear_header_row_separator_stroke();
@@ -1060,8 +1023,7 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TSD::StrokeArchive& header_row_separator_stroke() const;
   inline ::TSD::StrokeArchive* mutable_header_row_separator_stroke();
   inline ::TSD::StrokeArchive* release_header_row_separator_stroke();
-  inline void set_allocated_header_row_separator_stroke(::TSD::StrokeArchive* header_row_separator_stroke);
-
+  
   // optional .TSD.StrokeArchive header_row_border_stroke = 47;
   inline bool has_header_row_border_stroke() const;
   inline void clear_header_row_border_stroke();
@@ -1069,8 +1031,7 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TSD::StrokeArchive& header_row_border_stroke() const;
   inline ::TSD::StrokeArchive* mutable_header_row_border_stroke();
   inline ::TSD::StrokeArchive* release_header_row_border_stroke();
-  inline void set_allocated_header_row_border_stroke(::TSD::StrokeArchive* header_row_border_stroke);
-
+  
   // optional .TSD.StrokeArchive header_row_horizontal_stroke = 48;
   inline bool has_header_row_horizontal_stroke() const;
   inline void clear_header_row_horizontal_stroke();
@@ -1078,8 +1039,7 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TSD::StrokeArchive& header_row_horizontal_stroke() const;
   inline ::TSD::StrokeArchive* mutable_header_row_horizontal_stroke();
   inline ::TSD::StrokeArchive* release_header_row_horizontal_stroke();
-  inline void set_allocated_header_row_horizontal_stroke(::TSD::StrokeArchive* header_row_horizontal_stroke);
-
+  
   // optional .TSD.StrokeArchive header_row_vertical_stroke = 49;
   inline bool has_header_row_vertical_stroke() const;
   inline void clear_header_row_vertical_stroke();
@@ -1087,8 +1047,7 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TSD::StrokeArchive& header_row_vertical_stroke() const;
   inline ::TSD::StrokeArchive* mutable_header_row_vertical_stroke();
   inline ::TSD::StrokeArchive* release_header_row_vertical_stroke();
-  inline void set_allocated_header_row_vertical_stroke(::TSD::StrokeArchive* header_row_vertical_stroke);
-
+  
   // optional .TSD.StrokeArchive header_column_border_stroke = 50;
   inline bool has_header_column_border_stroke() const;
   inline void clear_header_column_border_stroke();
@@ -1096,8 +1055,7 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TSD::StrokeArchive& header_column_border_stroke() const;
   inline ::TSD::StrokeArchive* mutable_header_column_border_stroke();
   inline ::TSD::StrokeArchive* release_header_column_border_stroke();
-  inline void set_allocated_header_column_border_stroke(::TSD::StrokeArchive* header_column_border_stroke);
-
+  
   // optional .TSD.StrokeArchive header_column_separator_stroke = 51;
   inline bool has_header_column_separator_stroke() const;
   inline void clear_header_column_separator_stroke();
@@ -1105,8 +1063,7 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TSD::StrokeArchive& header_column_separator_stroke() const;
   inline ::TSD::StrokeArchive* mutable_header_column_separator_stroke();
   inline ::TSD::StrokeArchive* release_header_column_separator_stroke();
-  inline void set_allocated_header_column_separator_stroke(::TSD::StrokeArchive* header_column_separator_stroke);
-
+  
   // optional .TSD.StrokeArchive header_column_horizontal_stroke = 52;
   inline bool has_header_column_horizontal_stroke() const;
   inline void clear_header_column_horizontal_stroke();
@@ -1114,8 +1071,7 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TSD::StrokeArchive& header_column_horizontal_stroke() const;
   inline ::TSD::StrokeArchive* mutable_header_column_horizontal_stroke();
   inline ::TSD::StrokeArchive* release_header_column_horizontal_stroke();
-  inline void set_allocated_header_column_horizontal_stroke(::TSD::StrokeArchive* header_column_horizontal_stroke);
-
+  
   // optional .TSD.StrokeArchive header_column_vertical_stroke = 53;
   inline bool has_header_column_vertical_stroke() const;
   inline void clear_header_column_vertical_stroke();
@@ -1123,8 +1079,7 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TSD::StrokeArchive& header_column_vertical_stroke() const;
   inline ::TSD::StrokeArchive* mutable_header_column_vertical_stroke();
   inline ::TSD::StrokeArchive* release_header_column_vertical_stroke();
-  inline void set_allocated_header_column_vertical_stroke(::TSD::StrokeArchive* header_column_vertical_stroke);
-
+  
   // optional .TSD.StrokeArchive footer_row_separator_stroke = 54;
   inline bool has_footer_row_separator_stroke() const;
   inline void clear_footer_row_separator_stroke();
@@ -1132,8 +1087,7 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TSD::StrokeArchive& footer_row_separator_stroke() const;
   inline ::TSD::StrokeArchive* mutable_footer_row_separator_stroke();
   inline ::TSD::StrokeArchive* release_footer_row_separator_stroke();
-  inline void set_allocated_footer_row_separator_stroke(::TSD::StrokeArchive* footer_row_separator_stroke);
-
+  
   // optional .TSD.StrokeArchive footer_row_border_stroke = 55;
   inline bool has_footer_row_border_stroke() const;
   inline void clear_footer_row_border_stroke();
@@ -1141,8 +1095,7 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TSD::StrokeArchive& footer_row_border_stroke() const;
   inline ::TSD::StrokeArchive* mutable_footer_row_border_stroke();
   inline ::TSD::StrokeArchive* release_footer_row_border_stroke();
-  inline void set_allocated_footer_row_border_stroke(::TSD::StrokeArchive* footer_row_border_stroke);
-
+  
   // optional .TSD.StrokeArchive footer_row_horizontal_stroke = 56;
   inline bool has_footer_row_horizontal_stroke() const;
   inline void clear_footer_row_horizontal_stroke();
@@ -1150,8 +1103,7 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TSD::StrokeArchive& footer_row_horizontal_stroke() const;
   inline ::TSD::StrokeArchive* mutable_footer_row_horizontal_stroke();
   inline ::TSD::StrokeArchive* release_footer_row_horizontal_stroke();
-  inline void set_allocated_footer_row_horizontal_stroke(::TSD::StrokeArchive* footer_row_horizontal_stroke);
-
+  
   // optional .TSD.StrokeArchive footer_row_vertical_stroke = 57;
   inline bool has_footer_row_vertical_stroke() const;
   inline void clear_footer_row_vertical_stroke();
@@ -1159,8 +1111,7 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TSD::StrokeArchive& footer_row_vertical_stroke() const;
   inline ::TSD::StrokeArchive* mutable_footer_row_vertical_stroke();
   inline ::TSD::StrokeArchive* release_footer_row_vertical_stroke();
-  inline void set_allocated_footer_row_vertical_stroke(::TSD::StrokeArchive* footer_row_vertical_stroke);
-
+  
   // optional .TSD.StrokeArchive table_body_horizontal_border_stroke = 58;
   inline bool has_table_body_horizontal_border_stroke() const;
   inline void clear_table_body_horizontal_border_stroke();
@@ -1168,8 +1119,7 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TSD::StrokeArchive& table_body_horizontal_border_stroke() const;
   inline ::TSD::StrokeArchive* mutable_table_body_horizontal_border_stroke();
   inline ::TSD::StrokeArchive* release_table_body_horizontal_border_stroke();
-  inline void set_allocated_table_body_horizontal_border_stroke(::TSD::StrokeArchive* table_body_horizontal_border_stroke);
-
+  
   // optional .TSD.StrokeArchive table_body_vertical_border_stroke = 59;
   inline bool has_table_body_vertical_border_stroke() const;
   inline void clear_table_body_vertical_border_stroke();
@@ -1177,8 +1127,7 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TSD::StrokeArchive& table_body_vertical_border_stroke() const;
   inline ::TSD::StrokeArchive* mutable_table_body_vertical_border_stroke();
   inline ::TSD::StrokeArchive* release_table_body_vertical_border_stroke();
-  inline void set_allocated_table_body_vertical_border_stroke(::TSD::StrokeArchive* table_body_vertical_border_stroke);
-
+  
   // optional .TSD.StrokeArchive table_body_horizontal_stroke = 60;
   inline bool has_table_body_horizontal_stroke() const;
   inline void clear_table_body_horizontal_stroke();
@@ -1186,8 +1135,7 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TSD::StrokeArchive& table_body_horizontal_stroke() const;
   inline ::TSD::StrokeArchive* mutable_table_body_horizontal_stroke();
   inline ::TSD::StrokeArchive* release_table_body_horizontal_stroke();
-  inline void set_allocated_table_body_horizontal_stroke(::TSD::StrokeArchive* table_body_horizontal_stroke);
-
+  
   // optional .TSD.StrokeArchive table_body_vertical_stroke = 61;
   inline bool has_table_body_vertical_stroke() const;
   inline void clear_table_body_vertical_stroke();
@@ -1195,8 +1143,7 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline const ::TSD::StrokeArchive& table_body_vertical_stroke() const;
   inline ::TSD::StrokeArchive* mutable_table_body_vertical_stroke();
   inline ::TSD::StrokeArchive* release_table_body_vertical_stroke();
-  inline void set_allocated_table_body_vertical_stroke(::TSD::StrokeArchive* table_body_vertical_stroke);
-
+  
   // @@protoc_insertion_point(class_scope:TST.TableStylePropertiesArchive)
  private:
   inline void set_has_banded_rows();
@@ -1299,9 +1246,9 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   inline void clear_has_table_body_horizontal_stroke();
   inline void set_has_table_body_vertical_stroke();
   inline void clear_has_table_body_vertical_stroke();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TSD::FillArchive* banded_fill_;
   ::TST::Deprecated_TableStrokeArchive* deprecated_header_row_separator_stroke_;
   ::TST::Deprecated_TableStrokeArchive* deprecated_header_row_border_stroke_;
@@ -1352,14 +1299,14 @@ class TableStylePropertiesArchive : public ::google::protobuf::Message {
   ::TSD::StrokeArchive* table_body_vertical_border_stroke_;
   ::TSD::StrokeArchive* table_body_horizontal_stroke_;
   ::TSD::StrokeArchive* table_body_vertical_stroke_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(50 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTStylePropertyArchiving_2eproto();
   friend void protobuf_AssignDesc_TSTStylePropertyArchiving_2eproto();
   friend void protobuf_ShutdownFile_TSTStylePropertyArchiving_2eproto();
-
+  
   void InitAsDefaultInstance();
   static TableStylePropertiesArchive* default_instance_;
 };
@@ -1369,29 +1316,29 @@ class TableStylePresetArchive : public ::google::protobuf::Message {
  public:
   TableStylePresetArchive();
   virtual ~TableStylePresetArchive();
-
+  
   TableStylePresetArchive(const TableStylePresetArchive& from);
-
+  
   inline TableStylePresetArchive& operator=(const TableStylePresetArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const TableStylePresetArchive& default_instance();
-
+  
   void Swap(TableStylePresetArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   TableStylePresetArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -1399,7 +1346,7 @@ class TableStylePresetArchive : public ::google::protobuf::Message {
   void MergeFrom(const TableStylePresetArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -1412,20 +1359,20 @@ class TableStylePresetArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
-  // required int32 index = 1;
+  
+  // optional int32 index = 1;
   inline bool has_index() const;
   inline void clear_index();
   static const int kIndexFieldNumber = 1;
   inline ::google::protobuf::int32 index() const;
   inline void set_index(::google::protobuf::int32 value);
-
+  
   // optional .TSP.Reference image = 2;
   inline bool has_image() const;
   inline void clear_image();
@@ -1433,8 +1380,7 @@ class TableStylePresetArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& image() const;
   inline ::TSP::Reference* mutable_image();
   inline ::TSP::Reference* release_image();
-  inline void set_allocated_image(::TSP::Reference* image);
-
+  
   // optional .TSP.Reference style_network = 3;
   inline bool has_style_network() const;
   inline void clear_style_network();
@@ -1442,8 +1388,7 @@ class TableStylePresetArchive : public ::google::protobuf::Message {
   inline const ::TSP::Reference& style_network() const;
   inline ::TSP::Reference* mutable_style_network();
   inline ::TSP::Reference* release_style_network();
-  inline void set_allocated_style_network(::TSP::Reference* style_network);
-
+  
   // @@protoc_insertion_point(class_scope:TST.TableStylePresetArchive)
  private:
   inline void set_has_index();
@@ -1452,20 +1397,20 @@ class TableStylePresetArchive : public ::google::protobuf::Message {
   inline void clear_has_image();
   inline void set_has_style_network();
   inline void clear_has_style_network();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::TSP::Reference* image_;
   ::TSP::Reference* style_network_;
   ::google::protobuf::int32 index_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(3 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTStylePropertyArchiving_2eproto();
   friend void protobuf_AssignDesc_TSTStylePropertyArchiving_2eproto();
   friend void protobuf_ShutdownFile_TSTStylePropertyArchiving_2eproto();
-
+  
   void InitAsDefaultInstance();
   static TableStylePresetArchive* default_instance_;
 };
@@ -1475,29 +1420,29 @@ class TableStrokePresetArchive : public ::google::protobuf::Message {
  public:
   TableStrokePresetArchive();
   virtual ~TableStrokePresetArchive();
-
+  
   TableStrokePresetArchive(const TableStrokePresetArchive& from);
-
+  
   inline TableStrokePresetArchive& operator=(const TableStrokePresetArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const TableStrokePresetArchive& default_instance();
-
+  
   void Swap(TableStrokePresetArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   TableStrokePresetArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -1505,7 +1450,7 @@ class TableStrokePresetArchive : public ::google::protobuf::Message {
   void MergeFrom(const TableStrokePresetArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -1518,36 +1463,36 @@ class TableStrokePresetArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // required int32 index = 1;
   inline bool has_index() const;
   inline void clear_index();
   static const int kIndexFieldNumber = 1;
   inline ::google::protobuf::int32 index() const;
   inline void set_index(::google::protobuf::int32 value);
-
+  
   // @@protoc_insertion_point(class_scope:TST.TableStrokePresetArchive)
  private:
   inline void set_has_index();
   inline void clear_has_index();
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::google::protobuf::int32 index_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(1 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTStylePropertyArchiving_2eproto();
   friend void protobuf_AssignDesc_TSTStylePropertyArchiving_2eproto();
   friend void protobuf_ShutdownFile_TSTStylePropertyArchiving_2eproto();
-
+  
   void InitAsDefaultInstance();
   static TableStrokePresetArchive* default_instance_;
 };
@@ -1557,29 +1502,29 @@ class ThemePresetsArchive : public ::google::protobuf::Message {
  public:
   ThemePresetsArchive();
   virtual ~ThemePresetsArchive();
-
+  
   ThemePresetsArchive(const ThemePresetsArchive& from);
-
+  
   inline ThemePresetsArchive& operator=(const ThemePresetsArchive& from) {
     CopyFrom(from);
     return *this;
   }
-
+  
   inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
     return _unknown_fields_;
   }
-
+  
   inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return &_unknown_fields_;
   }
-
+  
   static const ::google::protobuf::Descriptor* descriptor();
   static const ThemePresetsArchive& default_instance();
-
+  
   void Swap(ThemePresetsArchive* other);
-
+  
   // implements Message ----------------------------------------------
-
+  
   ThemePresetsArchive* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
@@ -1587,7 +1532,7 @@ class ThemePresetsArchive : public ::google::protobuf::Message {
   void MergeFrom(const ThemePresetsArchive& from);
   void Clear();
   bool IsInitialized() const;
-
+  
   int ByteSize() const;
   bool MergePartialFromCodedStream(
       ::google::protobuf::io::CodedInputStream* input);
@@ -1600,13 +1545,13 @@ class ThemePresetsArchive : public ::google::protobuf::Message {
   void SharedDtor();
   void SetCachedSize(int size) const;
   public:
-
+  
   ::google::protobuf::Metadata GetMetadata() const;
-
+  
   // nested types ----------------------------------------------------
-
+  
   // accessors -------------------------------------------------------
-
+  
   // repeated .TSP.Reference table_style_presets = 1;
   inline int table_style_presets_size() const;
   inline void clear_table_style_presets();
@@ -1618,7 +1563,7 @@ class ThemePresetsArchive : public ::google::protobuf::Message {
       table_style_presets() const;
   inline ::google::protobuf::RepeatedPtrField< ::TSP::Reference >*
       mutable_table_style_presets();
-
+  
   // repeated .TSP.Reference table_cell_stroke_presets = 2;
   inline int table_cell_stroke_presets_size() const;
   inline void clear_table_cell_stroke_presets();
@@ -1630,26 +1575,26 @@ class ThemePresetsArchive : public ::google::protobuf::Message {
       table_cell_stroke_presets() const;
   inline ::google::protobuf::RepeatedPtrField< ::TSP::Reference >*
       mutable_table_cell_stroke_presets();
-
+  
   static const int kExtensionFieldNumber = 200;
   static ::google::protobuf::internal::ExtensionIdentifier< ::TSS::ThemeArchive,
       ::google::protobuf::internal::MessageTypeTraits< ::TST::ThemePresetsArchive >, 11, false >
     extension;
   // @@protoc_insertion_point(class_scope:TST.ThemePresetsArchive)
  private:
-
+  
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
-
+  
   ::google::protobuf::RepeatedPtrField< ::TSP::Reference > table_style_presets_;
   ::google::protobuf::RepeatedPtrField< ::TSP::Reference > table_cell_stroke_presets_;
-
+  
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
-
+  
   friend void  protobuf_AddDesc_TSTStylePropertyArchiving_2eproto();
   friend void protobuf_AssignDesc_TSTStylePropertyArchiving_2eproto();
   friend void protobuf_ShutdownFile_TSTStylePropertyArchiving_2eproto();
-
+  
   void InitAsDefaultInstance();
   static ThemePresetsArchive* default_instance_;
 };
@@ -1687,15 +1632,6 @@ inline ::TSD::StrokeArchive* Deprecated_TableStrokeArchive::release_stroke() {
   ::TSD::StrokeArchive* temp = stroke_;
   stroke_ = NULL;
   return temp;
-}
-inline void Deprecated_TableStrokeArchive::set_allocated_stroke(::TSD::StrokeArchive* stroke) {
-  delete stroke_;
-  stroke_ = stroke;
-  if (stroke) {
-    set_has_stroke();
-  } else {
-    clear_has_stroke();
-  }
 }
 
 // optional bool background = 2 [deprecated = true];
@@ -1796,15 +1732,6 @@ inline ::TSD::FillArchive* CellStylePropertiesArchive::release_cell_fill() {
   cell_fill_ = NULL;
   return temp;
 }
-inline void CellStylePropertiesArchive::set_allocated_cell_fill(::TSD::FillArchive* cell_fill) {
-  delete cell_fill_;
-  cell_fill_ = cell_fill;
-  if (cell_fill) {
-    set_has_cell_fill();
-  } else {
-    clear_has_cell_fill();
-  }
-}
 
 // optional bool text_wrap = 3;
 inline bool CellStylePropertiesArchive::has_text_wrap() const {
@@ -1856,15 +1783,6 @@ inline ::TST::Deprecated_TableStrokeArchive* CellStylePropertiesArchive::release
   deprecated_top_stroke_ = NULL;
   return temp;
 }
-inline void CellStylePropertiesArchive::set_allocated_deprecated_top_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_top_stroke) {
-  delete deprecated_top_stroke_;
-  deprecated_top_stroke_ = deprecated_top_stroke;
-  if (deprecated_top_stroke) {
-    set_has_deprecated_top_stroke();
-  } else {
-    clear_has_deprecated_top_stroke();
-  }
-}
 
 // optional .TST.Deprecated_TableStrokeArchive deprecated_right_stroke = 5;
 inline bool CellStylePropertiesArchive::has_deprecated_right_stroke() const {
@@ -1893,15 +1811,6 @@ inline ::TST::Deprecated_TableStrokeArchive* CellStylePropertiesArchive::release
   ::TST::Deprecated_TableStrokeArchive* temp = deprecated_right_stroke_;
   deprecated_right_stroke_ = NULL;
   return temp;
-}
-inline void CellStylePropertiesArchive::set_allocated_deprecated_right_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_right_stroke) {
-  delete deprecated_right_stroke_;
-  deprecated_right_stroke_ = deprecated_right_stroke;
-  if (deprecated_right_stroke) {
-    set_has_deprecated_right_stroke();
-  } else {
-    clear_has_deprecated_right_stroke();
-  }
 }
 
 // optional .TST.Deprecated_TableStrokeArchive deprecated_bottom_stroke = 6;
@@ -1932,15 +1841,6 @@ inline ::TST::Deprecated_TableStrokeArchive* CellStylePropertiesArchive::release
   deprecated_bottom_stroke_ = NULL;
   return temp;
 }
-inline void CellStylePropertiesArchive::set_allocated_deprecated_bottom_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_bottom_stroke) {
-  delete deprecated_bottom_stroke_;
-  deprecated_bottom_stroke_ = deprecated_bottom_stroke;
-  if (deprecated_bottom_stroke) {
-    set_has_deprecated_bottom_stroke();
-  } else {
-    clear_has_deprecated_bottom_stroke();
-  }
-}
 
 // optional .TST.Deprecated_TableStrokeArchive deprecated_left_stroke = 7;
 inline bool CellStylePropertiesArchive::has_deprecated_left_stroke() const {
@@ -1969,15 +1869,6 @@ inline ::TST::Deprecated_TableStrokeArchive* CellStylePropertiesArchive::release
   ::TST::Deprecated_TableStrokeArchive* temp = deprecated_left_stroke_;
   deprecated_left_stroke_ = NULL;
   return temp;
-}
-inline void CellStylePropertiesArchive::set_allocated_deprecated_left_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_left_stroke) {
-  delete deprecated_left_stroke_;
-  deprecated_left_stroke_ = deprecated_left_stroke;
-  if (deprecated_left_stroke) {
-    set_has_deprecated_left_stroke();
-  } else {
-    clear_has_deprecated_left_stroke();
-  }
 }
 
 // optional int32 vertical_alignment = 8;
@@ -2030,15 +1921,6 @@ inline ::TSWP::PaddingArchive* CellStylePropertiesArchive::release_padding() {
   padding_ = NULL;
   return temp;
 }
-inline void CellStylePropertiesArchive::set_allocated_padding(::TSWP::PaddingArchive* padding) {
-  delete padding_;
-  padding_ = padding;
-  if (padding) {
-    set_has_padding();
-  } else {
-    clear_has_padding();
-  }
-}
 
 // optional .TSD.StrokeArchive top_stroke = 10;
 inline bool CellStylePropertiesArchive::has_top_stroke() const {
@@ -2067,15 +1949,6 @@ inline ::TSD::StrokeArchive* CellStylePropertiesArchive::release_top_stroke() {
   ::TSD::StrokeArchive* temp = top_stroke_;
   top_stroke_ = NULL;
   return temp;
-}
-inline void CellStylePropertiesArchive::set_allocated_top_stroke(::TSD::StrokeArchive* top_stroke) {
-  delete top_stroke_;
-  top_stroke_ = top_stroke;
-  if (top_stroke) {
-    set_has_top_stroke();
-  } else {
-    clear_has_top_stroke();
-  }
 }
 
 // optional .TSD.StrokeArchive right_stroke = 11;
@@ -2106,15 +1979,6 @@ inline ::TSD::StrokeArchive* CellStylePropertiesArchive::release_right_stroke() 
   right_stroke_ = NULL;
   return temp;
 }
-inline void CellStylePropertiesArchive::set_allocated_right_stroke(::TSD::StrokeArchive* right_stroke) {
-  delete right_stroke_;
-  right_stroke_ = right_stroke;
-  if (right_stroke) {
-    set_has_right_stroke();
-  } else {
-    clear_has_right_stroke();
-  }
-}
 
 // optional .TSD.StrokeArchive bottom_stroke = 12;
 inline bool CellStylePropertiesArchive::has_bottom_stroke() const {
@@ -2144,15 +2008,6 @@ inline ::TSD::StrokeArchive* CellStylePropertiesArchive::release_bottom_stroke()
   bottom_stroke_ = NULL;
   return temp;
 }
-inline void CellStylePropertiesArchive::set_allocated_bottom_stroke(::TSD::StrokeArchive* bottom_stroke) {
-  delete bottom_stroke_;
-  bottom_stroke_ = bottom_stroke;
-  if (bottom_stroke) {
-    set_has_bottom_stroke();
-  } else {
-    clear_has_bottom_stroke();
-  }
-}
 
 // optional .TSD.StrokeArchive left_stroke = 13;
 inline bool CellStylePropertiesArchive::has_left_stroke() const {
@@ -2181,15 +2036,6 @@ inline ::TSD::StrokeArchive* CellStylePropertiesArchive::release_left_stroke() {
   ::TSD::StrokeArchive* temp = left_stroke_;
   left_stroke_ = NULL;
   return temp;
-}
-inline void CellStylePropertiesArchive::set_allocated_left_stroke(::TSD::StrokeArchive* left_stroke) {
-  delete left_stroke_;
-  left_stroke_ = left_stroke;
-  if (left_stroke) {
-    set_has_left_stroke();
-  } else {
-    clear_has_left_stroke();
-  }
 }
 
 // -------------------------------------------------------------------
@@ -2224,15 +2070,6 @@ inline ::TST::Deprecated_TableStrokeArchive* Deprecated_StrokePresetDataArchive:
   deprecated_horizontal_stroke_ = NULL;
   return temp;
 }
-inline void Deprecated_StrokePresetDataArchive::set_allocated_deprecated_horizontal_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_horizontal_stroke) {
-  delete deprecated_horizontal_stroke_;
-  deprecated_horizontal_stroke_ = deprecated_horizontal_stroke;
-  if (deprecated_horizontal_stroke) {
-    set_has_deprecated_horizontal_stroke();
-  } else {
-    clear_has_deprecated_horizontal_stroke();
-  }
-}
 
 // required .TST.Deprecated_TableStrokeArchive deprecated_vertical_stroke = 1;
 inline bool Deprecated_StrokePresetDataArchive::has_deprecated_vertical_stroke() const {
@@ -2262,15 +2099,6 @@ inline ::TST::Deprecated_TableStrokeArchive* Deprecated_StrokePresetDataArchive:
   deprecated_vertical_stroke_ = NULL;
   return temp;
 }
-inline void Deprecated_StrokePresetDataArchive::set_allocated_deprecated_vertical_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_vertical_stroke) {
-  delete deprecated_vertical_stroke_;
-  deprecated_vertical_stroke_ = deprecated_vertical_stroke;
-  if (deprecated_vertical_stroke) {
-    set_has_deprecated_vertical_stroke();
-  } else {
-    clear_has_deprecated_vertical_stroke();
-  }
-}
 
 // required .TST.Deprecated_TableStrokeArchive deprecated_exterior_stroke = 3;
 inline bool Deprecated_StrokePresetDataArchive::has_deprecated_exterior_stroke() const {
@@ -2299,15 +2127,6 @@ inline ::TST::Deprecated_TableStrokeArchive* Deprecated_StrokePresetDataArchive:
   ::TST::Deprecated_TableStrokeArchive* temp = deprecated_exterior_stroke_;
   deprecated_exterior_stroke_ = NULL;
   return temp;
-}
-inline void Deprecated_StrokePresetDataArchive::set_allocated_deprecated_exterior_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_exterior_stroke) {
-  delete deprecated_exterior_stroke_;
-  deprecated_exterior_stroke_ = deprecated_exterior_stroke;
-  if (deprecated_exterior_stroke) {
-    set_has_deprecated_exterior_stroke();
-  } else {
-    clear_has_deprecated_exterior_stroke();
-  }
 }
 
 // required int32 deprecated_visible_mask = 5;
@@ -2364,15 +2183,6 @@ inline ::TSD::StrokeArchive* StrokePresetDataArchive::release_horizontal_stroke(
   horizontal_stroke_ = NULL;
   return temp;
 }
-inline void StrokePresetDataArchive::set_allocated_horizontal_stroke(::TSD::StrokeArchive* horizontal_stroke) {
-  delete horizontal_stroke_;
-  horizontal_stroke_ = horizontal_stroke;
-  if (horizontal_stroke) {
-    set_has_horizontal_stroke();
-  } else {
-    clear_has_horizontal_stroke();
-  }
-}
 
 // optional .TSD.StrokeArchive vertical_stroke = 2;
 inline bool StrokePresetDataArchive::has_vertical_stroke() const {
@@ -2402,15 +2212,6 @@ inline ::TSD::StrokeArchive* StrokePresetDataArchive::release_vertical_stroke() 
   vertical_stroke_ = NULL;
   return temp;
 }
-inline void StrokePresetDataArchive::set_allocated_vertical_stroke(::TSD::StrokeArchive* vertical_stroke) {
-  delete vertical_stroke_;
-  vertical_stroke_ = vertical_stroke;
-  if (vertical_stroke) {
-    set_has_vertical_stroke();
-  } else {
-    clear_has_vertical_stroke();
-  }
-}
 
 // optional .TSD.StrokeArchive exterior_stroke = 3;
 inline bool StrokePresetDataArchive::has_exterior_stroke() const {
@@ -2439,15 +2240,6 @@ inline ::TSD::StrokeArchive* StrokePresetDataArchive::release_exterior_stroke() 
   ::TSD::StrokeArchive* temp = exterior_stroke_;
   exterior_stroke_ = NULL;
   return temp;
-}
-inline void StrokePresetDataArchive::set_allocated_exterior_stroke(::TSD::StrokeArchive* exterior_stroke) {
-  delete exterior_stroke_;
-  exterior_stroke_ = exterior_stroke;
-  if (exterior_stroke) {
-    set_has_exterior_stroke();
-  } else {
-    clear_has_exterior_stroke();
-  }
 }
 
 // optional int32 visible_mask = 4;
@@ -2602,15 +2394,6 @@ inline ::TSD::FillArchive* TableStylePropertiesArchive::release_banded_fill() {
   banded_fill_ = NULL;
   return temp;
 }
-inline void TableStylePropertiesArchive::set_allocated_banded_fill(::TSD::FillArchive* banded_fill) {
-  delete banded_fill_;
-  banded_fill_ = banded_fill;
-  if (banded_fill) {
-    set_has_banded_fill();
-  } else {
-    clear_has_banded_fill();
-  }
-}
 
 // optional bool behaves_like_spreadsheet = 21;
 inline bool TableStylePropertiesArchive::has_behaves_like_spreadsheet() const {
@@ -2684,15 +2467,6 @@ inline ::TST::Deprecated_TableStrokeArchive* TableStylePropertiesArchive::releas
   deprecated_header_row_separator_stroke_ = NULL;
   return temp;
 }
-inline void TableStylePropertiesArchive::set_allocated_deprecated_header_row_separator_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_header_row_separator_stroke) {
-  delete deprecated_header_row_separator_stroke_;
-  deprecated_header_row_separator_stroke_ = deprecated_header_row_separator_stroke;
-  if (deprecated_header_row_separator_stroke) {
-    set_has_deprecated_header_row_separator_stroke();
-  } else {
-    clear_has_deprecated_header_row_separator_stroke();
-  }
-}
 
 // optional .TST.Deprecated_TableStrokeArchive deprecated_header_row_border_stroke = 5;
 inline bool TableStylePropertiesArchive::has_deprecated_header_row_border_stroke() const {
@@ -2721,15 +2495,6 @@ inline ::TST::Deprecated_TableStrokeArchive* TableStylePropertiesArchive::releas
   ::TST::Deprecated_TableStrokeArchive* temp = deprecated_header_row_border_stroke_;
   deprecated_header_row_border_stroke_ = NULL;
   return temp;
-}
-inline void TableStylePropertiesArchive::set_allocated_deprecated_header_row_border_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_header_row_border_stroke) {
-  delete deprecated_header_row_border_stroke_;
-  deprecated_header_row_border_stroke_ = deprecated_header_row_border_stroke;
-  if (deprecated_header_row_border_stroke) {
-    set_has_deprecated_header_row_border_stroke();
-  } else {
-    clear_has_deprecated_header_row_border_stroke();
-  }
 }
 
 // optional .TST.Deprecated_TableStrokeArchive deprecated_header_row_horizontal_stroke = 23;
@@ -2760,15 +2525,6 @@ inline ::TST::Deprecated_TableStrokeArchive* TableStylePropertiesArchive::releas
   deprecated_header_row_horizontal_stroke_ = NULL;
   return temp;
 }
-inline void TableStylePropertiesArchive::set_allocated_deprecated_header_row_horizontal_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_header_row_horizontal_stroke) {
-  delete deprecated_header_row_horizontal_stroke_;
-  deprecated_header_row_horizontal_stroke_ = deprecated_header_row_horizontal_stroke;
-  if (deprecated_header_row_horizontal_stroke) {
-    set_has_deprecated_header_row_horizontal_stroke();
-  } else {
-    clear_has_deprecated_header_row_horizontal_stroke();
-  }
-}
 
 // optional .TST.Deprecated_TableStrokeArchive deprecated_header_row_vertical_stroke = 24;
 inline bool TableStylePropertiesArchive::has_deprecated_header_row_vertical_stroke() const {
@@ -2797,15 +2553,6 @@ inline ::TST::Deprecated_TableStrokeArchive* TableStylePropertiesArchive::releas
   ::TST::Deprecated_TableStrokeArchive* temp = deprecated_header_row_vertical_stroke_;
   deprecated_header_row_vertical_stroke_ = NULL;
   return temp;
-}
-inline void TableStylePropertiesArchive::set_allocated_deprecated_header_row_vertical_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_header_row_vertical_stroke) {
-  delete deprecated_header_row_vertical_stroke_;
-  deprecated_header_row_vertical_stroke_ = deprecated_header_row_vertical_stroke;
-  if (deprecated_header_row_vertical_stroke) {
-    set_has_deprecated_header_row_vertical_stroke();
-  } else {
-    clear_has_deprecated_header_row_vertical_stroke();
-  }
 }
 
 // optional .TST.Deprecated_TableStrokeArchive deprecated_header_column_border_stroke = 7;
@@ -2836,15 +2583,6 @@ inline ::TST::Deprecated_TableStrokeArchive* TableStylePropertiesArchive::releas
   deprecated_header_column_border_stroke_ = NULL;
   return temp;
 }
-inline void TableStylePropertiesArchive::set_allocated_deprecated_header_column_border_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_header_column_border_stroke) {
-  delete deprecated_header_column_border_stroke_;
-  deprecated_header_column_border_stroke_ = deprecated_header_column_border_stroke;
-  if (deprecated_header_column_border_stroke) {
-    set_has_deprecated_header_column_border_stroke();
-  } else {
-    clear_has_deprecated_header_column_border_stroke();
-  }
-}
 
 // optional .TST.Deprecated_TableStrokeArchive deprecated_header_column_separator_stroke = 8;
 inline bool TableStylePropertiesArchive::has_deprecated_header_column_separator_stroke() const {
@@ -2873,15 +2611,6 @@ inline ::TST::Deprecated_TableStrokeArchive* TableStylePropertiesArchive::releas
   ::TST::Deprecated_TableStrokeArchive* temp = deprecated_header_column_separator_stroke_;
   deprecated_header_column_separator_stroke_ = NULL;
   return temp;
-}
-inline void TableStylePropertiesArchive::set_allocated_deprecated_header_column_separator_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_header_column_separator_stroke) {
-  delete deprecated_header_column_separator_stroke_;
-  deprecated_header_column_separator_stroke_ = deprecated_header_column_separator_stroke;
-  if (deprecated_header_column_separator_stroke) {
-    set_has_deprecated_header_column_separator_stroke();
-  } else {
-    clear_has_deprecated_header_column_separator_stroke();
-  }
 }
 
 // optional .TST.Deprecated_TableStrokeArchive deprecated_header_column_horizontal_stroke = 25;
@@ -2912,15 +2641,6 @@ inline ::TST::Deprecated_TableStrokeArchive* TableStylePropertiesArchive::releas
   deprecated_header_column_horizontal_stroke_ = NULL;
   return temp;
 }
-inline void TableStylePropertiesArchive::set_allocated_deprecated_header_column_horizontal_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_header_column_horizontal_stroke) {
-  delete deprecated_header_column_horizontal_stroke_;
-  deprecated_header_column_horizontal_stroke_ = deprecated_header_column_horizontal_stroke;
-  if (deprecated_header_column_horizontal_stroke) {
-    set_has_deprecated_header_column_horizontal_stroke();
-  } else {
-    clear_has_deprecated_header_column_horizontal_stroke();
-  }
-}
 
 // optional .TST.Deprecated_TableStrokeArchive deprecated_header_column_vertical_stroke = 26;
 inline bool TableStylePropertiesArchive::has_deprecated_header_column_vertical_stroke() const {
@@ -2949,15 +2669,6 @@ inline ::TST::Deprecated_TableStrokeArchive* TableStylePropertiesArchive::releas
   ::TST::Deprecated_TableStrokeArchive* temp = deprecated_header_column_vertical_stroke_;
   deprecated_header_column_vertical_stroke_ = NULL;
   return temp;
-}
-inline void TableStylePropertiesArchive::set_allocated_deprecated_header_column_vertical_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_header_column_vertical_stroke) {
-  delete deprecated_header_column_vertical_stroke_;
-  deprecated_header_column_vertical_stroke_ = deprecated_header_column_vertical_stroke;
-  if (deprecated_header_column_vertical_stroke) {
-    set_has_deprecated_header_column_vertical_stroke();
-  } else {
-    clear_has_deprecated_header_column_vertical_stroke();
-  }
 }
 
 // optional .TST.Deprecated_TableStrokeArchive deprecated_footer_row_separator_stroke = 10;
@@ -2988,15 +2699,6 @@ inline ::TST::Deprecated_TableStrokeArchive* TableStylePropertiesArchive::releas
   deprecated_footer_row_separator_stroke_ = NULL;
   return temp;
 }
-inline void TableStylePropertiesArchive::set_allocated_deprecated_footer_row_separator_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_footer_row_separator_stroke) {
-  delete deprecated_footer_row_separator_stroke_;
-  deprecated_footer_row_separator_stroke_ = deprecated_footer_row_separator_stroke;
-  if (deprecated_footer_row_separator_stroke) {
-    set_has_deprecated_footer_row_separator_stroke();
-  } else {
-    clear_has_deprecated_footer_row_separator_stroke();
-  }
-}
 
 // optional .TST.Deprecated_TableStrokeArchive deprecated_footer_row_border_stroke = 11;
 inline bool TableStylePropertiesArchive::has_deprecated_footer_row_border_stroke() const {
@@ -3025,15 +2727,6 @@ inline ::TST::Deprecated_TableStrokeArchive* TableStylePropertiesArchive::releas
   ::TST::Deprecated_TableStrokeArchive* temp = deprecated_footer_row_border_stroke_;
   deprecated_footer_row_border_stroke_ = NULL;
   return temp;
-}
-inline void TableStylePropertiesArchive::set_allocated_deprecated_footer_row_border_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_footer_row_border_stroke) {
-  delete deprecated_footer_row_border_stroke_;
-  deprecated_footer_row_border_stroke_ = deprecated_footer_row_border_stroke;
-  if (deprecated_footer_row_border_stroke) {
-    set_has_deprecated_footer_row_border_stroke();
-  } else {
-    clear_has_deprecated_footer_row_border_stroke();
-  }
 }
 
 // optional .TST.Deprecated_TableStrokeArchive deprecated_footer_row_horizontal_stroke = 27;
@@ -3064,15 +2757,6 @@ inline ::TST::Deprecated_TableStrokeArchive* TableStylePropertiesArchive::releas
   deprecated_footer_row_horizontal_stroke_ = NULL;
   return temp;
 }
-inline void TableStylePropertiesArchive::set_allocated_deprecated_footer_row_horizontal_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_footer_row_horizontal_stroke) {
-  delete deprecated_footer_row_horizontal_stroke_;
-  deprecated_footer_row_horizontal_stroke_ = deprecated_footer_row_horizontal_stroke;
-  if (deprecated_footer_row_horizontal_stroke) {
-    set_has_deprecated_footer_row_horizontal_stroke();
-  } else {
-    clear_has_deprecated_footer_row_horizontal_stroke();
-  }
-}
 
 // optional .TST.Deprecated_TableStrokeArchive deprecated_footer_row_vertical_stroke = 28;
 inline bool TableStylePropertiesArchive::has_deprecated_footer_row_vertical_stroke() const {
@@ -3101,15 +2785,6 @@ inline ::TST::Deprecated_TableStrokeArchive* TableStylePropertiesArchive::releas
   ::TST::Deprecated_TableStrokeArchive* temp = deprecated_footer_row_vertical_stroke_;
   deprecated_footer_row_vertical_stroke_ = NULL;
   return temp;
-}
-inline void TableStylePropertiesArchive::set_allocated_deprecated_footer_row_vertical_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_footer_row_vertical_stroke) {
-  delete deprecated_footer_row_vertical_stroke_;
-  deprecated_footer_row_vertical_stroke_ = deprecated_footer_row_vertical_stroke;
-  if (deprecated_footer_row_vertical_stroke) {
-    set_has_deprecated_footer_row_vertical_stroke();
-  } else {
-    clear_has_deprecated_footer_row_vertical_stroke();
-  }
 }
 
 // optional .TST.Deprecated_TableStrokeArchive deprecated_table_body_horizontal_border_stroke = 12;
@@ -3140,15 +2815,6 @@ inline ::TST::Deprecated_TableStrokeArchive* TableStylePropertiesArchive::releas
   deprecated_table_body_horizontal_border_stroke_ = NULL;
   return temp;
 }
-inline void TableStylePropertiesArchive::set_allocated_deprecated_table_body_horizontal_border_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_table_body_horizontal_border_stroke) {
-  delete deprecated_table_body_horizontal_border_stroke_;
-  deprecated_table_body_horizontal_border_stroke_ = deprecated_table_body_horizontal_border_stroke;
-  if (deprecated_table_body_horizontal_border_stroke) {
-    set_has_deprecated_table_body_horizontal_border_stroke();
-  } else {
-    clear_has_deprecated_table_body_horizontal_border_stroke();
-  }
-}
 
 // optional .TST.Deprecated_TableStrokeArchive deprecated_table_body_vertical_border_stroke = 29;
 inline bool TableStylePropertiesArchive::has_deprecated_table_body_vertical_border_stroke() const {
@@ -3177,15 +2843,6 @@ inline ::TST::Deprecated_TableStrokeArchive* TableStylePropertiesArchive::releas
   ::TST::Deprecated_TableStrokeArchive* temp = deprecated_table_body_vertical_border_stroke_;
   deprecated_table_body_vertical_border_stroke_ = NULL;
   return temp;
-}
-inline void TableStylePropertiesArchive::set_allocated_deprecated_table_body_vertical_border_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_table_body_vertical_border_stroke) {
-  delete deprecated_table_body_vertical_border_stroke_;
-  deprecated_table_body_vertical_border_stroke_ = deprecated_table_body_vertical_border_stroke;
-  if (deprecated_table_body_vertical_border_stroke) {
-    set_has_deprecated_table_body_vertical_border_stroke();
-  } else {
-    clear_has_deprecated_table_body_vertical_border_stroke();
-  }
 }
 
 // optional .TST.Deprecated_TableStrokeArchive deprecated_table_body_horizontal_stroke = 30;
@@ -3216,15 +2873,6 @@ inline ::TST::Deprecated_TableStrokeArchive* TableStylePropertiesArchive::releas
   deprecated_table_body_horizontal_stroke_ = NULL;
   return temp;
 }
-inline void TableStylePropertiesArchive::set_allocated_deprecated_table_body_horizontal_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_table_body_horizontal_stroke) {
-  delete deprecated_table_body_horizontal_stroke_;
-  deprecated_table_body_horizontal_stroke_ = deprecated_table_body_horizontal_stroke;
-  if (deprecated_table_body_horizontal_stroke) {
-    set_has_deprecated_table_body_horizontal_stroke();
-  } else {
-    clear_has_deprecated_table_body_horizontal_stroke();
-  }
-}
 
 // optional .TST.Deprecated_TableStrokeArchive deprecated_table_body_vertical_stroke = 31;
 inline bool TableStylePropertiesArchive::has_deprecated_table_body_vertical_stroke() const {
@@ -3254,15 +2902,6 @@ inline ::TST::Deprecated_TableStrokeArchive* TableStylePropertiesArchive::releas
   deprecated_table_body_vertical_stroke_ = NULL;
   return temp;
 }
-inline void TableStylePropertiesArchive::set_allocated_deprecated_table_body_vertical_stroke(::TST::Deprecated_TableStrokeArchive* deprecated_table_body_vertical_stroke) {
-  delete deprecated_table_body_vertical_stroke_;
-  deprecated_table_body_vertical_stroke_ = deprecated_table_body_vertical_stroke;
-  if (deprecated_table_body_vertical_stroke) {
-    set_has_deprecated_table_body_vertical_stroke();
-  } else {
-    clear_has_deprecated_table_body_vertical_stroke();
-  }
-}
 
 // optional .TST.StrokePresetListArchive stroke_preset_list = 32;
 inline bool TableStylePropertiesArchive::has_stroke_preset_list() const {
@@ -3291,15 +2930,6 @@ inline ::TST::StrokePresetListArchive* TableStylePropertiesArchive::release_stro
   ::TST::StrokePresetListArchive* temp = stroke_preset_list_;
   stroke_preset_list_ = NULL;
   return temp;
-}
-inline void TableStylePropertiesArchive::set_allocated_stroke_preset_list(::TST::StrokePresetListArchive* stroke_preset_list) {
-  delete stroke_preset_list_;
-  stroke_preset_list_ = stroke_preset_list;
-  if (stroke_preset_list) {
-    set_has_stroke_preset_list();
-  } else {
-    clear_has_stroke_preset_list();
-  }
 }
 
 // optional bool v_strokes_visible = 33;
@@ -3601,18 +3231,6 @@ inline ::std::string* TableStylePropertiesArchive::release_master_font_family() 
     return temp;
   }
 }
-inline void TableStylePropertiesArchive::set_allocated_master_font_family(::std::string* master_font_family) {
-  if (master_font_family_ != &::google::protobuf::internal::kEmptyString) {
-    delete master_font_family_;
-  }
-  if (master_font_family) {
-    set_has_master_font_family();
-    master_font_family_ = master_font_family;
-  } else {
-    clear_has_master_font_family();
-    master_font_family_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
-  }
-}
 
 // optional .TSWP.WritingDirectionType writing_direction = 45;
 inline bool TableStylePropertiesArchive::has_writing_direction() const {
@@ -3628,11 +3246,11 @@ inline void TableStylePropertiesArchive::clear_writing_direction() {
   writing_direction_ = -1;
   clear_has_writing_direction();
 }
-inline ::TSWP::WritingDirectionType TableStylePropertiesArchive::writing_direction() const {
-  return static_cast< ::TSWP::WritingDirectionType >(writing_direction_);
+inline TSWP::WritingDirectionType TableStylePropertiesArchive::writing_direction() const {
+  return static_cast< TSWP::WritingDirectionType >(writing_direction_);
 }
-inline void TableStylePropertiesArchive::set_writing_direction(::TSWP::WritingDirectionType value) {
-  assert(::TSWP::WritingDirectionType_IsValid(value));
+inline void TableStylePropertiesArchive::set_writing_direction(TSWP::WritingDirectionType value) {
+  GOOGLE_DCHECK(TSWP::WritingDirectionType_IsValid(value));
   set_has_writing_direction();
   writing_direction_ = value;
 }
@@ -3665,15 +3283,6 @@ inline ::TSD::StrokeArchive* TableStylePropertiesArchive::release_header_row_sep
   header_row_separator_stroke_ = NULL;
   return temp;
 }
-inline void TableStylePropertiesArchive::set_allocated_header_row_separator_stroke(::TSD::StrokeArchive* header_row_separator_stroke) {
-  delete header_row_separator_stroke_;
-  header_row_separator_stroke_ = header_row_separator_stroke;
-  if (header_row_separator_stroke) {
-    set_has_header_row_separator_stroke();
-  } else {
-    clear_has_header_row_separator_stroke();
-  }
-}
 
 // optional .TSD.StrokeArchive header_row_border_stroke = 47;
 inline bool TableStylePropertiesArchive::has_header_row_border_stroke() const {
@@ -3702,15 +3311,6 @@ inline ::TSD::StrokeArchive* TableStylePropertiesArchive::release_header_row_bor
   ::TSD::StrokeArchive* temp = header_row_border_stroke_;
   header_row_border_stroke_ = NULL;
   return temp;
-}
-inline void TableStylePropertiesArchive::set_allocated_header_row_border_stroke(::TSD::StrokeArchive* header_row_border_stroke) {
-  delete header_row_border_stroke_;
-  header_row_border_stroke_ = header_row_border_stroke;
-  if (header_row_border_stroke) {
-    set_has_header_row_border_stroke();
-  } else {
-    clear_has_header_row_border_stroke();
-  }
 }
 
 // optional .TSD.StrokeArchive header_row_horizontal_stroke = 48;
@@ -3741,15 +3341,6 @@ inline ::TSD::StrokeArchive* TableStylePropertiesArchive::release_header_row_hor
   header_row_horizontal_stroke_ = NULL;
   return temp;
 }
-inline void TableStylePropertiesArchive::set_allocated_header_row_horizontal_stroke(::TSD::StrokeArchive* header_row_horizontal_stroke) {
-  delete header_row_horizontal_stroke_;
-  header_row_horizontal_stroke_ = header_row_horizontal_stroke;
-  if (header_row_horizontal_stroke) {
-    set_has_header_row_horizontal_stroke();
-  } else {
-    clear_has_header_row_horizontal_stroke();
-  }
-}
 
 // optional .TSD.StrokeArchive header_row_vertical_stroke = 49;
 inline bool TableStylePropertiesArchive::has_header_row_vertical_stroke() const {
@@ -3778,15 +3369,6 @@ inline ::TSD::StrokeArchive* TableStylePropertiesArchive::release_header_row_ver
   ::TSD::StrokeArchive* temp = header_row_vertical_stroke_;
   header_row_vertical_stroke_ = NULL;
   return temp;
-}
-inline void TableStylePropertiesArchive::set_allocated_header_row_vertical_stroke(::TSD::StrokeArchive* header_row_vertical_stroke) {
-  delete header_row_vertical_stroke_;
-  header_row_vertical_stroke_ = header_row_vertical_stroke;
-  if (header_row_vertical_stroke) {
-    set_has_header_row_vertical_stroke();
-  } else {
-    clear_has_header_row_vertical_stroke();
-  }
 }
 
 // optional .TSD.StrokeArchive header_column_border_stroke = 50;
@@ -3817,15 +3399,6 @@ inline ::TSD::StrokeArchive* TableStylePropertiesArchive::release_header_column_
   header_column_border_stroke_ = NULL;
   return temp;
 }
-inline void TableStylePropertiesArchive::set_allocated_header_column_border_stroke(::TSD::StrokeArchive* header_column_border_stroke) {
-  delete header_column_border_stroke_;
-  header_column_border_stroke_ = header_column_border_stroke;
-  if (header_column_border_stroke) {
-    set_has_header_column_border_stroke();
-  } else {
-    clear_has_header_column_border_stroke();
-  }
-}
 
 // optional .TSD.StrokeArchive header_column_separator_stroke = 51;
 inline bool TableStylePropertiesArchive::has_header_column_separator_stroke() const {
@@ -3854,15 +3427,6 @@ inline ::TSD::StrokeArchive* TableStylePropertiesArchive::release_header_column_
   ::TSD::StrokeArchive* temp = header_column_separator_stroke_;
   header_column_separator_stroke_ = NULL;
   return temp;
-}
-inline void TableStylePropertiesArchive::set_allocated_header_column_separator_stroke(::TSD::StrokeArchive* header_column_separator_stroke) {
-  delete header_column_separator_stroke_;
-  header_column_separator_stroke_ = header_column_separator_stroke;
-  if (header_column_separator_stroke) {
-    set_has_header_column_separator_stroke();
-  } else {
-    clear_has_header_column_separator_stroke();
-  }
 }
 
 // optional .TSD.StrokeArchive header_column_horizontal_stroke = 52;
@@ -3893,15 +3457,6 @@ inline ::TSD::StrokeArchive* TableStylePropertiesArchive::release_header_column_
   header_column_horizontal_stroke_ = NULL;
   return temp;
 }
-inline void TableStylePropertiesArchive::set_allocated_header_column_horizontal_stroke(::TSD::StrokeArchive* header_column_horizontal_stroke) {
-  delete header_column_horizontal_stroke_;
-  header_column_horizontal_stroke_ = header_column_horizontal_stroke;
-  if (header_column_horizontal_stroke) {
-    set_has_header_column_horizontal_stroke();
-  } else {
-    clear_has_header_column_horizontal_stroke();
-  }
-}
 
 // optional .TSD.StrokeArchive header_column_vertical_stroke = 53;
 inline bool TableStylePropertiesArchive::has_header_column_vertical_stroke() const {
@@ -3930,15 +3485,6 @@ inline ::TSD::StrokeArchive* TableStylePropertiesArchive::release_header_column_
   ::TSD::StrokeArchive* temp = header_column_vertical_stroke_;
   header_column_vertical_stroke_ = NULL;
   return temp;
-}
-inline void TableStylePropertiesArchive::set_allocated_header_column_vertical_stroke(::TSD::StrokeArchive* header_column_vertical_stroke) {
-  delete header_column_vertical_stroke_;
-  header_column_vertical_stroke_ = header_column_vertical_stroke;
-  if (header_column_vertical_stroke) {
-    set_has_header_column_vertical_stroke();
-  } else {
-    clear_has_header_column_vertical_stroke();
-  }
 }
 
 // optional .TSD.StrokeArchive footer_row_separator_stroke = 54;
@@ -3969,15 +3515,6 @@ inline ::TSD::StrokeArchive* TableStylePropertiesArchive::release_footer_row_sep
   footer_row_separator_stroke_ = NULL;
   return temp;
 }
-inline void TableStylePropertiesArchive::set_allocated_footer_row_separator_stroke(::TSD::StrokeArchive* footer_row_separator_stroke) {
-  delete footer_row_separator_stroke_;
-  footer_row_separator_stroke_ = footer_row_separator_stroke;
-  if (footer_row_separator_stroke) {
-    set_has_footer_row_separator_stroke();
-  } else {
-    clear_has_footer_row_separator_stroke();
-  }
-}
 
 // optional .TSD.StrokeArchive footer_row_border_stroke = 55;
 inline bool TableStylePropertiesArchive::has_footer_row_border_stroke() const {
@@ -4006,15 +3543,6 @@ inline ::TSD::StrokeArchive* TableStylePropertiesArchive::release_footer_row_bor
   ::TSD::StrokeArchive* temp = footer_row_border_stroke_;
   footer_row_border_stroke_ = NULL;
   return temp;
-}
-inline void TableStylePropertiesArchive::set_allocated_footer_row_border_stroke(::TSD::StrokeArchive* footer_row_border_stroke) {
-  delete footer_row_border_stroke_;
-  footer_row_border_stroke_ = footer_row_border_stroke;
-  if (footer_row_border_stroke) {
-    set_has_footer_row_border_stroke();
-  } else {
-    clear_has_footer_row_border_stroke();
-  }
 }
 
 // optional .TSD.StrokeArchive footer_row_horizontal_stroke = 56;
@@ -4045,15 +3573,6 @@ inline ::TSD::StrokeArchive* TableStylePropertiesArchive::release_footer_row_hor
   footer_row_horizontal_stroke_ = NULL;
   return temp;
 }
-inline void TableStylePropertiesArchive::set_allocated_footer_row_horizontal_stroke(::TSD::StrokeArchive* footer_row_horizontal_stroke) {
-  delete footer_row_horizontal_stroke_;
-  footer_row_horizontal_stroke_ = footer_row_horizontal_stroke;
-  if (footer_row_horizontal_stroke) {
-    set_has_footer_row_horizontal_stroke();
-  } else {
-    clear_has_footer_row_horizontal_stroke();
-  }
-}
 
 // optional .TSD.StrokeArchive footer_row_vertical_stroke = 57;
 inline bool TableStylePropertiesArchive::has_footer_row_vertical_stroke() const {
@@ -4082,15 +3601,6 @@ inline ::TSD::StrokeArchive* TableStylePropertiesArchive::release_footer_row_ver
   ::TSD::StrokeArchive* temp = footer_row_vertical_stroke_;
   footer_row_vertical_stroke_ = NULL;
   return temp;
-}
-inline void TableStylePropertiesArchive::set_allocated_footer_row_vertical_stroke(::TSD::StrokeArchive* footer_row_vertical_stroke) {
-  delete footer_row_vertical_stroke_;
-  footer_row_vertical_stroke_ = footer_row_vertical_stroke;
-  if (footer_row_vertical_stroke) {
-    set_has_footer_row_vertical_stroke();
-  } else {
-    clear_has_footer_row_vertical_stroke();
-  }
 }
 
 // optional .TSD.StrokeArchive table_body_horizontal_border_stroke = 58;
@@ -4121,15 +3631,6 @@ inline ::TSD::StrokeArchive* TableStylePropertiesArchive::release_table_body_hor
   table_body_horizontal_border_stroke_ = NULL;
   return temp;
 }
-inline void TableStylePropertiesArchive::set_allocated_table_body_horizontal_border_stroke(::TSD::StrokeArchive* table_body_horizontal_border_stroke) {
-  delete table_body_horizontal_border_stroke_;
-  table_body_horizontal_border_stroke_ = table_body_horizontal_border_stroke;
-  if (table_body_horizontal_border_stroke) {
-    set_has_table_body_horizontal_border_stroke();
-  } else {
-    clear_has_table_body_horizontal_border_stroke();
-  }
-}
 
 // optional .TSD.StrokeArchive table_body_vertical_border_stroke = 59;
 inline bool TableStylePropertiesArchive::has_table_body_vertical_border_stroke() const {
@@ -4158,15 +3659,6 @@ inline ::TSD::StrokeArchive* TableStylePropertiesArchive::release_table_body_ver
   ::TSD::StrokeArchive* temp = table_body_vertical_border_stroke_;
   table_body_vertical_border_stroke_ = NULL;
   return temp;
-}
-inline void TableStylePropertiesArchive::set_allocated_table_body_vertical_border_stroke(::TSD::StrokeArchive* table_body_vertical_border_stroke) {
-  delete table_body_vertical_border_stroke_;
-  table_body_vertical_border_stroke_ = table_body_vertical_border_stroke;
-  if (table_body_vertical_border_stroke) {
-    set_has_table_body_vertical_border_stroke();
-  } else {
-    clear_has_table_body_vertical_border_stroke();
-  }
 }
 
 // optional .TSD.StrokeArchive table_body_horizontal_stroke = 60;
@@ -4197,15 +3689,6 @@ inline ::TSD::StrokeArchive* TableStylePropertiesArchive::release_table_body_hor
   table_body_horizontal_stroke_ = NULL;
   return temp;
 }
-inline void TableStylePropertiesArchive::set_allocated_table_body_horizontal_stroke(::TSD::StrokeArchive* table_body_horizontal_stroke) {
-  delete table_body_horizontal_stroke_;
-  table_body_horizontal_stroke_ = table_body_horizontal_stroke;
-  if (table_body_horizontal_stroke) {
-    set_has_table_body_horizontal_stroke();
-  } else {
-    clear_has_table_body_horizontal_stroke();
-  }
-}
 
 // optional .TSD.StrokeArchive table_body_vertical_stroke = 61;
 inline bool TableStylePropertiesArchive::has_table_body_vertical_stroke() const {
@@ -4235,21 +3718,12 @@ inline ::TSD::StrokeArchive* TableStylePropertiesArchive::release_table_body_ver
   table_body_vertical_stroke_ = NULL;
   return temp;
 }
-inline void TableStylePropertiesArchive::set_allocated_table_body_vertical_stroke(::TSD::StrokeArchive* table_body_vertical_stroke) {
-  delete table_body_vertical_stroke_;
-  table_body_vertical_stroke_ = table_body_vertical_stroke;
-  if (table_body_vertical_stroke) {
-    set_has_table_body_vertical_stroke();
-  } else {
-    clear_has_table_body_vertical_stroke();
-  }
-}
 
 // -------------------------------------------------------------------
 
 // TableStylePresetArchive
 
-// required int32 index = 1;
+// optional int32 index = 1;
 inline bool TableStylePresetArchive::has_index() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -4299,15 +3773,6 @@ inline ::TSP::Reference* TableStylePresetArchive::release_image() {
   image_ = NULL;
   return temp;
 }
-inline void TableStylePresetArchive::set_allocated_image(::TSP::Reference* image) {
-  delete image_;
-  image_ = image;
-  if (image) {
-    set_has_image();
-  } else {
-    clear_has_image();
-  }
-}
 
 // optional .TSP.Reference style_network = 3;
 inline bool TableStylePresetArchive::has_style_network() const {
@@ -4336,15 +3801,6 @@ inline ::TSP::Reference* TableStylePresetArchive::release_style_network() {
   ::TSP::Reference* temp = style_network_;
   style_network_ = NULL;
   return temp;
-}
-inline void TableStylePresetArchive::set_allocated_style_network(::TSP::Reference* style_network) {
-  delete style_network_;
-  style_network_ = style_network;
-  if (style_network) {
-    set_has_style_network();
-  } else {
-    clear_has_style_network();
-  }
 }
 
 // -------------------------------------------------------------------
