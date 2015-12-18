@@ -84,7 +84,13 @@
 		[self registerPagesPersistenceMessages];
 	} else if ([UTI isEqualToString:@"com.apple.iwork.numbers.numbers"]) {
 		[self registerNumbersPersistenceMessages];
-	}
+    } else if ([UTI isEqualToString:@"Keynote"]) {
+        [self registerKeynotePersistenceMessages];
+    } else if ([UTI isEqualToString:@"Pages"]) {
+        [self registerPagesPersistenceMessages];
+    } else if ([UTI isEqualToString:@"Numbers"]) {
+        [self registerNumbersPersistenceMessages];
+    }
 	
 	return self;
 }

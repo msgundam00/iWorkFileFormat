@@ -508,6 +508,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Sean Patrick O'Brien";
 				TargetAttributes = {
+					576B645D18228DDE005D22E3 = {
+						DevelopmentTeam = 85ZWTP7255;
+					};
 					576B648118228DDE005D22E3 = {
 						TestTargetID = 576B645D18228DDE005D22E3;
 					};
@@ -721,7 +724,7 @@
 		576B649318228DDE005D22E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iWorkFileInspector/Target/iWorkFileInspector-Prefix.pch";
@@ -735,6 +738,7 @@
 					"$(SRCROOT)/Externals/prebuilt/lib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -742,7 +746,7 @@
 		576B649418228DDE005D22E3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iWorkFileInspector/Target/iWorkFileInspector-Prefix.pch";
@@ -756,6 +760,7 @@
 					"$(SRCROOT)/Externals/prebuilt/lib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

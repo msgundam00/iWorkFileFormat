@@ -57,10 +57,34 @@
 		<dict>
 			<key>CFBundleTypeExtensions</key>
 			<array>
-				<string>*</string>
+				<string>pages</string>
 			</array>
 			<key>CFBundleTypeName</key>
-			<string>office</string>
+			<string>Pages</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>NSDocumentClass</key>
+			<string>IWDocument</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>numbers</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>Numbers</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>NSDocumentClass</key>
+			<string>IWDocument</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>key</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>Keynote</string>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>NSDocumentClass</key>
